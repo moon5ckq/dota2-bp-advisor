@@ -17,6 +17,7 @@ import { fetchHeroes, fetchHeroStats } from '../api/index.js';
 import HeroCard from '../components/HeroCard.jsx';
 import RankSelector from '../components/RankSelector.jsx';
 import RoleFilter from '../components/RoleFilter.jsx';
+import DataFooter from '../components/DataFooter.jsx';
 
 export default function Home() {
   const [heroes, setHeroes] = useState([]);     // 英雄基础信息列表
@@ -99,6 +100,7 @@ export default function Home() {
           ))}
         </div>
       )}
+      <DataFooter />
     </div>
   );
 }

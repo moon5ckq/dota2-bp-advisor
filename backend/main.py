@@ -251,8 +251,122 @@ async def reload_data():
     """
     from services.recommend import _load_static, _cache
     _load_static()
-    _cache.clear()  # 清除所有内存缓存
+    _cache.clear()
     return {"status": "ok", "message": "数据已重载"}
+
+
+# ── 数据更新时间 API ──
+
+@app.get("/api/data-status")
+def get_data_status():
+    """
+    获取各数据文件的最后更新时间
+    前端用于在页面底部显示数据更新时间
+    """
+    import os, time
+    data_dir = Path(__file__).parent / "data"
+    files = {
+        "hero_synergy": "配合数据",
+        "hero_lane_roles": "分路数据",
+        "hero_aliases": "英雄别名",
+        "hero_positions": "位置数据",
+        "dota2": "英雄基础数据",
+    }
+    result = {}
+    oldest_ts = None
+    for key, label in files.items():
+        ext = ".db" if key == "dota2" else ".json"
+        fpath = data_dir / f"{key}{ext}"
+        if fpath.exists():
+            mtime = os.path.getmtime(fpath)
+            result[key] = {
+                "label": label,
+                "updated_at": time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(mtime)),
+                "timestamp": int(mtime),
+            }
+            if oldest_ts is None or mtime < oldest_ts:
+                oldest_ts = mtime
+    
+    # 返回最老的更新时间作为总体数据时间
+    overall = time.strftime("%Y-%m-%d %H:%M", time.localtime(oldest_ts)) if oldest_ts else "未知"
+    return {"files": result, "overall_updated_at": overall}
+
+
+# ── 后台定时更新调度器 ──
+
+import asyncio as _asyncio
+import logging
+
+_update_logger = logging.getLogger("data_updater")
+
+async def _run_update_task(task_name: str, args: list[str]):
+    """运行数据更新脚本（子进程，不阻塞主服务）"""
+    script = str(Path(__file__).parent / "scripts" / "update_data.py")
+    try:
+        _update_logger.info(f"开始更新: {task_name}")
+        proc = await _asyncio.create_subprocess_exec(
+            "python3", script, *args,
+            stdout=_asyncio.subprocess.PIPE,
+            stderr=_asyncio.subprocess.PIPE,
+        )
+        stdout, stderr = await proc.communicate()
+        if proc.returncode == 0:
+            _update_logger.info(f"更新完成: {task_name}")
+            # 更新完成后重载内存数据
+            from services.recommend import _load_static, _cache
+            _load_static()
+            _cache.clear()
+        else:
+            _update_logger.error(f"更新失败: {task_name}, stderr={stderr.decode()[:200]}")
+    except Exception as e:
+        _update_logger.error(f"更新异常: {task_name}, {e}")
+
+async def _background_scheduler():
+    """
+    后台定时更新调度器
+    
+    更新频率：
+    - 英雄基础数据: 每6小时
+    - 分路数据: 每周（7天）
+    - 配合数据: 每周（7天）
+    
+    启动后先等60秒再开始第一轮检查，避免影响启动速度
+    """
+    await _asyncio.sleep(60)  # 启动后等60秒
+    
+    HERO_INTERVAL = 6 * 3600       # 6小时
+    LANE_INTERVAL = 7 * 86400      # 7天
+    SYNERGY_INTERVAL = 7 * 86400   # 7天
+    
+    import os, time
+    data_dir = Path(__file__).parent / "data"
+    
+    while True:
+        now = time.time()
+        
+        # 检查英雄基础数据
+        db_path = data_dir / "dota2.db"
+        if db_path.exists():
+            age = now - os.path.getmtime(db_path)
+            if age > HERO_INTERVAL:
+                await _run_update_task("英雄基础数据", ["--heroes"])
+        
+        # 检查分路数据
+        lane_path = data_dir / "hero_lane_roles.json"
+        if lane_path.exists():
+            age = now - os.path.getmtime(lane_path)
+            if age > LANE_INTERVAL:
+                await _run_update_task("分路数据", ["--lane-roles"])
+        
+        # 检查配合数据
+        syn_path = data_dir / "hero_synergy.json"
+        if syn_path.exists():
+            age = now - os.path.getmtime(syn_path)
+            if age > SYNERGY_INTERVAL:
+                await _run_update_task("配合数据", ["--synergy"])
+        
+        # 每小时检查一次
+        await _asyncio.sleep(3600)
 
 
 # ── 前端静态资源服务 ──

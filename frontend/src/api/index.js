@@ -90,6 +90,16 @@ export async function fetchPlayerHeroPool(accountId) {
  * @param {number[]} data.player_ids - 绑定的玩家账号ID列表
  * @returns {Promise<Object>} {radiant: [...], dire: [...]}
  */
+/**
+ * 获取数据更新状态（各数据文件的最后更新时间）
+ * @returns {Promise<Object>} {files: {...}, overall_updated_at: "2026-04-23 17:00"}
+ */
+export async function fetchDataStatus() {
+  const res = await fetch(`${API_BASE}/data-status`);
+  if (!res.ok) throw new Error('Failed to fetch data status');
+  return res.json();
+}
+
 export async function fetchRecommend(data) {
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), 30000); // 30秒超时

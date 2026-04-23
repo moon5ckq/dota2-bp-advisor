@@ -16,6 +16,7 @@
 
 import { useState, useEffect, useMemo, useRef, useCallback } from 'react';
 import { fetchHeroAliases, fetchRecommend } from '../api';
+import DataFooter from '../components/DataFooter.jsx';
 
 // Steam CDN 基础地址，用于加载英雄头像图片
 const CDN = 'https://cdn.cloudflare.steamstatic.com';
@@ -446,6 +447,7 @@ export default function BPAnalysis() {
           </div>
         );
       })}
+      <DataFooter />
     </div>
   );
 }

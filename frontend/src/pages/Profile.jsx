@@ -13,6 +13,7 @@
 
 import { useState, useEffect } from 'react';
 import { fetchPlayerProfile, fetchPlayerHeroPool } from '../api';
+import DataFooter from '../components/DataFooter.jsx';
 
 // Steam64 ID 基础偏移量，用于将 Steam64 ID 转换为 Dota2 好友 ID
 const STEAM_ID_BASE = 76561197960265728n;
@@ -332,6 +333,7 @@ export default function Profile() {
           ))}
         </div>
       )}
+      <DataFooter />
     </div>
   );
 }
