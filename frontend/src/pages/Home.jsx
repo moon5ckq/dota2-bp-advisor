@@ -90,7 +90,7 @@ export default function Home() {
         // 无数据提示
         <div className="text-center py-20 text-[#8b8fa3]">
           <p className="text-lg mb-2">暂无数据</p>
-          <p className="text-sm">请点击右上角「同步数据」按钮获取最新英雄数据</p>
+          <p className="text-sm">英雄数据将自动更新</p>
         </div>
       ) : (
         // 英雄卡片网格（响应式列数）

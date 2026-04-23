@@ -11,8 +11,8 @@
  * - dota2_player_ids: 玩家账号列表 JSON
  */
 
-import { useState, useEffect } from 'react';
-import { fetchPlayerProfile, fetchPlayerHeroPool } from '../api';
+import { useState, useEffect, useRef, useCallback } from 'react';
+import { fetchPlayerProfile, fetchPlayerHeroPool, fetchDefaultDegrees } from '../api';
 import DataFooter from '../components/DataFooter.jsx';
 
 // Steam64 ID 基础偏移量，用于将 Steam64 ID 转换为 Dota2 好友 ID
@@ -21,6 +21,21 @@ const STEAM_ID_BASE = 76561197960265728n;
 // localStorage 存储键
 const LS_KEY = 'dota2_player_ids';       // 玩家ID列表
 const RANK_LS_KEY = 'dota2_rank_tier';   // 段位设置
+const DEGREES_LS_KEY = 'dota2_custom_degrees';
+
+const STAGES = [
+  { key: 'early', label: '早期', desc: '己方0-1人' },
+  { key: 'mid', label: '中期', desc: '己方2人' },
+  { key: 'mid_late', label: '中后期', desc: '己方3人' },
+  { key: 'late', label: '后期', desc: '己方4人' },
+];
+
+const FALLBACK_DEGREES = {
+  early: { hero: 50, team: 30, comp: 20 },
+  mid: { hero: 25, team: 50, comp: 25 },
+  mid_late: { hero: 15, team: 35, comp: 50 },
+  late: { hero: 10, team: 30, comp: 60 },
+};
 
 // 段位配置列表
 const RANKS = [
@@ -60,6 +75,152 @@ function loadRank() {
     const n = v ? parseInt(v, 10) : 5;
     return n >= 1 && n <= 8 ? n : 5;
   } catch { return 5; }
+}
+
+function loadDegrees() {
+  try {
+    const raw = localStorage.getItem(DEGREES_LS_KEY);
+    return raw ? JSON.parse(raw) : null;
+  } catch { return null; }
+}
+
+/** Dual-thumb slider: splits a bar into 3 colored segments */
+function DualSlider({ hero, team, comp, onChange }) {
+  const trackRef = useRef(null);
+  const dragging = useRef(null); // 'left' | 'right' | null
+  const MIN = 5;
+
+  const getPos = useCallback((e) => {
+    const rect = trackRef.current.getBoundingClientRect();
+    const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+    return Math.max(0, Math.min(100, ((clientX - rect.left) / rect.width) * 100));
+  }, []);
+
+  const handleMove = useCallback((e) => {
+    if (!dragging.current) return;
+    e.preventDefault();
+    const pos = getPos(e);
+    let h = hero, t = team, c = comp;
+    if (dragging.current === 'left') {
+      h = Math.round(Math.max(MIN, Math.min(100 - MIN - MIN, pos)));
+      // keep right thumb (h+t) stable if possible
+      const rightEdge = hero + team;
+      t = Math.max(MIN, rightEdge - h);
+      c = 100 - h - t;
+      if (c < MIN) { c = MIN; t = 100 - h - c; }
+      if (t < MIN) { t = MIN; h = 100 - t - c; }
+    } else {
+      // right thumb at hero+team position
+      const rightPos = Math.round(Math.max(hero + MIN, Math.min(100 - MIN, pos)));
+      t = rightPos - hero;
+      if (t < MIN) t = MIN;
+      c = 100 - hero - t;
+      if (c < MIN) { c = MIN; t = 100 - hero - c; }
+      h = hero; // hero stays
+    }
+    onChange(h, t, c);
+  }, [hero, team, comp, getPos, onChange]);
+
+  const handleEnd = useCallback(() => { dragging.current = null; }, []);
+
+  useEffect(() => {
+    const onMove = (e) => handleMove(e);
+    const onEnd = () => handleEnd();
+    window.addEventListener('mousemove', onMove);
+    window.addEventListener('mouseup', onEnd);
+    window.addEventListener('touchmove', onMove, { passive: false });
+    window.addEventListener('touchend', onEnd);
+    return () => {
+      window.removeEventListener('mousemove', onMove);
+      window.removeEventListener('mouseup', onEnd);
+      window.removeEventListener('touchmove', onMove);
+      window.removeEventListener('touchend', onEnd);
+    };
+  }, [handleMove, handleEnd]);
+
+  const leftPos = hero;
+  const rightPos = hero + team;
+
+  return (
+    <div className="relative" style={{ height: 30 }}>
+      {/* Track */}
+      <div ref={trackRef} className="absolute top-[2px] left-0 right-0 h-2 rounded-full overflow-hidden" style={{ background: '#232638' }}>
+        <div className="absolute h-full" style={{ left: 0, width: `${leftPos}%`, background: '#3b82f6' }} />
+        <div className="absolute h-full" style={{ left: `${leftPos}%`, width: `${team}%`, background: '#ef4444' }} />
+        <div className="absolute h-full" style={{ left: `${rightPos}%`, width: `${comp}%`, background: '#22c55e' }} />
+      </div>
+      {/* Left thumb */}
+      <div
+        className="absolute top-[-2px] w-[16px] h-[16px] rounded-full border-2 border-white cursor-grab active:scale-110 z-10"
+        style={{ left: `calc(${leftPos}% - 8px)`, background: '#3b82f6', touchAction: 'none' }}
+        onMouseDown={() => { dragging.current = 'left'; }}
+        onTouchStart={() => { dragging.current = 'left'; }}
+      />
+      {/* Right thumb */}
+      <div
+        className="absolute top-[-2px] w-[16px] h-[16px] rounded-full border-2 border-white cursor-grab active:scale-110 z-10"
+        style={{ left: `calc(${rightPos}% - 8px)`, background: '#22c55e', touchAction: 'none' }}
+        onMouseDown={() => { dragging.current = 'right'; }}
+        onTouchStart={() => { dragging.current = 'right'; }}
+      />
+      {/* Percentage labels - below track */}
+      <div className="absolute top-[16px] text-[9px] font-medium" style={{ left: `${leftPos / 2}%`, transform: 'translateX(-50%)', color: '#3b82f6' }}>{hero}%</div>
+      <div className="absolute top-[16px] text-[9px] font-medium" style={{ left: `${leftPos + team / 2}%`, transform: 'translateX(-50%)', color: '#ef4444' }}>{team}%</div>
+      <div className="absolute top-[16px] text-[9px] font-medium" style={{ left: `${rightPos + comp / 2}%`, transform: 'translateX(-50%)', color: '#22c55e' }}>{comp}%</div>
+    </div>
+  );
+}
+
+function WeightEditor() {
+  const [degrees, setDegrees] = useState(() => loadDegrees() || { ...FALLBACK_DEGREES });
+
+  const saveDegrees = (d) => {
+    setDegrees(d);
+    localStorage.setItem(DEGREES_LS_KEY, JSON.stringify(d));
+  };
+
+  const handleChange = (stageKey, hero, team, comp) => {
+    saveDegrees({ ...degrees, [stageKey]: { hero, team, comp } });
+  };
+
+  const handleReset = async () => {
+    try {
+      const defaults = await fetchDefaultDegrees();
+      saveDegrees(defaults);
+    } catch {
+      saveDegrees({ ...FALLBACK_DEGREES });
+    }
+    localStorage.removeItem(DEGREES_LS_KEY);
+  };
+
+  return (
+    <div className="mb-3">
+      <div className="flex items-center justify-between mb-1">
+        <div className="text-xs font-medium" style={{ color: '#8b8fa3' }}>⚖️ 推荐权重</div>
+        <button onClick={handleReset} className="text-[10px] px-2 py-0.5 rounded" style={{ color: '#8b8fa3', background: '#1a1d2e' }}>恢复默认</button>
+      </div>
+      <div className="rounded-lg px-3 py-2 space-y-1" style={{ background: '#1a1d2e' }}>
+        {/* 图例+说明 */}
+        <div className="flex justify-center gap-3 pb-1 border-b border-[#232638]">
+          <span className="text-[9px]" style={{ color: '#3b82f6' }}>🔵 英雄度(熟练+胜率)</span>
+          <span className="text-[9px]" style={{ color: '#ef4444' }}>🔴 团队度(克制+配合)</span>
+          <span className="text-[9px]" style={{ color: '#22c55e' }}>🟢 补位度(位置+能力)</span>
+        </div>
+        {STAGES.map(s => {
+          const d = degrees[s.key] || FALLBACK_DEGREES[s.key];
+          return (
+            <div key={s.key}>
+              <div className="flex items-center gap-1">
+                <span className="text-[10px] font-medium" style={{ color: '#e8e6e3', minWidth: 36 }}>{s.label}</span>
+                <span className="text-[9px]" style={{ color: '#6b7280' }}>{s.desc}</span>
+              </div>
+              <DualSlider hero={d.hero} team={d.team} comp={d.comp} onChange={(h, t, c) => handleChange(s.key, h, t, c)} />
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
 }
 
 export default function Profile() {
@@ -174,6 +335,9 @@ export default function Profile() {
           ))}
         </div>
       </div>
+
+      {/* 权重自定义 */}
+      <WeightEditor />
 
       {/* 账号ID输入区 */}
       <div className="flex gap-2 mb-3">

@@ -28,56 +28,68 @@ from services import database
 
 # ── 动态权重（根据 BP 阶段调整） ──
 
-def _get_weights(ally_count: int, enemy_count: int, has_pool: bool) -> dict:
-    """
-    根据 BP 阶段和是否有个人英雄池数据，返回6个维度的权重配置
-    
-    BP 阶段划分：
-    - 早期（己方0-1人）：侧重个人擅长 + 段位强势，尽量拿版本强势/自己擅长的英雄
-    - 中期（己方2人）：侧重克制 + 配合，针对敌方阵容做反制
-    - 中后期（己方3人）：位置 + 能力开始提升，确保阵容完整性
-    - 后期（己方4人，只剩1个位置）：位置 + 能力为主，补齐阵容短板
-    
-    参数:
-        ally_count: 己方已选英雄数量（0-4）
-        enemy_count: 敌方已选英雄数量
-        has_pool: 是否绑定了玩家账号（有个人英雄池数据）
-    
-    返回:
-        dict: {counter, meta, personal, position, capability, synergy} 各维度权重（总和为1.0）
-    """
-    if ally_count <= 1:
-        # 早期：个人擅长 + 段位强势为主
-        if has_pool:
-            return {'counter': 0.15, 'meta': 0.20, 'personal': 0.30,
-                    'position': 0.10, 'capability': 0.10, 'synergy': 0.15}
-        else:
-            return {'counter': 0.15, 'meta': 0.50, 'personal': 0,
-                    'position': 0.10, 'capability': 0.10, 'synergy': 0.15}
-    elif ally_count == 2:
-        # 中期：克制 + 配合为主
-        if has_pool:
-            return {'counter': 0.30, 'meta': 0.10, 'personal': 0.15,
-                    'position': 0.15, 'capability': 0.10, 'synergy': 0.20}
-        else:
-            return {'counter': 0.30, 'meta': 0.25, 'personal': 0,
-                    'position': 0.15, 'capability': 0.10, 'synergy': 0.20}
-    elif ally_count == 3:
-        # 中后期：位置 + 能力开始提升
-        if has_pool:
-            return {'counter': 0.20, 'meta': 0.05, 'personal': 0.10,
-                    'position': 0.30, 'capability': 0.20, 'synergy': 0.15}
-        else:
-            return {'counter': 0.20, 'meta': 0.15, 'personal': 0,
-                    'position': 0.30, 'capability': 0.20, 'synergy': 0.15}
+# 3个度的默认值（4个阶段）
+DEFAULT_DEGREES = {
+    'early':     {'hero': 50, 'team': 30, 'comp': 20},
+    'mid':       {'hero': 25, 'team': 50, 'comp': 25},
+    'mid_late':  {'hero': 15, 'team': 35, 'comp': 50},
+    'late':      {'hero': 10, 'team': 30, 'comp': 60},
+}
+
+# 固定子比例
+SUB_RATIOS = {
+    'meta_in_hero': 0.4,
+    'personal_in_hero': 0.6,
+    'counter_in_team': 0.6,
+    'synergy_in_team': 0.4,
+    'position_in_comp': 0.6,
+    'capability_in_comp': 0.4,
+}
+
+
+def _degrees_to_weights(hero_deg: float, team_deg: float, comp_deg: float, has_pool: bool) -> dict:
+    """将3个度转换为6维度权重"""
+    total = hero_deg + team_deg + comp_deg
+    if total <= 0:
+        total = 100
+    hero = hero_deg / total
+    team = team_deg / total
+    comp = comp_deg / total
+
+    if has_pool:
+        meta_ratio = SUB_RATIOS['meta_in_hero']
+        personal_ratio = SUB_RATIOS['personal_in_hero']
     else:
-        # 后期（4人）：位置 + 能力为主
-        if has_pool:
-            return {'counter': 0.20, 'meta': 0.00, 'personal': 0.10,
-                    'position': 0.35, 'capability': 0.25, 'synergy': 0.10}
-        else:
-            return {'counter': 0.20, 'meta': 0.10, 'personal': 0,
-                    'position': 0.35, 'capability': 0.25, 'synergy': 0.10}
+        meta_ratio = 1.0
+        personal_ratio = 0.0
+
+    return {
+        'counter': team * SUB_RATIOS['counter_in_team'],
+        'synergy': team * SUB_RATIOS['synergy_in_team'],
+        'meta': hero * meta_ratio,
+        'personal': hero * personal_ratio,
+        'position': comp * SUB_RATIOS['position_in_comp'],
+        'capability': comp * SUB_RATIOS['capability_in_comp'],
+    }
+
+
+def _get_weights(ally_count: int, enemy_count: int, has_pool: bool, custom_degrees: dict = None) -> dict:
+    """获取权重，支持自定义度数"""
+    if ally_count <= 1:
+        stage = 'early'
+    elif ally_count == 2:
+        stage = 'mid'
+    elif ally_count == 3:
+        stage = 'mid_late'
+    else:
+        stage = 'late'
+
+    if custom_degrees and stage in custom_degrees:
+        deg = custom_degrees[stage]
+    else:
+        deg = DEFAULT_DEGREES[stage]
+
+    return _degrees_to_weights(deg['hero'], deg['team'], deg['comp'], has_pool)
 
 
 # ── 能力标签定义 ──
@@ -654,6 +666,7 @@ async def recommend(
     bans: list[int],
     rank_tier: int = 5,
     player_ids: Optional[list[int]] = None,
+    custom_degrees: Optional[dict] = None,
 ) -> list[dict]:
     """
     核心推荐函数：根据当前 BP 状态返回 TOP10 推荐英雄
@@ -678,7 +691,7 @@ async def recommend(
     """
     player_ids = player_ids or []
     has_pool = len(player_ids) > 0
-    weights = _get_weights(len(ally_picks), len(enemy_picks), has_pool)
+    weights = _get_weights(len(ally_picks), len(enemy_picks), has_pool, custom_degrees)
 
     heroes_db = _get_heroes_db()
     hero_map = _build_hero_map(heroes_db)

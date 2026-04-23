@@ -198,23 +198,23 @@ async def sync_heroes():
 
 class RecommendRequest(BaseModel):
     """推荐请求参数模型"""
-    radiant_picks: list[int] = []   # 天辉已选英雄ID列表
-    dire_picks: list[int] = []      # 夜魇已选英雄ID列表
-    bans: list[int] = []            # 已Ban英雄ID列表
-    rank_tier: int = 5              # 段位等级（1-8，默认5=传奇）
-    player_ids: list[int] = []      # 绑定的玩家账号ID列表
+    radiant_picks: list[int] = []
+    dire_picks: list[int] = []
+    bans: list[int] = []
+    rank_tier: int = 5
+    player_ids: list[int] = []
+    custom_degrees: dict = None
+
+
+@app.get("/api/default-degrees")
+def get_default_degrees():
+    from services.recommend import DEFAULT_DEGREES
+    return DEFAULT_DEGREES
 
 
 @app.post("/api/recommend")
 async def recommend(request: RecommendRequest):
-    """
-    根据当前 BP 状态生成英雄推荐
-    
-    分别为天辉和夜魇计算推荐（仅对未满5人的阵营）。
-    推荐时会互换 ally/enemy 视角：
-    - 天辉推荐：ally=天辉, enemy=夜魇
-    - 夜魇推荐：ally=夜魇, enemy=天辉
-    """
+
     results = {}
     
     # 天辉未满5人时，计算天辉推荐
@@ -225,9 +225,9 @@ async def recommend(request: RecommendRequest):
             bans=request.bans,
             rank_tier=request.rank_tier,
             player_ids=request.player_ids,
+            custom_degrees=request.custom_degrees,
         )
     
-    # 夜魇未满5人时，计算夜魇推荐
     if len(request.dire_picks) < 5:
         results['dire'] = await run_recommend(
             ally_picks=request.dire_picks,
@@ -235,6 +235,7 @@ async def recommend(request: RecommendRequest):
             bans=request.bans,
             rank_tier=request.rank_tier,
             player_ids=request.player_ids,
+            custom_degrees=request.custom_degrees,
         )
     
     return results

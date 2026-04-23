@@ -100,6 +100,12 @@ export async function fetchDataStatus() {
   return res.json();
 }
 
+export async function fetchDefaultDegrees() {
+  const res = await fetch(`${API_BASE}/default-degrees`);
+  if (!res.ok) throw new Error('Failed to fetch default degrees');
+  return res.json();
+}
+
 export async function fetchRecommend(data) {
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), 30000); // 30秒超时

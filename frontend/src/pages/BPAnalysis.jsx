@@ -127,6 +127,14 @@ export default function BPAnalysis() {
         rank_tier: rankTier,
         player_ids: playerIds,
       };
+      // 读取自定义权重
+      let customDegrees = null;
+      try {
+        const raw = localStorage.getItem('dota2_custom_degrees');
+        if (raw) customDegrees = JSON.parse(raw);
+      } catch {}
+      if (customDegrees) data.custom_degrees = customDegrees;
+
       doFetchRecommend(data);
     }, 300);
 
