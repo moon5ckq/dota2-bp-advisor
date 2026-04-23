@@ -1,0 +1,1680 @@
+[
+  {
+    "hero_id": 1,
+    "name_en": "Anti-Mage",
+    "name_cn": "敌法师",
+    "aliases": [
+      "AM",
+      "DH",
+      "df",
+      "dfs",
+      "difa",
+      "difashi",
+      "敌法"
+    ]
+  },
+  {
+    "hero_id": 2,
+    "name_en": "Axe",
+    "name_cn": "斧王",
+    "aliases": [
+      "ft",
+      "futou",
+      "fuwang",
+      "fw",
+      "斧头"
+    ]
+  },
+  {
+    "hero_id": 3,
+    "name_en": "Bane",
+    "name_cn": "祸乱之源",
+    "aliases": [
+      "hl",
+      "hlzy",
+      "huoluan",
+      "huoluanzhiyuan",
+      "祸乱"
+    ]
+  },
+  {
+    "hero_id": 4,
+    "name_en": "Bloodseeker",
+    "name_cn": "嗜血狂魔",
+    "aliases": [
+      "BS",
+      "shixuekuangmo",
+      "sxkm",
+      "xm",
+      "xuemo",
+      "血魔"
+    ]
+  },
+  {
+    "hero_id": 5,
+    "name_en": "Crystal Maiden",
+    "name_cn": "水晶室女",
+    "aliases": [
+      "CM",
+      "bingnv",
+      "bn",
+      "shuijingshinv",
+      "sjsn",
+      "冰女"
+    ]
+  },
+  {
+    "hero_id": 6,
+    "name_en": "Drow Ranger",
+    "name_cn": "卓尔游侠",
+    "aliases": [
+      "DR",
+      "Drow",
+      "heigong",
+      "hg",
+      "xh",
+      "xiaohei",
+      "zeyx",
+      "zhuoeryouxia",
+      "小黑",
+      "黑弓"
+    ]
+  },
+  {
+    "hero_id": 7,
+    "name_en": "Earthshaker",
+    "name_cn": "撼地者",
+    "aliases": [
+      "ES",
+      "handizhe",
+      "hdz",
+      "niutou",
+      "nt",
+      "xiaoniu",
+      "xn",
+      "小牛",
+      "牛头"
+    ]
+  },
+  {
+    "hero_id": 8,
+    "name_en": "Juggernaut",
+    "name_cn": "主宰",
+    "aliases": [
+      "Jugg",
+      "jiansheng",
+      "js",
+      "zhuzai",
+      "zz",
+      "剑圣"
+    ]
+  },
+  {
+    "hero_id": 9,
+    "name_en": "Mirana",
+    "name_cn": "米拉娜",
+    "aliases": [
+      "POM",
+      "baihu",
+      "bh",
+      "milana",
+      "mln",
+      "yn",
+      "yuenv",
+      "月女",
+      "白虎"
+    ]
+  },
+  {
+    "hero_id": 10,
+    "name_en": "Morphling",
+    "name_cn": "变体精灵",
+    "aliases": [
+      "Morph",
+      "biantijingling",
+      "btjl",
+      "shuiren",
+      "sr",
+      "水人"
+    ]
+  },
+  {
+    "hero_id": 11,
+    "name_en": "Shadow Fiend",
+    "name_cn": "影魔",
+    "aliases": [
+      "SF",
+      "hs",
+      "hunshou",
+      "yingmo",
+      "ym",
+      "魂守"
+    ]
+  },
+  {
+    "hero_id": 12,
+    "name_en": "Phantom Lancer",
+    "name_cn": "幻影长矛手",
+    "aliases": [
+      "PL",
+      "hm",
+      "houzi",
+      "huanmao",
+      "huanyingchangmaoshou",
+      "hycms",
+      "hz",
+      "幻矛",
+      "猴子"
+    ]
+  },
+  {
+    "hero_id": 13,
+    "name_en": "Puck",
+    "name_cn": "帕克",
+    "aliases": [
+      "jinglinglong",
+      "jll",
+      "pake",
+      "pk",
+      "精灵龙"
+    ]
+  },
+  {
+    "hero_id": 14,
+    "name_en": "Pudge",
+    "name_cn": "帕吉",
+    "aliases": [
+      "paji",
+      "pj",
+      "tf",
+      "tufu",
+      "屠夫"
+    ]
+  },
+  {
+    "hero_id": 15,
+    "name_en": "Razor",
+    "name_cn": "剃刀",
+    "aliases": [
+      "dg",
+      "dh",
+      "diangun",
+      "dianhun",
+      "td",
+      "tidao",
+      "电棍",
+      "电魂"
+    ]
+  },
+  {
+    "hero_id": 16,
+    "name_en": "Sand King",
+    "name_cn": "沙王",
+    "aliases": [
+      "SK",
+      "shawang",
+      "sw"
+    ]
+  },
+  {
+    "hero_id": 17,
+    "name_en": "Storm Spirit",
+    "name_cn": "风暴之灵",
+    "aliases": [
+      "Storm",
+      "fbzl",
+      "fengbaozhiling",
+      "lanmao",
+      "lm",
+      "蓝猫"
+    ]
+  },
+  {
+    "hero_id": 18,
+    "name_en": "Sven",
+    "name_cn": "斯温",
+    "aliases": [
+      "liulang",
+      "liulangjianke",
+      "ll",
+      "lljk",
+      "siwen",
+      "sw",
+      "流浪",
+      "流浪剑客"
+    ]
+  },
+  {
+    "hero_id": 19,
+    "name_en": "Tiny",
+    "name_cn": "小小",
+    "aliases": [
+      "shanling",
+      "shanlingjuren",
+      "sl",
+      "sljr",
+      "xiaoxiao",
+      "xx",
+      "山岭",
+      "山岭巨人"
+    ]
+  },
+  {
+    "hero_id": 20,
+    "name_en": "Vengeful Spirit",
+    "name_cn": "复仇之魂",
+    "aliases": [
+      "VS",
+      "ch",
+      "chouhen",
+      "fc",
+      "fczh",
+      "fuchou",
+      "fuchouzhihun",
+      "仇恨",
+      "复仇"
+    ]
+  },
+  {
+    "hero_id": 21,
+    "name_en": "Windranger",
+    "name_cn": "风行者",
+    "aliases": [
+      "WR",
+      "fenggong",
+      "fengxing",
+      "fengxingzhe",
+      "fg",
+      "fx",
+      "fxz",
+      "风弓",
+      "风行"
+    ]
+  },
+  {
+    "hero_id": 22,
+    "name_en": "Zeus",
+    "name_cn": "宙斯",
+    "aliases": [
+      "ZS",
+      "zhousi",
+      "zs"
+    ]
+  },
+  {
+    "hero_id": 23,
+    "name_en": "Kunkka",
+    "name_cn": "昆卡",
+    "aliases": [
+      "chuanzhang",
+      "cz",
+      "haijunshangjiang",
+      "hjsj",
+      "kk",
+      "kunka",
+      "海军上将",
+      "船长"
+    ]
+  },
+  {
+    "hero_id": 25,
+    "name_en": "Lina",
+    "name_cn": "莉娜",
+    "aliases": [
+      "hn",
+      "huonv",
+      "ln",
+      "火女"
+    ]
+  },
+  {
+    "hero_id": 26,
+    "name_en": "Lion",
+    "name_cn": "莱恩",
+    "aliases": [
+      "emowushi",
+      "emws",
+      "laien",
+      "le",
+      "恶魔巫师"
+    ]
+  },
+  {
+    "hero_id": 27,
+    "name_en": "Shadow Shaman",
+    "name_cn": "暗影萨满",
+    "aliases": [
+      "SS",
+      "anyingsaman",
+      "aysm",
+      "saman",
+      "sm",
+      "xY",
+      "xiaoY",
+      "小Y",
+      "萨满"
+    ]
+  },
+  {
+    "hero_id": 28,
+    "name_en": "Slardar",
+    "name_cn": "斯拉达",
+    "aliases": [
+      "dayu",
+      "dayuren",
+      "dy",
+      "dyr",
+      "silada",
+      "sld",
+      "大鱼",
+      "大鱼人"
+    ]
+  },
+  {
+    "hero_id": 29,
+    "name_en": "Tidehunter",
+    "name_cn": "潮汐猎人",
+    "aliases": [
+      "Tide",
+      "chaoxi",
+      "chaoxilieren",
+      "cx",
+      "cxlr",
+      "dahaiguai",
+      "dhg",
+      "大海怪",
+      "潮汐"
+    ]
+  },
+  {
+    "hero_id": 30,
+    "name_en": "Witch Doctor",
+    "name_cn": "巫医",
+    "aliases": [
+      "WD",
+      "wuyi",
+      "wy"
+    ]
+  },
+  {
+    "hero_id": 31,
+    "name_en": "Lich",
+    "name_cn": "巫妖",
+    "aliases": [
+      "wuyao",
+      "wy"
+    ]
+  },
+  {
+    "hero_id": 32,
+    "name_en": "Riki",
+    "name_cn": "力丸",
+    "aliases": [
+      "SA",
+      "liwan",
+      "lw",
+      "yc",
+      "yinci",
+      "yinxingcike",
+      "yxck",
+      "隐刺",
+      "隐形刺客"
+    ]
+  },
+  {
+    "hero_id": 33,
+    "name_en": "Enigma",
+    "name_cn": "谜团",
+    "aliases": [
+      "mituan",
+      "mt"
+    ]
+  },
+  {
+    "hero_id": 34,
+    "name_en": "Tinker",
+    "name_cn": "修补匠",
+    "aliases": [
+      "TK",
+      "dg",
+      "dingge",
+      "xbj",
+      "xiubujiang",
+      "丁哥"
+    ]
+  },
+  {
+    "hero_id": 35,
+    "name_en": "Sniper",
+    "name_cn": "狙击手",
+    "aliases": [
+      "airenjujishou",
+      "arjjs",
+      "hq",
+      "huoqiang",
+      "jjs",
+      "jujishou",
+      "火枪",
+      "矮人狙击手"
+    ]
+  },
+  {
+    "hero_id": 36,
+    "name_en": "Necrophos",
+    "name_cn": "瘟疫法师",
+    "aliases": [
+      "40",
+      "Nec",
+      "Necro",
+      "wenyifashi",
+      "wyfs"
+    ]
+  },
+  {
+    "hero_id": 37,
+    "name_en": "Warlock",
+    "name_cn": "术士",
+    "aliases": [
+      "WL",
+      "shushi",
+      "ss"
+    ]
+  },
+  {
+    "hero_id": 38,
+    "name_en": "Beastmaster",
+    "name_cn": "兽王",
+    "aliases": [
+      "BM",
+      "shouwang",
+      "sw"
+    ]
+  },
+  {
+    "hero_id": 39,
+    "name_en": "Queen of Pain",
+    "name_cn": "痛苦女王",
+    "aliases": [
+      "QOP",
+      "nvwang",
+      "nw",
+      "tk",
+      "tknw",
+      "tongku",
+      "tongkunvwang",
+      "女王",
+      "痛苦"
+    ]
+  },
+  {
+    "hero_id": 40,
+    "name_en": "Venomancer",
+    "name_cn": "剧毒术士",
+    "aliases": [
+      "Veno",
+      "dg",
+      "dugou",
+      "jdss",
+      "judushushi",
+      "毒狗"
+    ]
+  },
+  {
+    "hero_id": 41,
+    "name_en": "Faceless Void",
+    "name_cn": "虚空假面",
+    "aliases": [
+      "FV",
+      "Void",
+      "xk",
+      "xkjm",
+      "xukong",
+      "xukongjiamian",
+      "虚空"
+    ]
+  },
+  {
+    "hero_id": 42,
+    "name_en": "Wraith King",
+    "name_cn": "冥魂大帝",
+    "aliases": [
+      "SK",
+      "SNK",
+      "WK",
+      "dakulou",
+      "dkl",
+      "klw",
+      "kulouwang",
+      "mhdd",
+      "minghundadi",
+      "大骷髅",
+      "骷髅王"
+    ]
+  },
+  {
+    "hero_id": 43,
+    "name_en": "Death Prophet",
+    "name_cn": "死亡先知",
+    "aliases": [
+      "DP",
+      "siwang",
+      "siwangxianzhi",
+      "sw",
+      "swxz",
+      "死亡"
+    ]
+  },
+  {
+    "hero_id": 44,
+    "name_en": "Phantom Assassin",
+    "name_cn": "幻影刺客",
+    "aliases": [
+      "PA",
+      "hc",
+      "huanci",
+      "huanyingcike",
+      "hyck",
+      "幻刺"
+    ]
+  },
+  {
+    "hero_id": 45,
+    "name_en": "Pugna",
+    "name_cn": "帕格纳",
+    "aliases": [
+      "gf",
+      "gufa",
+      "pagena",
+      "pgn",
+      "骨法"
+    ]
+  },
+  {
+    "hero_id": 46,
+    "name_en": "Templar Assassin",
+    "name_cn": "圣堂刺客",
+    "aliases": [
+      "TA",
+      "shengtang",
+      "shengtangcike",
+      "st",
+      "stck",
+      "圣堂"
+    ]
+  },
+  {
+    "hero_id": 47,
+    "name_en": "Viper",
+    "name_cn": "冥界亚龙",
+    "aliases": [
+      "VIP",
+      "dl",
+      "dulong",
+      "mingjieyalong",
+      "mjyl",
+      "毒龙"
+    ]
+  },
+  {
+    "hero_id": 48,
+    "name_en": "Luna",
+    "name_cn": "露娜",
+    "aliases": [
+      "ln",
+      "yq",
+      "yueqi",
+      "yuezhiqishi",
+      "yzqs",
+      "月之骑士",
+      "月骑"
+    ]
+  },
+  {
+    "hero_id": 49,
+    "name_en": "Dragon Knight",
+    "name_cn": "龙骑士",
+    "aliases": [
+      "DK",
+      "longqi",
+      "longqishi",
+      "lq",
+      "lqs",
+      "龙骑"
+    ]
+  },
+  {
+    "hero_id": 50,
+    "name_en": "Dazzle",
+    "name_cn": "戴泽",
+    "aliases": [
+      "daize",
+      "dz"
+    ]
+  },
+  {
+    "hero_id": 51,
+    "name_en": "Clockwerk",
+    "name_cn": "发条技师",
+    "aliases": [
+      "CG",
+      "Clock",
+      "fatiao",
+      "fatiaojishi",
+      "ft",
+      "ftjs",
+      "发条"
+    ]
+  },
+  {
+    "hero_id": 52,
+    "name_en": "Leshrac",
+    "name_cn": "拉席克",
+    "aliases": [
+      "Lesh",
+      "laxike",
+      "lxk",
+      "malian",
+      "ml",
+      "马脸"
+    ]
+  },
+  {
+    "hero_id": 53,
+    "name_en": "Nature's Prophet",
+    "name_cn": "先知",
+    "aliases": [
+      "FUR",
+      "Furion",
+      "NP",
+      "xianzhi",
+      "xz"
+    ]
+  },
+  {
+    "hero_id": 54,
+    "name_en": "Lifestealer",
+    "name_cn": "噬魂鬼",
+    "aliases": [
+      "LS",
+      "Naix",
+      "shg",
+      "shihungui",
+      "shishigui",
+      "ssg",
+      "xg",
+      "xiaogou",
+      "小狗",
+      "食尸鬼"
+    ]
+  },
+  {
+    "hero_id": 55,
+    "name_en": "Dark Seer",
+    "name_cn": "黑暗贤者",
+    "aliases": [
+      "DS",
+      "haxz",
+      "heianxianzhe",
+      "heixian",
+      "hx",
+      "黑贤"
+    ]
+  },
+  {
+    "hero_id": 56,
+    "name_en": "Clinkz",
+    "name_cn": "克林克兹",
+    "aliases": [
+      "gg",
+      "gugong",
+      "kelinkezi",
+      "klkz",
+      "xiaokulou",
+      "xkl",
+      "小骷髅",
+      "骨弓"
+    ]
+  },
+  {
+    "hero_id": 57,
+    "name_en": "Omniknight",
+    "name_cn": "全能骑士",
+    "aliases": [
+      "OK",
+      "Omni",
+      "qn",
+      "qnqs",
+      "quanneng",
+      "quannengqishi",
+      "全能"
+    ]
+  },
+  {
+    "hero_id": 58,
+    "name_en": "Enchantress",
+    "name_cn": "魅惑魔女",
+    "aliases": [
+      "Ench",
+      "meihuomonv",
+      "mhmn",
+      "xiaolu",
+      "xl",
+      "小鹿"
+    ]
+  },
+  {
+    "hero_id": 59,
+    "name_en": "Huskar",
+    "name_cn": "哈斯卡",
+    "aliases": [
+      "Hus",
+      "hasika",
+      "hsk"
+    ]
+  },
+  {
+    "hero_id": 60,
+    "name_en": "Night Stalker",
+    "name_cn": "暗夜魔王",
+    "aliases": [
+      "NS",
+      "anyemowang",
+      "aymw",
+      "yemo",
+      "ym",
+      "夜魔"
+    ]
+  },
+  {
+    "hero_id": 61,
+    "name_en": "Broodmother",
+    "name_cn": "育母蜘蛛",
+    "aliases": [
+      "Brood",
+      "ymzz",
+      "yumuzhizhu",
+      "zh",
+      "zhizhu",
+      "zhuhou",
+      "zz",
+      "蛛后",
+      "蜘蛛"
+    ]
+  },
+  {
+    "hero_id": 62,
+    "name_en": "Bounty Hunter",
+    "name_cn": "赏金猎人",
+    "aliases": [
+      "BH",
+      "shangjin",
+      "shangjinlieren",
+      "sj",
+      "sjlr",
+      "赏金"
+    ]
+  },
+  {
+    "hero_id": 63,
+    "name_en": "Weaver",
+    "name_cn": "编织者",
+    "aliases": [
+      "bianzhizhe",
+      "bzz",
+      "mazha",
+      "mz",
+      "yinxingzhizhu",
+      "yxzz",
+      "蚂蚱",
+      "隐形蜘蛛"
+    ]
+  },
+  {
+    "hero_id": 64,
+    "name_en": "Jakiro",
+    "name_cn": "杰奇洛",
+    "aliases": [
+      "THD",
+      "jieqiluo",
+      "jql",
+      "shuangtoulong",
+      "stl",
+      "双头龙"
+    ]
+  },
+  {
+    "hero_id": 65,
+    "name_en": "Batrider",
+    "name_cn": "蝙蝠骑士",
+    "aliases": [
+      "Bat",
+      "bf",
+      "bfqs",
+      "bianfu",
+      "bianfuqishi",
+      "蝙蝠"
+    ]
+  },
+  {
+    "hero_id": 66,
+    "name_en": "Chen",
+    "name_cn": "陈",
+    "aliases": [
+      "c",
+      "shengqi",
+      "sq",
+      "圣骑"
+    ]
+  },
+  {
+    "hero_id": 67,
+    "name_en": "Spectre",
+    "name_cn": "幽鬼",
+    "aliases": [
+      "UG",
+      "yg",
+      "yougui"
+    ]
+  },
+  {
+    "hero_id": 68,
+    "name_en": "Ancient Apparition",
+    "name_cn": "远古冰魄",
+    "aliases": [
+      "AA",
+      "bh",
+      "binghun",
+      "ygbp",
+      "yuangubingpo",
+      "冰魂"
+    ]
+  },
+  {
+    "hero_id": 69,
+    "name_en": "Doom",
+    "name_cn": "末日使者",
+    "aliases": [
+      "mori",
+      "morishizhe",
+      "mr",
+      "mrsz",
+      "末日"
+    ]
+  },
+  {
+    "hero_id": 70,
+    "name_en": "Ursa",
+    "name_cn": "熊战士",
+    "aliases": [
+      "paipai",
+      "paipaixiong",
+      "pp",
+      "ppx",
+      "x",
+      "xiong",
+      "xiongzhanshi",
+      "xzs",
+      "拍拍",
+      "拍拍熊",
+      "熊"
+    ]
+  },
+  {
+    "hero_id": 71,
+    "name_en": "Spirit Breaker",
+    "name_cn": "裂魂人",
+    "aliases": [
+      "SB",
+      "bainiu",
+      "bn",
+      "kj",
+      "kongjian",
+      "lhr",
+      "liehunren",
+      "白牛",
+      "空间"
+    ]
+  },
+  {
+    "hero_id": 72,
+    "name_en": "Gyrocopter",
+    "name_cn": "矮人直升机",
+    "aliases": [
+      "Gyro",
+      "airenzhishengji",
+      "arzsj",
+      "feiji",
+      "fj",
+      "飞机"
+    ]
+  },
+  {
+    "hero_id": 73,
+    "name_en": "Alchemist",
+    "name_cn": "炼金术士",
+    "aliases": [
+      "Alch",
+      "lianjin",
+      "lianjinshushi",
+      "lj",
+      "ljss",
+      "炼金"
+    ]
+  },
+  {
+    "hero_id": 74,
+    "name_en": "Invoker",
+    "name_cn": "祈求者",
+    "aliases": [
+      "Carl",
+      "kaer",
+      "ke",
+      "qiqiuzhe",
+      "qqz",
+      "卡尔"
+    ]
+  },
+  {
+    "hero_id": 75,
+    "name_en": "Silencer",
+    "name_cn": "沉默术士",
+    "aliases": [
+      "Sil",
+      "chenmo",
+      "chenmoshushi",
+      "cm",
+      "cmss",
+      "沉默"
+    ]
+  },
+  {
+    "hero_id": 76,
+    "name_en": "Outworld Destroyer",
+    "name_cn": "殁境神蚀者",
+    "aliases": [
+      "OD",
+      "heiniao",
+      "hn",
+      "mjssz",
+      "mojingshenshizhe",
+      "黑鸟"
+    ]
+  },
+  {
+    "hero_id": 77,
+    "name_en": "Lycan",
+    "name_cn": "狼人",
+    "aliases": [
+      "LYC",
+      "langren",
+      "lr"
+    ]
+  },
+  {
+    "hero_id": 78,
+    "name_en": "Brewmaster",
+    "name_cn": "酒仙",
+    "aliases": [
+      "Panda",
+      "jiuxian",
+      "jx",
+      "xiongmao",
+      "xiongmaojiuxian",
+      "xm",
+      "xmjx",
+      "熊猫",
+      "熊猫酒仙"
+    ]
+  },
+  {
+    "hero_id": 79,
+    "name_en": "Shadow Demon",
+    "name_cn": "暗影恶魔",
+    "aliases": [
+      "SD",
+      "am",
+      "anmu",
+      "anyingemo",
+      "ayem",
+      "暗牧"
+    ]
+  },
+  {
+    "hero_id": 80,
+    "name_en": "Lone Druid",
+    "name_cn": "德鲁伊",
+    "aliases": [
+      "LD",
+      "deluyi",
+      "dly",
+      "xd",
+      "xiongde",
+      "熊德"
+    ]
+  },
+  {
+    "hero_id": 81,
+    "name_en": "Chaos Knight",
+    "name_cn": "混沌骑士",
+    "aliases": [
+      "CK",
+      "hd",
+      "hdqs",
+      "hundun",
+      "hundunqishi",
+      "混沌"
+    ]
+  },
+  {
+    "hero_id": 82,
+    "name_en": "Meepo",
+    "name_cn": "米波",
+    "aliases": [
+      "dbs",
+      "diboshi",
+      "mb",
+      "mibo",
+      "地卜师"
+    ]
+  },
+  {
+    "hero_id": 83,
+    "name_en": "Treant Protector",
+    "name_cn": "树精卫士",
+    "aliases": [
+      "Treant",
+      "dashu",
+      "ds",
+      "shujingweishi",
+      "sjws",
+      "大树"
+    ]
+  },
+  {
+    "hero_id": 84,
+    "name_en": "Ogre Magi",
+    "name_cn": "食人魔法师",
+    "aliases": [
+      "OM",
+      "lanpang",
+      "lanpangzi",
+      "lp",
+      "lpz",
+      "shirenmo",
+      "shirenmofashi",
+      "srm",
+      "srmfs",
+      "蓝胖",
+      "蓝胖子",
+      "食人魔"
+    ]
+  },
+  {
+    "hero_id": 85,
+    "name_en": "Undying",
+    "name_cn": "不朽尸王",
+    "aliases": [
+      "UD",
+      "buxiushiwang",
+      "bxsw",
+      "jiangshi",
+      "js",
+      "shiwang",
+      "sw",
+      "僵尸",
+      "尸王"
+    ]
+  },
+  {
+    "hero_id": 86,
+    "name_en": "Rubick",
+    "name_cn": "拉比克",
+    "aliases": [
+      "fashishashou",
+      "fsss",
+      "labike",
+      "lbk",
+      "toushu",
+      "ts",
+      "偷术",
+      "法师杀手"
+    ]
+  },
+  {
+    "hero_id": 87,
+    "name_en": "Disruptor",
+    "name_cn": "干扰者",
+    "aliases": [
+      "ganraozhe",
+      "grz",
+      "saer",
+      "se",
+      "萨尔"
+    ]
+  },
+  {
+    "hero_id": 88,
+    "name_en": "Nyx Assassin",
+    "name_cn": "司夜刺客",
+    "aliases": [
+      "Nyx",
+      "siyecike",
+      "syck",
+      "xiaoqiang",
+      "xq",
+      "小强"
+    ]
+  },
+  {
+    "hero_id": 89,
+    "name_en": "Naga Siren",
+    "name_cn": "娜迦海妖",
+    "aliases": [
+      "Naga",
+      "najiahaiyao",
+      "njhy",
+      "xiaonajia",
+      "xnj",
+      "小那加"
+    ]
+  },
+  {
+    "hero_id": 90,
+    "name_en": "Keeper of the Light",
+    "name_cn": "光之守卫",
+    "aliases": [
+      "KOT",
+      "KOTL",
+      "gf",
+      "guangfa",
+      "guangzhishouwei",
+      "gzsw",
+      "光法"
+    ]
+  },
+  {
+    "hero_id": 91,
+    "name_en": "Io",
+    "name_cn": "艾欧",
+    "aliases": [
+      "Wisp",
+      "aiou",
+      "ao",
+      "jingling",
+      "jl",
+      "精灵"
+    ]
+  },
+  {
+    "hero_id": 92,
+    "name_en": "Visage",
+    "name_cn": "维萨吉",
+    "aliases": [
+      "silingfeilong",
+      "slfl",
+      "weisaji",
+      "wsj",
+      "死灵飞龙"
+    ]
+  },
+  {
+    "hero_id": 93,
+    "name_en": "Slark",
+    "name_cn": "斯拉克",
+    "aliases": [
+      "silake",
+      "slk",
+      "xiaoyu",
+      "xiaoyuren",
+      "xy",
+      "xyr",
+      "小鱼",
+      "小鱼人"
+    ]
+  },
+  {
+    "hero_id": 94,
+    "name_en": "Medusa",
+    "name_cn": "美杜莎",
+    "aliases": [
+      "dashe",
+      "ds",
+      "mds",
+      "meidusha",
+      "yijie",
+      "yj",
+      "一姐",
+      "大蛇"
+    ]
+  },
+  {
+    "hero_id": 95,
+    "name_en": "Troll Warlord",
+    "name_cn": "巨魔战将",
+    "aliases": [
+      "TW",
+      "jm",
+      "jmzj",
+      "jumo",
+      "jumozhanjiang",
+      "巨魔"
+    ]
+  },
+  {
+    "hero_id": 96,
+    "name_en": "Centaur Warrunner",
+    "name_cn": "半人马战行者",
+    "aliases": [
+      "CW",
+      "Cent",
+      "banrenma",
+      "banrenmazhanxingzhe",
+      "brm",
+      "brmzxz",
+      "renma",
+      "rm",
+      "人马",
+      "半人马"
+    ]
+  },
+  {
+    "hero_id": 97,
+    "name_en": "Magnus",
+    "name_cn": "马格纳斯",
+    "aliases": [
+      "Mag",
+      "magenasi",
+      "mengma",
+      "mgns",
+      "mm",
+      "猛犸"
+    ]
+  },
+  {
+    "hero_id": 98,
+    "name_en": "Timbersaw",
+    "name_cn": "伐木机",
+    "aliases": [
+      "Timber",
+      "famu",
+      "famuji",
+      "fm",
+      "fmj",
+      "伐木"
+    ]
+  },
+  {
+    "hero_id": 99,
+    "name_en": "Bristleback",
+    "name_cn": "钢背兽",
+    "aliases": [
+      "BB",
+      "gangbei",
+      "gangbeishou",
+      "gangzhu",
+      "gb",
+      "gbs",
+      "gz",
+      "刚背",
+      "钢猪"
+    ]
+  },
+  {
+    "hero_id": 100,
+    "name_en": "Tusk",
+    "name_cn": "巨牙海民",
+    "aliases": [
+      "daya",
+      "dy",
+      "haimin",
+      "hm",
+      "juyahaimin",
+      "jyhm",
+      "大牙",
+      "海民"
+    ]
+  },
+  {
+    "hero_id": 101,
+    "name_en": "Skywrath Mage",
+    "name_cn": "天怒法师",
+    "aliases": [
+      "Sky",
+      "Skywrath",
+      "tiannu",
+      "tiannufashi",
+      "tn",
+      "tnfs",
+      "天怒"
+    ]
+  },
+  {
+    "hero_id": 102,
+    "name_en": "Abaddon",
+    "name_cn": "阿巴顿",
+    "aliases": [
+      "abadun",
+      "abd"
+    ]
+  },
+  {
+    "hero_id": 103,
+    "name_en": "Elder Titan",
+    "name_cn": "上古巨神",
+    "aliases": [
+      "ET",
+      "js",
+      "jushen",
+      "sgjs",
+      "shanggujushen",
+      "巨神"
+    ]
+  },
+  {
+    "hero_id": 104,
+    "name_en": "Legion Commander",
+    "name_cn": "军团指挥官",
+    "aliases": [
+      "LC",
+      "jt",
+      "jtzhg",
+      "juntuan",
+      "juntuanzhihuiguan",
+      "军团"
+    ]
+  },
+  {
+    "hero_id": 105,
+    "name_en": "Techies",
+    "name_cn": "工程师",
+    "aliases": [
+      "dilei",
+      "dl",
+      "gcs",
+      "gongchengshi",
+      "zdr",
+      "zhadanren",
+      "地雷",
+      "炸弹人"
+    ]
+  },
+  {
+    "hero_id": 106,
+    "name_en": "Ember Spirit",
+    "name_cn": "灰烬之灵",
+    "aliases": [
+      "Ember",
+      "hjzl",
+      "hm",
+      "huijinzhiling",
+      "huomao",
+      "火猫"
+    ]
+  },
+  {
+    "hero_id": 107,
+    "name_en": "Earth Spirit",
+    "name_cn": "大地之灵",
+    "aliases": [
+      "Earth",
+      "dadizhiling",
+      "ddzl",
+      "tm",
+      "tumao",
+      "土猫"
+    ]
+  },
+  {
+    "hero_id": 108,
+    "name_en": "Underlord",
+    "name_cn": "孽主",
+    "aliases": [
+      "UL",
+      "dapigu",
+      "dpg",
+      "niezhu",
+      "nz",
+      "shenyuanlingzhu",
+      "sylz",
+      "大屁股",
+      "深渊领主"
+    ]
+  },
+  {
+    "hero_id": 109,
+    "name_en": "Terrorblade",
+    "name_cn": "恐怖利刃",
+    "aliases": [
+      "TB",
+      "Terror",
+      "kblr",
+      "kongbuliren"
+    ]
+  },
+  {
+    "hero_id": 110,
+    "name_en": "Phoenix",
+    "name_cn": "凤凰",
+    "aliases": [
+      "fenghuang",
+      "fh"
+    ]
+  },
+  {
+    "hero_id": 111,
+    "name_en": "Oracle",
+    "name_cn": "神谕者",
+    "aliases": [
+      "shenyuzhe",
+      "syz"
+    ]
+  },
+  {
+    "hero_id": 112,
+    "name_en": "Winter Wyvern",
+    "name_cn": "寒冬飞龙",
+    "aliases": [
+      "WW",
+      "dl",
+      "donglong",
+      "handongfeilong",
+      "hdfl",
+      "冬龙"
+    ]
+  },
+  {
+    "hero_id": 113,
+    "name_en": "Arc Warden",
+    "name_cn": "天穹守望者",
+    "aliases": [
+      "tianqiongshouwangzhe",
+      "tqswz"
+    ]
+  },
+  {
+    "hero_id": 114,
+    "name_en": "Monkey King",
+    "name_cn": "齐天大圣",
+    "aliases": [
+      "MK",
+      "dasheng",
+      "ds",
+      "houwang",
+      "hw",
+      "qitiandasheng",
+      "qtds",
+      "大圣",
+      "猴王"
+    ]
+  },
+  {
+    "hero_id": 119,
+    "name_en": "Dark Willow",
+    "name_cn": "邪影芳灵",
+    "aliases": [
+      "DW",
+      "xiaoxiannv",
+      "xieyingfangling",
+      "xxn",
+      "xyfl",
+      "小仙女"
+    ]
+  },
+  {
+    "hero_id": 120,
+    "name_en": "Pangolier",
+    "name_cn": "石鳞剑士",
+    "aliases": [
+      "Pango",
+      "shilinjianshi",
+      "sljs"
+    ]
+  },
+  {
+    "hero_id": 121,
+    "name_en": "Grimstroke",
+    "name_cn": "天涯墨客",
+    "aliases": [
+      "Grim",
+      "tianmo",
+      "tianyamoke",
+      "tm",
+      "tymk",
+      "天墨"
+    ]
+  },
+  {
+    "hero_id": 123,
+    "name_en": "Hoodwink",
+    "name_cn": "森海飞霞",
+    "aliases": [
+      "Hood",
+      "senhaifeixia",
+      "shfx",
+      "songshu",
+      "ss",
+      "松鼠"
+    ]
+  },
+  {
+    "hero_id": 126,
+    "name_en": "Void Spirit",
+    "name_cn": "虚无之灵",
+    "aliases": [
+      "xuwuzhiling",
+      "xwzl",
+      "zimao",
+      "zm",
+      "紫猫"
+    ]
+  },
+  {
+    "hero_id": 128,
+    "name_en": "Snapfire",
+    "name_cn": "电炎绝手",
+    "aliases": [
+      "Snap",
+      "dianyanjueshou",
+      "dyjs",
+      "nainai",
+      "nn",
+      "奶奶"
+    ]
+  },
+  {
+    "hero_id": 129,
+    "name_en": "Mars",
+    "name_cn": "玛尔斯",
+    "aliases": [
+      "huoxing",
+      "hx",
+      "maersi",
+      "mes",
+      "火星"
+    ]
+  },
+  {
+    "hero_id": 131,
+    "name_en": "Ringmaster",
+    "name_cn": "马戏团长",
+    "aliases": [
+      "Ring",
+      "maxi",
+      "maxituanzhang",
+      "mx",
+      "mxtz",
+      "马戏"
+    ]
+  },
+  {
+    "hero_id": 135,
+    "name_en": "Dawnbreaker",
+    "name_cn": "破晓辰星",
+    "aliases": [
+      "Dawn",
+      "poxiao",
+      "poxiaochenxing",
+      "px",
+      "pxcx",
+      "破晓"
+    ]
+  },
+  {
+    "hero_id": 136,
+    "name_en": "Marci",
+    "name_cn": "玛西",
+    "aliases": [
+      "maxi",
+      "mx"
+    ]
+  },
+  {
+    "hero_id": 137,
+    "name_en": "Primal Beast",
+    "name_cn": "獸",
+    "aliases": [
+      "PB",
+      "s",
+      "shou",
+      "yss",
+      "yuanshishou",
+      "原始兽"
+    ]
+  },
+  {
+    "hero_id": 138,
+    "name_en": "Muerta",
+    "name_cn": "琼英碧灵",
+    "aliases": [
+      "qiongyingbiling",
+      "qybl"
+    ]
+  },
+  {
+    "hero_id": 145,
+    "name_en": "Kez",
+    "name_cn": "凯兹",
+    "aliases": [
+      "kaizi",
+      "kz"
+    ]
+  },
+  {
+    "hero_id": 155,
+    "name_en": "Largo",
+    "name_cn": "朗戈",
+    "aliases": [
+      "langge",
+      "lg",
+      "蛤蟆",
+      "青蛙",
+      "hama",
+      "hm",
+      "qingwa",
+      "qw",
+      "云游乐手",
+      "yunyouyueshou",
+      "yyys"
+    ]
+  }
+]
