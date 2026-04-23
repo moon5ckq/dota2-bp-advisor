@@ -1,3 +1,11 @@
+/**
+ * RankSelector.jsx — 段位选择器组件
+ * 
+ * 横向滚动的段位按钮组，用于首页按段位筛选英雄胜率数据。
+ * 选中的段位按钮高亮为 Dota2 红色主题。
+ */
+
+// 段位配置：value 对应后端的 rank_tier 参数
 const RANKS = [
   { value: 1, label: '先锋' },
   { value: 2, label: '卫士' },
@@ -9,6 +17,10 @@ const RANKS = [
   { value: 8, label: '万古以上' },
 ];
 
+/**
+ * @param {number} value - 当前选中的段位值
+ * @param {function} onChange - 段位切换回调
+ */
 export default function RankSelector({ value, onChange }) {
   return (
     <div className="flex gap-1.5 overflow-x-auto pb-2 scrollbar-hide">

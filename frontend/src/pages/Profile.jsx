@@ -1,10 +1,27 @@
+/**
+ * Profile.jsx — 个人中心页
+ * 
+ * 本页面负责用户设置和账号管理，包括：
+ * 1. 段位选择：设置当前段位（影响推荐权重和统计展示）
+ * 2. 多账号管理：添加/删除 Dota2 账号（支持好友ID和 Steam64 ID 自动转换）
+ * 3. 英雄池分析：展示每个账号最近200场的 TOP10 常用英雄及胜率
+ * 
+ * 所有设置持久化到 localStorage：
+ * - dota2_rank_tier: 段位等级（1-8）
+ * - dota2_player_ids: 玩家账号列表 JSON
+ */
+
 import { useState, useEffect } from 'react';
 import { fetchPlayerProfile, fetchPlayerHeroPool } from '../api';
 
+// Steam64 ID 基础偏移量，用于将 Steam64 ID 转换为 Dota2 好友 ID
 const STEAM_ID_BASE = 76561197960265728n;
-const LS_KEY = 'dota2_player_ids';
-const RANK_LS_KEY = 'dota2_rank_tier';
 
+// localStorage 存储键
+const LS_KEY = 'dota2_player_ids';       // 玩家ID列表
+const RANK_LS_KEY = 'dota2_rank_tier';   // 段位设置
+
+// 段位配置列表
 const RANKS = [
   { tier: 1, name: '先锋' },
   { tier: 2, name: '卫士' },
@@ -16,16 +33,26 @@ const RANKS = [
   { tier: 8, name: '冠绝' },
 ];
 
+/**
+ * 从 localStorage 加载已保存的玩家列表
+ */
 function loadPlayers() {
   try {
     const raw = localStorage.getItem(LS_KEY);
     return raw ? JSON.parse(raw) : [];
   } catch { return []; }
 }
+
+/**
+ * 保存玩家列表到 localStorage
+ */
 function savePlayers(players) {
   localStorage.setItem(LS_KEY, JSON.stringify(players));
 }
 
+/**
+ * 从 localStorage 加载段位设置
+ */
 function loadRank() {
   try {
     const v = localStorage.getItem(RANK_LS_KEY);
@@ -35,19 +62,28 @@ function loadRank() {
 }
 
 export default function Profile() {
-  const [players, setPlayers] = useState(loadPlayers);
-  const [rankTier, setRankTier] = useState(loadRank);
-  const [input, setInput] = useState('');
-  const [adding, setAdding] = useState(false);
-  const [addError, setAddError] = useState('');
-  const [selectedId, setSelectedId] = useState(null);
-  const [heroPool, setHeroPool] = useState(null);
-  const [poolLoading, setPoolLoading] = useState(false);
-  const [poolError, setPoolError] = useState('');
+  // ── 状态定义 ──
+  const [players, setPlayers] = useState(loadPlayers);      // 已绑定的玩家列表
+  const [rankTier, setRankTier] = useState(loadRank);       // 当前段位设置
+  const [input, setInput] = useState('');                    // ID 输入框内容
+  const [adding, setAdding] = useState(false);              // 添加中状态
+  const [addError, setAddError] = useState('');             // 添加错误信息
+  const [selectedId, setSelectedId] = useState(null);       // 当前展开查看英雄池的玩家ID
+  const [heroPool, setHeroPool] = useState(null);           // 英雄池数据
+  const [poolLoading, setPoolLoading] = useState(false);    // 英雄池加载状态
+  const [poolError, setPoolError] = useState('');           // 英雄池加载错误
 
+  // 玩家列表变化时自动保存到 localStorage
   useEffect(() => { savePlayers(players); }, [players]);
+  // 段位变化时自动保存到 localStorage
   useEffect(() => { localStorage.setItem(RANK_LS_KEY, String(rankTier)); }, [rankTier]);
 
+  /**
+   * 将用户输入的ID转换为 Dota2 好友 ID
+   * 支持两种格式：
+   * - 纯数字（好友ID）：直接使用
+   * - 17位以上大数字（Steam64 ID）：减去 STEAM_ID_BASE 转换为好友ID
+   */
   function convertId(raw) {
     const trimmed = raw.trim();
     if (!trimmed || !/^\d+$/.test(trimmed)) return null;
@@ -58,6 +94,9 @@ export default function Profile() {
     return Number(n);
   }
 
+  /**
+   * 添加新账号：转换ID → 检查重复 → 调用 API 获取玩家信息 → 保存
+   */
   async function handleAdd() {
     setAddError('');
     const id = convertId(input);
@@ -73,11 +112,17 @@ export default function Profile() {
     } finally { setAdding(false); }
   }
 
+  /**
+   * 删除已绑定的账号
+   */
   function handleRemove(id) {
     setPlayers(prev => prev.filter(p => p.account_id !== id));
     if (selectedId === id) { setSelectedId(null); setHeroPool(null); }
   }
 
+  /**
+   * 选择/取消选择玩家卡片，展开时加载英雄池数据
+   */
   async function handleSelect(id) {
     if (selectedId === id) { setSelectedId(null); setHeroPool(null); return; }
     setSelectedId(id);
@@ -97,6 +142,9 @@ export default function Profile() {
     } finally { setPoolLoading(false); }
   }
 
+  /**
+   * 根据胜率返回对应颜色：>=55% 绿色 / <45% 红色 / 其他白色
+   */
   function winRateColor(rate) {
     if (rate >= 55) return '#4ade80';
     if (rate < 45) return '#e04a32';
@@ -105,7 +153,7 @@ export default function Profile() {
 
   return (
     <div className="px-3 pt-3 pb-20" style={{ background: '#0f1118', minHeight: '100vh' }}>
-      {/* Rank Selector */}
+      {/* 段位选择器 */}
       <div className="mb-4">
         <div className="text-xs font-medium mb-2" style={{ color: '#8b8fa3' }}>我的段位</div>
         <div className="flex gap-1.5 overflow-x-auto pb-1" style={{ scrollbarWidth: 'none' }}>
@@ -126,7 +174,7 @@ export default function Profile() {
         </div>
       </div>
 
-      {/* ID Input */}
+      {/* 账号ID输入区 */}
       <div className="flex gap-2 mb-3">
         <input
           type="text"
@@ -152,8 +200,9 @@ export default function Profile() {
       </div>
       {addError && <p className="text-xs mb-2" style={{ color: '#e04a32' }}>{addError}</p>}
 
-      {/* Player cards */}
+      {/* 玩家列表 */}
       {players.length === 0 ? (
+        // 空状态提示
         <div className="text-center py-16">
           <div className="text-4xl mb-3">🎮</div>
           <p className="text-sm" style={{ color: '#8b8fa3' }}>
@@ -167,6 +216,7 @@ export default function Profile() {
         <div className="space-y-2 mb-3">
           {players.map(p => (
             <div key={p.account_id}>
+              {/* 玩家卡片：头像 + 昵称 + ID + 删除按钮 */}
               <div
                 onClick={() => handleSelect(p.account_id)}
                 className="flex items-center gap-3 px-3 py-2 rounded-lg cursor-pointer transition-colors"
@@ -197,14 +247,16 @@ export default function Profile() {
                 </button>
               </div>
 
-              {/* Hero pool under selected player */}
+              {/* 英雄池展开面板（选中该玩家时显示） */}
               {selectedId === p.account_id && (
                 <div className="mt-1 rounded-lg px-3 py-3" style={{ background: '#1a1d2e' }}>
+                  {/* 加载状态 */}
                   {poolLoading && (
                     <div className="text-center py-6">
                       <div className="text-sm" style={{ color: '#8b8fa3' }}>正在加载...</div>
                     </div>
                   )}
+                  {/* 错误状态 */}
                   {poolError && (
                     <div className="text-center py-4">
                       <p className="text-xs leading-relaxed" style={{ color: '#e04a32' }}>
@@ -214,6 +266,7 @@ export default function Profile() {
                       </p>
                     </div>
                   )}
+                  {/* 英雄池数据展示 */}
                   {heroPool && (
                     <>
                       <div className="flex items-center justify-between mb-2">
@@ -224,6 +277,7 @@ export default function Profile() {
                           共 {heroPool.total_matches} 场
                         </span>
                       </div>
+                      {/* 英雄池列表 */}
                       <div className="space-y-1">
                         {heroPool.heroes.map((h, i) => (
                           <div
@@ -231,9 +285,11 @@ export default function Profile() {
                             className="flex items-center gap-2 px-2 py-1.5 rounded"
                             style={{ background: '#232638' }}
                           >
+                            {/* 排名序号 */}
                             <span className="text-xs w-4 text-center shrink-0" style={{ color: '#8b8fa3' }}>
                               {i + 1}
                             </span>
+                            {/* 英雄头像 */}
                             <img
                               src={h.img ? `https://cdn.cloudflare.steamstatic.com${h.img}` : ''}
                               alt=""
@@ -241,12 +297,15 @@ export default function Profile() {
                               style={{ aspectRatio: '16/9', objectFit: 'cover', background: '#1a1d2e' }}
                               onError={e => { e.target.style.display = 'none'; }}
                             />
+                            {/* 英雄中文名 */}
                             <span className="text-xs flex-1 truncate" style={{ color: '#e8e6e3' }}>
                               {h.name_cn}
                             </span>
+                            {/* 场次 */}
                             <span className="text-xs shrink-0" style={{ color: '#8b8fa3' }}>
                               {h.games}场
                             </span>
+                            {/* 胜率进度条 + 数值 */}
                             <div className="w-16 shrink-0 flex items-center gap-1">
                               <div className="flex-1 h-1.5 rounded-full overflow-hidden" style={{ background: '#0f1118' }}>
                                 <div

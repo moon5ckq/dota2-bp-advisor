@@ -7,9 +7,10 @@ venv/
 
 # Node
 node_modules/
-
-# Frontend build
 frontend/dist/
+
+# Data (大文件，按需选择是否提交)
+# backend/data/hero_synergy.json
 
 # IDE
 .vscode/
@@ -19,9 +20,6 @@ frontend/dist/
 .DS_Store
 Thumbs.db
 
-# Temp files
+# Temp
 *.tmp
 *.updating
-
-# Fetch script (generated, not source)
-backend/data/fetch_synergy.py

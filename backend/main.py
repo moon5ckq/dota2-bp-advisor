@@ -35,8 +35,12 @@ app.add_middleware(
 
 @app.on_event("startup")
 def startup():
-    """应用启动时初始化数据库（创建表结构）"""
+    """应用启动时初始化数据库并启动后台定时更新"""
     database.init_db()
+    # 启动后台定时数据更新
+    import asyncio
+    loop = asyncio.get_event_loop()
+    loop.create_task(_background_scheduler())
 
 
 # ── 英雄基础数据 API ──
@@ -276,7 +280,7 @@ class CacheMiddleware(BaseHTTPMiddleware):
             response.headers['Cache-Control'] = 'public, max-age=31536000, immutable'
         elif path.startswith('/api/heroes') and request.method == 'GET':
             # 英雄列表数据变化少，缓存10分钟
-            response.headers['Cache-Control'] = 'public, max-age=600'
+            response.headers['Cache-Control'] = 'public, max-age=21600'  # 6小时
         elif path == '/favicon.svg':
             response.headers['Cache-Control'] = 'public, max-age=86400'
         return response
