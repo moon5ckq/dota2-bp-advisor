@@ -28,7 +28,7 @@ export default function RankSelector({ value, onChange }) {
         <button
           key={r.value}
           onClick={() => onChange(r.value)}
-          className={`shrink-0 px-3 py-1.5 rounded text-xs font-medium transition-all ${
+          className={`shrink-0 px-3.5 py-2 rounded text-sm font-medium transition-all ${
             value === r.value
               ? 'bg-[#e04a32] text-white shadow-lg shadow-[#e04a32]/20'
               : 'bg-[#232638] text-[#8b8fa3] hover:bg-[#2d3048]'

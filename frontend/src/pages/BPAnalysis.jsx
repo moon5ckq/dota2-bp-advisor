@@ -45,18 +45,51 @@ const REASON_ICONS = {
   personal: '👤 个人',
 };
 
+// localStorage key for BP state
+const BP_LS_KEY = 'dota2_bp_state';
+
+function loadBPState() {
+  try {
+    const raw = localStorage.getItem(BP_LS_KEY);
+    return raw ? JSON.parse(raw) : null;
+  } catch { return null; }
+}
+
+function saveBPState(state) {
+  localStorage.setItem(BP_LS_KEY, JSON.stringify(state));
+}
+
 export default function BPAnalysis() {
+  // ── 加载持久化的 BP 状态 ──
+  const saved = useMemo(() => loadBPState(), []);
+
   // ── 状态定义 ──
   const [heroes, setHeroes] = useState([]);                    // 英雄别名数据列表
   const [loading, setLoading] = useState(true);                // 英雄数据加载状态
-  const [mode, setMode] = useState('pick_radiant');            // 当前操作模式：pick_radiant / pick_dire / ban
-  const [bans, setBans] = useState([]);                        // 已 Ban 英雄列表
-  const [radiantPicks, setRadiantPicks] = useState([]);        // 天辉已选英雄列表
-  const [direPicks, setDirePicks] = useState([]);              // 夜魇已选英雄列表
+  const [mode, setMode] = useState(saved?.mode || 'pick_radiant');  // 当前操作模式
+  const [bans, setBans] = useState(saved?.bans || []);         // 已 Ban 英雄列表
+  const [radiantPicks, setRadiantPicks] = useState(saved?.radiantPicks || []);  // 天辉已选
+  const [direPicks, setDirePicks] = useState(saved?.direPicks || []);           // 夜魇已选
   const [searchText, setSearchText] = useState('');            // 搜索框文本
-  const [recommendations, setRecommendations] = useState({ radiant: [], dire: [] }); // 推荐结果
-  const [recLoading, setRecLoading] = useState(false);         // 推荐加载状态
-  const [selectedRecommendId, setSelectedRecommendId] = useState(null); // 当前展开查看理由的推荐英雄ID
+  const [recommendations, setRecommendations] = useState({ radiant: [], dire: [] });
+  const [recLoading, setRecLoading] = useState(false);
+  const [selectedRecommendId, setSelectedRecommendId] = useState(null);
+
+  // ── BP 状态变化时自动持久化 ──
+  useEffect(() => {
+    saveBPState({ mode, bans, radiantPicks, direPicks });
+  }, [mode, bans, radiantPicks, direPicks]);
+
+  // ── 清空 BP 状态 ──
+  const handleClearBP = () => {
+    setBans([]);
+    setRadiantPicks([]);
+    setDirePicks([]);
+    setMode('pick_radiant');
+    setRecommendations({ radiant: [], dire: [] });
+    setSelectedRecommendId(null);
+    localStorage.removeItem(BP_LS_KEY);
+  };
 
   // 页面加载时获取英雄别名数据
   useEffect(() => {
@@ -384,13 +417,19 @@ export default function BPAnalysis() {
       )}
 
       {/* BP 状态区（天辉 / 夜魇 / Ban） */}
+      <div className="flex items-center justify-between mb-1">
+        <div className="text-[9px] text-[#8b8fa3]">点击区域切换模式 · 双击头像取消</div>
+        <button
+          onClick={handleClearBP}
+          className="text-[9px] px-2 py-0.5 rounded"
+          style={{ color: '#8b8fa3', background: '#1a1d2e', border: '1px solid #2a2d3e' }}
+        >🗑️ 清空</button>
+      </div>
       <div className="flex flex-col gap-1.5 mb-1.5">
         <RadiantSection />
         <DireSection />
         <BanSection />
       </div>
-
-      <div className="text-[9px] text-[#8b8fa3] text-center mb-1.5">点击区域切换模式 · 双击头像取消</div>
 
       {/* 英雄搜索框 */}
       <div className="relative mb-2">

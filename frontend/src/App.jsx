@@ -20,15 +20,17 @@ function App() {
   const [tab, setTab] = useState('home');
 
   return (
-    <div className="min-h-screen bg-[#0f1118] text-[#e8e6e3]">
-      {/* 顶部导航栏（标题 + 同步按钮） */}
-      <Navbar />
-      {/* 根据当前 Tab 渲染对应页面 */}
-      {tab === 'home' && <Home />}
-      {tab === 'bp' && <BPAnalysis />}
-      {tab === 'me' && <Profile />}
-      {/* 底部标签栏 */}
-      <TabBar active={tab} onChange={setTab} />
+    <div className="min-h-screen bg-[#0f1118] text-[#e8e6e3] flex justify-center">
+      <div className="w-full app-container">
+        {/* 顶部导航栏（标题 + 同步按钮） */}
+        <Navbar />
+        {/* 根据当前 Tab 渲染对应页面 */}
+        {tab === 'home' && <Home />}
+        {tab === 'bp' && <BPAnalysis />}
+        {tab === 'me' && <Profile />}
+        {/* 底部标签栏 */}
+        <TabBar active={tab} onChange={setTab} />
+      </div>
     </div>
   );
 }

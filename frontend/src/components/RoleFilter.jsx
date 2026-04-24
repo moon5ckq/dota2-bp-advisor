@@ -31,7 +31,7 @@ export default function RoleFilter({ value, onChange }) {
         <button
           key={role.key}
           onClick={() => onChange(role.key)}
-          className={`shrink-0 px-3 py-1.5 rounded text-xs font-medium transition-all ${
+          className={`shrink-0 px-3.5 py-2 rounded text-sm font-medium transition-all ${
             value === role.key
               ? 'bg-[#f5c542] text-[#0f1118]'
               : 'bg-[#232638] text-[#8b8fa3] hover:bg-[#2d3048]'

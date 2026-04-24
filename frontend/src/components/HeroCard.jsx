@@ -46,10 +46,10 @@ export default function HeroCard({ hero }) {
         <div className="absolute inset-0 bg-gradient-to-t from-[#232638] via-transparent to-transparent" />
       </div>
       {/* 英雄信息区域 */}
-      <div className="p-2.5">
-        <div className="font-semibold text-sm truncate mb-0.5">{displayName}</div>
-        <div className="text-[10px] text-[#8b8fa3] truncate mb-1.5">{hero.localized_name}</div>
-        <div className="flex justify-between text-xs">
+      <div className="p-3">
+        <div className="font-semibold text-base truncate mb-0.5">{displayName}</div>
+        <div className="text-xs text-[#8b8fa3] truncate mb-2">{hero.localized_name}</div>
+        <div className="flex justify-between text-sm">
           <span className={winColor}>胜率 {winRate}%</span>
           <span className="text-[#8b8fa3]">{picks}场</span>
         </div>

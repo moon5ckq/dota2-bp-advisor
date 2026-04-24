@@ -23,7 +23,7 @@ export default function DataFooter() {
   if (!updateTime) return null;
 
   return (
-    <div className="text-center text-[9px] text-[#8b8fa3]/50 py-2 pb-16">
+    <div className="text-center text-xs text-[#8b8fa3]/50 py-3 pb-16">
       数据更新于 {updateTime}
     </div>
   );
