@@ -36,7 +36,15 @@ app.add_middleware(
 @app.on_event("startup")
 def startup():
     """应用启动时初始化数据库并启动后台定时更新"""
-    database.init_db()
+    import logging
+    logging.basicConfig(level=logging.INFO, format="%(asctime)s %(name)s %(levelname)s %(message)s")
+    
+    try:
+        database.init_db()
+        logging.getLogger(__name__).info("数据库初始化成功")
+    except Exception as e:
+        logging.getLogger(__name__).error(f"数据库初始化失败: {e}", exc_info=True)
+    
     # 启动后台定时数据更新
     import asyncio
     loop = asyncio.get_event_loop()

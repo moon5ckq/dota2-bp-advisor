@@ -2,7 +2,7 @@
 SQLite 数据库操作模块
 
 本模块封装了所有与 SQLite 数据库的交互操作，负责：
-1. 数据库初始化（创建 heroes 和 hero_stats 表）
+1. 数据库初始化（创建 heroes 和 hero_stats 表）+ 自动迁移
 2. 英雄数据的增删改查（upsert_heroes, get_all_heroes）
 3. 英雄统计数据的写入和查询（upsert_hero_stats, get_hero_stats）
 
@@ -11,13 +11,31 @@ SQLite 数据库操作模块
 
 import sqlite3
 import json
+import logging
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Optional
 from services.hero_names_cn import get_cn_name
 
+logger = logging.getLogger(__name__)
+
 # 数据库文件路径
 DB_PATH = Path(__file__).parent.parent / "data" / "dota2.db"
+
+# heroes 表的完整 schema 定义（单一来源）
+# 格式: (列名, 类型+约束, 默认值)
+HEROES_COLUMNS = [
+    ("id", "INTEGER PRIMARY KEY", None),
+    ("name", "TEXT NOT NULL", None),
+    ("localized_name", "TEXT NOT NULL", None),
+    ("cn_name", "TEXT NOT NULL DEFAULT ''", "''"),
+    ("primary_attr", "TEXT NOT NULL", None),
+    ("attack_type", "TEXT NOT NULL", None),
+    ("roles", "TEXT NOT NULL", None),
+    ("img", "TEXT NOT NULL DEFAULT ''", "''"),
+    ("icon", "TEXT NOT NULL DEFAULT ''", "''"),
+    ("legs", "INTEGER DEFAULT 0", "0"),
+]
 
 
 def get_conn() -> sqlite3.Connection:
@@ -28,41 +46,51 @@ def get_conn() -> sqlite3.Connection:
     """
     DB_PATH.parent.mkdir(parents=True, exist_ok=True)
     conn = sqlite3.connect(str(DB_PATH))
-    conn.row_factory = sqlite3.Row  # 使查询结果支持 dict(row) 转换
+    conn.row_factory = sqlite3.Row
     return conn
+
+
+def _migrate_heroes_table(conn: sqlite3.Connection) -> None:
+    """
+    自动迁移 heroes 表：检查并补齐缺失的列
+    
+    对比 HEROES_COLUMNS 定义与实际表结构，自动 ALTER TABLE ADD COLUMN。
+    这样无论代码怎么演进，旧数据库都能自动升级。
+    """
+    cursor = conn.execute("PRAGMA table_info(heroes)")
+    existing_cols = {row[1] for row in cursor.fetchall()}
+    
+    for col_name, col_def, default_val in HEROES_COLUMNS:
+        if col_name not in existing_cols:
+            # 构建 ALTER TABLE 语句
+            alter_sql = f"ALTER TABLE heroes ADD COLUMN {col_name} {col_def}"
+            try:
+                conn.execute(alter_sql)
+                logger.info(f"数据库迁移: 添加列 heroes.{col_name}")
+            except sqlite3.OperationalError as e:
+                logger.warning(f"数据库迁移: 添加列 heroes.{col_name} 失败: {e}")
 
 
 def init_db() -> None:
     """
-    初始化数据库表结构
+    初始化数据库表结构 + 自动迁移
     
     创建两张核心表：
     - heroes: 英雄基础信息（ID、名称、属性、角色、图片等）
     - hero_stats: 英雄各段位统计数据（选取数、胜场数、胜率）
     
-    包含 cn_name 列的迁移逻辑（兼容旧版本数据库）
+    表已存在时自动检查并补齐缺失列（migration）
     """
     conn = get_conn()
-    # 英雄基础信息表
-    conn.execute("""
-        CREATE TABLE IF NOT EXISTS heroes (
-            id INTEGER PRIMARY KEY,
-            name TEXT NOT NULL,
-            localized_name TEXT NOT NULL,
-            cn_name TEXT NOT NULL DEFAULT '',
-            primary_attr TEXT NOT NULL,
-            attack_type TEXT NOT NULL,
-            roles TEXT NOT NULL,
-            img TEXT NOT NULL DEFAULT '',
-            icon TEXT NOT NULL DEFAULT ''
-        )
-    """)
-    # 迁移：为旧表添加 cn_name 列（如已存在则忽略错误）
-    try:
-        conn.execute("ALTER TABLE heroes ADD COLUMN cn_name TEXT NOT NULL DEFAULT ''")
-    except sqlite3.OperationalError:
-        pass
-    # 英雄段位统计表（复合主键：hero_id + rank_tier）
+    
+    # 构建 CREATE TABLE 语句
+    col_defs = ", ".join(f"{name} {typedef}" for name, typedef, _ in HEROES_COLUMNS)
+    conn.execute(f"CREATE TABLE IF NOT EXISTS heroes ({col_defs})")
+    
+    # 自动迁移：补齐缺失列
+    _migrate_heroes_table(conn)
+    
+    # 英雄段位统计表
     conn.execute("""
         CREATE TABLE IF NOT EXISTS hero_stats (
             hero_id INTEGER NOT NULL,
@@ -76,31 +104,30 @@ def init_db() -> None:
     """)
     conn.commit()
     conn.close()
+    logger.info("数据库初始化完成")
 
 
 def upsert_heroes(heroes: list[dict[str, Any]]) -> int:
     """
     批量写入或更新英雄数据
     
-    使用 INSERT OR REPLACE 实现 upsert 语义（存在则更新，不存在则插入）。
+    使用 INSERT OR REPLACE 实现 upsert 语义。
     自动根据英文名查找对应的中文名。
-    
-    参数:
-        heroes: OpenDota API 返回的英雄数据列表
-    
-    返回:
-        int: 写入的英雄数量
+    自动根据 hero name 生成 Steam CDN 图片路径。
     """
     conn = get_conn()
     count = 0
     for h in heroes:
         roles = json.dumps(h.get("roles", []))
-        cn_name = get_cn_name(h["localized_name"])  # 查找中文名
+        cn_name = get_cn_name(h["localized_name"])
+        # 图片路径：优先用 API 返回的，否则从 hero name 生成
+        img = h.get("img") or f'/apps/dota2/images/dota_react/heroes/{h["name"].replace("npc_dota_hero_", "")}.png'
+        icon = h.get("icon") or ""
         conn.execute(
-            """INSERT OR REPLACE INTO heroes (id, name, localized_name, cn_name, primary_attr, attack_type, roles, img, icon)
-               VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+            """INSERT OR REPLACE INTO heroes (id, name, localized_name, cn_name, primary_attr, attack_type, roles, img, icon, legs)
+               VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
             (h["id"], h["name"], h["localized_name"], cn_name, h["primary_attr"],
-             h["attack_type"], roles, h.get("img", ""), h.get("icon", "")),
+             h["attack_type"], roles, img, icon, h.get("legs", 0)),
         )
         count += 1
     conn.commit()
@@ -116,27 +143,23 @@ def upsert_hero_stats(stats: list[dict[str, Any]]) -> int:
     格式为 {rank}_pick 和 {rank}_win（rank 为 1-8）。
     
     同时利用该接口返回的 img/icon 字段更新 heroes 表的图片路径。
-    
-    参数:
-        stats: OpenDota heroStats API 返回的统计数据列表
-    
-    返回:
-        int: 写入的统计记录数
     """
     conn = get_conn()
     now = datetime.now(timezone.utc).isoformat()
     count = 0
     for s in stats:
         hero_id = s["id"]
-        # 顺便更新英雄表的图片路径（heroStats 接口包含 img/icon 字段）
-        img = s.get("img", "")
-        icon = s.get("icon", "")
+        # 图片路径：优先用 API 返回的，否则从 hero name 生成
+        img = s.get("img") or ""
+        icon = s.get("icon") or ""
+        name = s.get("name", "")
+        if not img and name:
+            img = f'/apps/dota2/images/dota_react/heroes/{name.replace("npc_dota_hero_", "")}.png'
         if img or icon:
             conn.execute(
                 "UPDATE heroes SET img = ?, icon = ? WHERE id = ?",
                 (img, icon, hero_id),
             )
-        # 遍历8个段位，分别写入统计数据
         for rank in range(1, 9):
             pick_key = f"{rank}_pick"
             win_key = f"{rank}_win"
@@ -165,12 +188,6 @@ def get_all_heroes() -> list[dict[str, Any]]:
 def get_hero_stats(rank: Optional[int] = None) -> list[dict[str, Any]]:
     """
     获取英雄统计数据，关联英雄表获取中文名和图片
-    
-    参数:
-        rank: 段位等级（1-8），不传则返回所有段位的统计
-    
-    返回:
-        list[dict]: 按胜率降序排列的统计记录
     """
     conn = get_conn()
     if rank:

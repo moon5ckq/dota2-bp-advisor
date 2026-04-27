@@ -1,0 +1,799 @@
+npm warn exec The following package was not found and will be installed: serve@14.2.6
+ INFO  Accepting connections at http://localhost:3000
+ HTTP  4/26/2026 3:19:25 PM ::1 GET /
+ HTTP  4/26/2026 3:19:25 PM ::1 Returned 200 in 16 ms
+ INFO  Accepting connections at http://localhost:43609
+ HTTP  4/26/2026 3:21:22 PM ::1 GET /
+ HTTP  4/26/2026 3:21:22 PM ::1 Returned 200 in 1 ms
+
+ INFO  Gracefully shutting down. Please wait...
+ HTTP  4/26/2026 3:22:51 PM ::1 GET /
+ HTTP  4/26/2026 3:22:51 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 3:28:38 PM ::1 GET /
+ HTTP  4/26/2026 3:28:38 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 3:29:40 PM 127.0.0.1 GET /
+ HTTP  4/26/2026 3:29:40 PM 127.0.0.1 Returned 200 in 1 ms
+ HTTP  4/26/2026 3:29:40 PM 127.0.0.1 GET /api/heroes/stats?rank=5
+ HTTP  4/26/2026 3:29:40 PM 127.0.0.1 Returned 200 in 1 ms
+ HTTP  4/26/2026 3:29:40 PM 127.0.0.1 GET /api/data-status
+ HTTP  4/26/2026 3:29:40 PM 127.0.0.1 GET /api/heroes
+ HTTP  4/26/2026 3:29:40 PM 127.0.0.1 Returned 200 in 1 ms
+ HTTP  4/26/2026 3:29:40 PM 127.0.0.1 Returned 200 in 1 ms
+ HTTP  4/26/2026 3:29:40 PM 127.0.0.1 GET /favicon.svg
+ HTTP  4/26/2026 3:29:40 PM 127.0.0.1 Returned 200 in 2 ms
+ HTTP  4/26/2026 3:29:43 PM 127.0.0.1 GET /api/heroes/aliases
+ HTTP  4/26/2026 3:29:43 PM 127.0.0.1 Returned 200 in 1 ms
+ HTTP  4/26/2026 3:29:43 PM 127.0.0.1 GET /api/data-status
+ HTTP  4/26/2026 3:29:43 PM 127.0.0.1 Returned 304 in 0 ms
+ HTTP  4/26/2026 3:29:43 PM 127.0.0.1 POST /api/recommend
+ HTTP  4/26/2026 3:29:43 PM 127.0.0.1 Returned 200 in 1 ms
+ HTTP  4/26/2026 3:29:45 PM 127.0.0.1 GET /api/data-status
+ HTTP  4/26/2026 3:29:45 PM 127.0.0.1 Returned 304 in 1 ms
+ HTTP  4/26/2026 3:29:46 PM 127.0.0.1 GET /api/data-status
+ HTTP  4/26/2026 3:29:46 PM 127.0.0.1 Returned 304 in 1 ms
+ HTTP  4/26/2026 3:29:46 PM 127.0.0.1 GET /api/heroes
+ HTTP  4/26/2026 3:29:46 PM 127.0.0.1 Returned 304 in 0 ms
+ HTTP  4/26/2026 3:29:46 PM 127.0.0.1 GET /api/heroes/stats?rank=5
+ HTTP  4/26/2026 3:29:46 PM 127.0.0.1 Returned 304 in 1 ms
+ HTTP  4/26/2026 3:29:48 PM 127.0.0.1 GET /
+ HTTP  4/26/2026 3:29:48 PM 127.0.0.1 Returned 304 in 1 ms
+ HTTP  4/26/2026 3:29:48 PM 127.0.0.1 GET /api/heroes/stats?rank=5
+ HTTP  4/26/2026 3:29:48 PM 127.0.0.1 GET /api/data-status
+ HTTP  4/26/2026 3:29:48 PM 127.0.0.1 Returned 304 in 1 ms
+ HTTP  4/26/2026 3:29:48 PM 127.0.0.1 Returned 304 in 1 ms
+ HTTP  4/26/2026 3:29:48 PM 127.0.0.1 GET /api/heroes
+ HTTP  4/26/2026 3:29:48 PM 127.0.0.1 Returned 304 in 0 ms
+ HTTP  4/26/2026 3:29:48 PM 127.0.0.1 GET /favicon.svg
+ HTTP  4/26/2026 3:29:48 PM 127.0.0.1 Returned 304 in 1 ms
+ HTTP  4/26/2026 3:29:53 PM 127.0.0.1 GET /api/heroes/stats?rank=1
+ HTTP  4/26/2026 3:29:53 PM 127.0.0.1 Returned 200 in 1 ms
+ HTTP  4/26/2026 3:29:54 PM 127.0.0.1 GET /api/heroes/stats?rank=2
+ HTTP  4/26/2026 3:29:54 PM 127.0.0.1 Returned 200 in 0 ms
+ HTTP  4/26/2026 3:29:54 PM 127.0.0.1 GET /api/heroes/stats?rank=3
+ HTTP  4/26/2026 3:29:54 PM 127.0.0.1 Returned 200 in 1 ms
+ HTTP  4/26/2026 3:29:55 PM 127.0.0.1 GET /api/heroes/stats?rank=4
+ HTTP  4/26/2026 3:29:55 PM 127.0.0.1 Returned 200 in 1 ms
+ HTTP  4/26/2026 3:29:56 PM 127.0.0.1 GET /api/heroes/stats?rank=5
+ HTTP  4/26/2026 3:29:56 PM 127.0.0.1 Returned 304 in 1 ms
+ HTTP  4/26/2026 3:29:57 PM 127.0.0.1 GET /api/data-status
+ HTTP  4/26/2026 3:29:57 PM 127.0.0.1 Returned 304 in 1 ms
+ HTTP  4/26/2026 3:29:59 PM 127.0.0.1 GET /api/player/123769363/hero-pool
+ HTTP  4/26/2026 3:29:59 PM 127.0.0.1 Returned 200 in 1 ms
+ HTTP  4/26/2026 3:30:01 PM 127.0.0.1 GET /api/player/123769363/hero-pool
+ HTTP  4/26/2026 3:30:01 PM 127.0.0.1 Returned 304 in 0 ms
+ HTTP  4/26/2026 3:30:03 PM 127.0.0.1 GET /api/player/123769363/hero-pool
+ HTTP  4/26/2026 3:30:03 PM 127.0.0.1 Returned 304 in 1 ms
+ HTTP  4/26/2026 3:30:05 PM 127.0.0.1 GET /api/heroes/aliases
+ HTTP  4/26/2026 3:30:05 PM 127.0.0.1 Returned 304 in 1 ms
+ HTTP  4/26/2026 3:30:05 PM 127.0.0.1 GET /api/data-status
+ HTTP  4/26/2026 3:30:05 PM 127.0.0.1 Returned 304 in 1 ms
+ HTTP  4/26/2026 3:30:05 PM 127.0.0.1 POST /api/recommend
+ HTTP  4/26/2026 3:30:05 PM 127.0.0.1 Returned 200 in 0 ms
+ HTTP  4/26/2026 3:30:06 PM 127.0.0.1 GET /api/data-status
+ HTTP  4/26/2026 3:30:06 PM 127.0.0.1 Returned 304 in 1 ms
+ HTTP  4/26/2026 3:30:06 PM 127.0.0.1 GET /api/heroes/stats?rank=5
+ HTTP  4/26/2026 3:30:06 PM 127.0.0.1 GET /api/heroes
+ HTTP  4/26/2026 3:30:06 PM 127.0.0.1 Returned 304 in 1 ms
+ HTTP  4/26/2026 3:30:06 PM 127.0.0.1 Returned 304 in 1 ms
+ HTTP  4/26/2026 3:30:07 PM 127.0.0.1 GET /
+ HTTP  4/26/2026 3:30:07 PM 127.0.0.1 Returned 304 in 0 ms
+ HTTP  4/26/2026 3:30:07 PM 127.0.0.1 GET /api/data-status
+ HTTP  4/26/2026 3:30:07 PM 127.0.0.1 GET /favicon.svg
+ HTTP  4/26/2026 3:30:07 PM 127.0.0.1 Returned 304 in 1 ms
+ HTTP  4/26/2026 3:30:07 PM 127.0.0.1 Returned 304 in 0 ms
+ HTTP  4/26/2026 3:30:07 PM 127.0.0.1 GET /api/heroes
+ HTTP  4/26/2026 3:30:07 PM 127.0.0.1 Returned 304 in 1 ms
+ HTTP  4/26/2026 3:30:07 PM 127.0.0.1 GET /api/heroes/stats?rank=5
+ HTTP  4/26/2026 3:30:07 PM 127.0.0.1 Returned 304 in 0 ms
+ HTTP  4/26/2026 3:30:08 PM 127.0.0.1 GET /api/data-status
+ HTTP  4/26/2026 3:30:08 PM 127.0.0.1 Returned 304 in 1 ms
+ HTTP  4/26/2026 3:30:09 PM 127.0.0.1 GET /api/player/123769363/hero-pool
+ HTTP  4/26/2026 3:30:09 PM 127.0.0.1 Returned 304 in 1 ms
+ HTTP  4/26/2026 3:32:51 PM ::1 GET /
+ HTTP  4/26/2026 3:32:51 PM ::1 Returned 200 in 0 ms
+ HTTP  4/26/2026 3:35:00 PM 127.0.0.1 GET /
+ HTTP  4/26/2026 3:35:00 PM 127.0.0.1 Returned 304 in 0 ms
+ HTTP  4/26/2026 3:35:00 PM 127.0.0.1 GET /favicon.svg
+ HTTP  4/26/2026 3:35:00 PM 127.0.0.1 Returned 304 in 0 ms
+ HTTP  4/26/2026 3:35:00 PM 127.0.0.1 GET /api/heroes/stats?rank=5
+ HTTP  4/26/2026 3:35:00 PM 127.0.0.1 GET /api/data-status
+ HTTP  4/26/2026 3:35:00 PM 127.0.0.1 Returned 304 in 0 ms
+ HTTP  4/26/2026 3:35:00 PM 127.0.0.1 Returned 304 in 1 ms
+ HTTP  4/26/2026 3:35:00 PM 127.0.0.1 GET /api/heroes
+ HTTP  4/26/2026 3:35:00 PM 127.0.0.1 Returned 304 in 0 ms
+ HTTP  4/26/2026 3:35:24 PM 127.0.0.1 GET /
+ HTTP  4/26/2026 3:35:24 PM 127.0.0.1 Returned 304 in 0 ms
+ HTTP  4/26/2026 3:35:24 PM 127.0.0.1 GET /api/data-status
+ HTTP  4/26/2026 3:35:24 PM 127.0.0.1 Returned 304 in 1 ms
+ HTTP  4/26/2026 3:35:24 PM 127.0.0.1 GET /api/heroes
+ HTTP  4/26/2026 3:35:24 PM 127.0.0.1 Returned 304 in 0 ms
+ HTTP  4/26/2026 3:35:24 PM 127.0.0.1 GET /api/heroes/stats?rank=5
+ HTTP  4/26/2026 3:35:24 PM 127.0.0.1 GET /favicon.svg
+ HTTP  4/26/2026 3:35:24 PM 127.0.0.1 Returned 304 in 0 ms
+ HTTP  4/26/2026 3:35:24 PM 127.0.0.1 Returned 304 in 1 ms
+ HTTP  4/26/2026 3:35:28 PM 127.0.0.1 GET /
+ HTTP  4/26/2026 3:35:28 PM 127.0.0.1 Returned 304 in 1 ms
+ HTTP  4/26/2026 3:35:28 PM 127.0.0.1 GET /api/data-status
+ HTTP  4/26/2026 3:35:28 PM 127.0.0.1 GET /api/heroes/stats?rank=5
+ HTTP  4/26/2026 3:35:28 PM 127.0.0.1 Returned 304 in 1 ms
+ HTTP  4/26/2026 3:35:28 PM 127.0.0.1 Returned 304 in 1 ms
+ HTTP  4/26/2026 3:35:28 PM 127.0.0.1 GET /favicon.svg
+ HTTP  4/26/2026 3:35:28 PM 127.0.0.1 Returned 304 in 0 ms
+ HTTP  4/26/2026 3:35:28 PM 127.0.0.1 GET /api/heroes
+ HTTP  4/26/2026 3:35:28 PM 127.0.0.1 Returned 304 in 0 ms
+ HTTP  4/26/2026 3:36:11 PM 127.0.0.1 GET /
+ HTTP  4/26/2026 3:36:11 PM 127.0.0.1 Returned 304 in 1 ms
+ HTTP  4/26/2026 3:36:11 PM 127.0.0.1 GET /api/data-status
+ HTTP  4/26/2026 3:36:11 PM 127.0.0.1 GET /api/heroes/stats?rank=5
+ HTTP  4/26/2026 3:36:11 PM 127.0.0.1 Returned 304 in 1 ms
+ HTTP  4/26/2026 3:36:11 PM 127.0.0.1 Returned 304 in 1 ms
+ HTTP  4/26/2026 3:36:11 PM 127.0.0.1 GET /favicon.svg
+ HTTP  4/26/2026 3:36:11 PM 127.0.0.1 Returned 304 in 1 ms
+ HTTP  4/26/2026 3:36:11 PM 127.0.0.1 GET /api/heroes
+ HTTP  4/26/2026 3:36:11 PM 127.0.0.1 Returned 304 in 0 ms
+ HTTP  4/26/2026 3:36:12 PM 127.0.0.1 GET /
+ HTTP  4/26/2026 3:36:12 PM 127.0.0.1 Returned 304 in 0 ms
+ HTTP  4/26/2026 3:36:12 PM 127.0.0.1 GET /api/heroes
+ HTTP  4/26/2026 3:36:12 PM 127.0.0.1 GET /api/data-status
+ HTTP  4/26/2026 3:36:12 PM 127.0.0.1 Returned 304 in 1 ms
+ HTTP  4/26/2026 3:36:12 PM 127.0.0.1 Returned 304 in 1 ms
+ HTTP  4/26/2026 3:36:12 PM 127.0.0.1 GET /api/heroes/stats?rank=5
+ HTTP  4/26/2026 3:36:12 PM 127.0.0.1 Returned 304 in 0 ms
+ HTTP  4/26/2026 3:36:12 PM 127.0.0.1 GET /favicon.svg
+ HTTP  4/26/2026 3:36:12 PM 127.0.0.1 Returned 304 in 0 ms
+ HTTP  4/26/2026 3:36:14 PM 127.0.0.1 GET /api/heroes/stats?rank=4
+ HTTP  4/26/2026 3:36:14 PM 127.0.0.1 Returned 304 in 1 ms
+ HTTP  4/26/2026 3:36:15 PM 127.0.0.1 GET /api/data-status
+ HTTP  4/26/2026 3:36:15 PM 127.0.0.1 Returned 304 in 1 ms
+ HTTP  4/26/2026 3:36:16 PM 127.0.0.1 GET /api/player/123769363/hero-pool
+ HTTP  4/26/2026 3:36:16 PM 127.0.0.1 Returned 304 in 0 ms
+ HTTP  4/26/2026 3:36:17 PM 127.0.0.1 GET /api/player/123769363/hero-pool
+ HTTP  4/26/2026 3:36:17 PM 127.0.0.1 Returned 304 in 0 ms
+ HTTP  4/26/2026 3:36:18 PM 127.0.0.1 GET /api/player/123769363/hero-pool
+ HTTP  4/26/2026 3:36:18 PM 127.0.0.1 Returned 304 in 1 ms
+ HTTP  4/26/2026 3:36:18 PM 127.0.0.1 GET /api/player/123769363/hero-pool
+ HTTP  4/26/2026 3:36:18 PM 127.0.0.1 Returned 304 in 1 ms
+ HTTP  4/26/2026 3:37:15 PM 127.0.0.1 GET /
+ HTTP  4/26/2026 3:37:15 PM 127.0.0.1 Returned 200 in 1 ms
+ HTTP  4/26/2026 3:37:15 PM 127.0.0.1 GET /assets/index-CBNfS1O1.js
+ HTTP  4/26/2026 3:37:15 PM 127.0.0.1 Returned 200 in 1 ms
+ HTTP  4/26/2026 3:37:15 PM 127.0.0.1 GET /assets/index-BuNCKqIm.css
+ HTTP  4/26/2026 3:37:15 PM 127.0.0.1 Returned 200 in 3 ms
+ HTTP  4/26/2026 3:37:15 PM 127.0.0.1 GET /api/data-status
+ HTTP  4/26/2026 3:37:15 PM 127.0.0.1 Returned 200 in 0 ms
+ HTTP  4/26/2026 3:37:15 PM 127.0.0.1 GET /favicon.svg
+ HTTP  4/26/2026 3:37:15 PM 127.0.0.1 Returned 200 in 1 ms
+ HTTP  4/26/2026 3:37:15 PM 127.0.0.1 GET /api/heroes/stats?rank=5
+ HTTP  4/26/2026 3:37:15 PM 127.0.0.1 GET /api/heroes
+ HTTP  4/26/2026 3:37:15 PM 127.0.0.1 Returned 200 in 0 ms
+ HTTP  4/26/2026 3:37:15 PM 127.0.0.1 Returned 200 in 1 ms
+ HTTP  4/26/2026 3:37:18 PM 127.0.0.1 GET /api/heroes/aliases
+ HTTP  4/26/2026 3:37:18 PM 127.0.0.1 Returned 200 in 0 ms
+ HTTP  4/26/2026 3:37:19 PM 127.0.0.1 GET /api/data-status
+ HTTP  4/26/2026 3:37:19 PM 127.0.0.1 Returned 304 in 0 ms
+ HTTP  4/26/2026 3:37:19 PM 127.0.0.1 POST /api/recommend
+ HTTP  4/26/2026 3:37:19 PM 127.0.0.1 Returned 200 in 1 ms
+ HTTP  4/26/2026 3:37:21 PM 127.0.0.1 POST /api/recommend
+ HTTP  4/26/2026 3:37:21 PM 127.0.0.1 Returned 200 in 0 ms
+ HTTP  4/26/2026 3:37:23 PM 127.0.0.1 POST /api/recommend
+ HTTP  4/26/2026 3:37:23 PM 127.0.0.1 Returned 200 in 0 ms
+ HTTP  4/26/2026 3:37:26 PM 127.0.0.1 GET /api/data-status
+ HTTP  4/26/2026 3:37:26 PM 127.0.0.1 Returned 304 in 0 ms
+ HTTP  4/26/2026 3:37:27 PM 127.0.0.1 GET /api/heroes
+ HTTP  4/26/2026 3:37:27 PM 127.0.0.1 Returned 304 in 0 ms
+ HTTP  4/26/2026 3:37:27 PM 127.0.0.1 GET /api/data-status
+ HTTP  4/26/2026 3:37:27 PM 127.0.0.1 GET /api/heroes/stats?rank=5
+ HTTP  4/26/2026 3:37:27 PM 127.0.0.1 Returned 304 in 1 ms
+ HTTP  4/26/2026 3:37:27 PM 127.0.0.1 Returned 304 in 0 ms
+ HTTP  4/26/2026 3:37:31 PM 127.0.0.1 GET /
+ HTTP  4/26/2026 3:37:31 PM 127.0.0.1 Returned 200 in 1 ms
+ HTTP  4/26/2026 3:37:31 PM 127.0.0.1 GET /assets/index-CBNfS1O1.js
+ HTTP  4/26/2026 3:37:31 PM 127.0.0.1 Returned 200 in 1 ms
+ HTTP  4/26/2026 3:37:31 PM 127.0.0.1 GET /assets/index-BuNCKqIm.css
+ HTTP  4/26/2026 3:37:31 PM 127.0.0.1 Returned 200 in 1 ms
+ HTTP  4/26/2026 3:37:32 PM 127.0.0.1 GET /api/data-status
+ HTTP  4/26/2026 3:37:32 PM 127.0.0.1 GET /favicon.svg
+ HTTP  4/26/2026 3:37:32 PM 127.0.0.1 Returned 200 in 1 ms
+ HTTP  4/26/2026 3:37:32 PM 127.0.0.1 Returned 200 in 1 ms
+ HTTP  4/26/2026 3:37:32 PM 127.0.0.1 GET /api/heroes
+ HTTP  4/26/2026 3:37:32 PM 127.0.0.1 Returned 200 in 1 ms
+ HTTP  4/26/2026 3:37:32 PM 127.0.0.1 GET /api/heroes/stats?rank=5
+ HTTP  4/26/2026 3:37:32 PM 127.0.0.1 Returned 200 in 1 ms
+ HTTP  4/26/2026 3:38:38 PM ::1 GET /
+ HTTP  4/26/2026 3:38:38 PM ::1 Returned 200 in 1 ms
+ INFO  Accepting connections at http://localhost:3000
+ HTTP  4/26/2026 3:48:38 PM ::1 GET /
+ HTTP  4/26/2026 3:48:38 PM ::1 Returned 200 in 14 ms
+ HTTP  4/26/2026 3:52:53 PM ::1 GET /
+ HTTP  4/26/2026 3:52:53 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 3:58:38 PM ::1 GET /
+ HTTP  4/26/2026 3:58:38 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 4:02:53 PM ::1 GET /
+ HTTP  4/26/2026 4:02:53 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 4:08:38 PM ::1 GET /
+ HTTP  4/26/2026 4:08:38 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 4:12:53 PM ::1 GET /
+ HTTP  4/26/2026 4:12:53 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 4:18:38 PM ::1 GET /
+ HTTP  4/26/2026 4:18:38 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 4:22:53 PM ::1 GET /
+ HTTP  4/26/2026 4:22:53 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 4:28:38 PM ::1 GET /
+ HTTP  4/26/2026 4:28:38 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 4:32:53 PM ::1 GET /
+ HTTP  4/26/2026 4:32:53 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 4:38:38 PM ::1 GET /
+ HTTP  4/26/2026 4:38:38 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 4:42:53 PM ::1 GET /
+ HTTP  4/26/2026 4:42:53 PM ::1 Returned 200 in 0 ms
+ HTTP  4/26/2026 4:48:38 PM ::1 GET /
+ HTTP  4/26/2026 4:48:38 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 4:52:53 PM ::1 GET /
+ HTTP  4/26/2026 4:52:53 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 4:58:38 PM ::1 GET /
+ HTTP  4/26/2026 4:58:38 PM ::1 Returned 200 in 0 ms
+ HTTP  4/26/2026 5:02:53 PM ::1 GET /
+ HTTP  4/26/2026 5:02:53 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 5:08:38 PM ::1 GET /
+ HTTP  4/26/2026 5:08:38 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 5:12:53 PM ::1 GET /
+ HTTP  4/26/2026 5:12:53 PM ::1 Returned 200 in 0 ms
+ HTTP  4/26/2026 5:18:38 PM ::1 GET /
+ HTTP  4/26/2026 5:18:38 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 5:22:53 PM ::1 GET /
+ HTTP  4/26/2026 5:22:53 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 5:28:38 PM ::1 GET /
+ HTTP  4/26/2026 5:28:38 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 5:32:53 PM ::1 GET /
+ HTTP  4/26/2026 5:32:53 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 5:38:38 PM ::1 GET /
+ HTTP  4/26/2026 5:38:38 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 5:42:53 PM ::1 GET /
+ HTTP  4/26/2026 5:42:53 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 5:48:38 PM ::1 GET /
+ HTTP  4/26/2026 5:48:38 PM ::1 Returned 200 in 0 ms
+ HTTP  4/26/2026 5:52:53 PM ::1 GET /
+ HTTP  4/26/2026 5:52:53 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 5:58:38 PM ::1 GET /
+ HTTP  4/26/2026 5:58:38 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 6:02:53 PM ::1 GET /
+ HTTP  4/26/2026 6:02:53 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 6:08:38 PM ::1 GET /
+ HTTP  4/26/2026 6:08:38 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 6:12:53 PM ::1 GET /
+ HTTP  4/26/2026 6:12:53 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 6:18:38 PM ::1 GET /
+ HTTP  4/26/2026 6:18:38 PM ::1 Returned 200 in 0 ms
+ HTTP  4/26/2026 6:22:53 PM ::1 GET /
+ HTTP  4/26/2026 6:22:53 PM ::1 Returned 200 in 0 ms
+ HTTP  4/26/2026 6:28:38 PM ::1 GET /
+ HTTP  4/26/2026 6:28:38 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 6:32:53 PM ::1 GET /
+ HTTP  4/26/2026 6:32:53 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 6:38:38 PM ::1 GET /
+ HTTP  4/26/2026 6:38:38 PM ::1 Returned 200 in 0 ms
+ HTTP  4/26/2026 6:42:53 PM ::1 GET /
+ HTTP  4/26/2026 6:42:53 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 6:48:38 PM ::1 GET /
+ HTTP  4/26/2026 6:48:38 PM ::1 Returned 200 in 0 ms
+ HTTP  4/26/2026 6:52:53 PM ::1 GET /
+ HTTP  4/26/2026 6:52:53 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 6:58:38 PM ::1 GET /
+ HTTP  4/26/2026 6:58:38 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 7:02:53 PM ::1 GET /
+ HTTP  4/26/2026 7:02:53 PM ::1 Returned 200 in 0 ms
+ HTTP  4/26/2026 7:08:38 PM ::1 GET /
+ HTTP  4/26/2026 7:08:38 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 7:12:53 PM ::1 GET /
+ HTTP  4/26/2026 7:12:53 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 7:18:38 PM ::1 GET /
+ HTTP  4/26/2026 7:18:38 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 7:22:53 PM ::1 GET /
+ HTTP  4/26/2026 7:22:53 PM ::1 Returned 200 in 0 ms
+ HTTP  4/26/2026 7:28:38 PM ::1 GET /
+ HTTP  4/26/2026 7:28:38 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 7:32:53 PM ::1 GET /
+ HTTP  4/26/2026 7:32:53 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 7:38:38 PM ::1 GET /
+ HTTP  4/26/2026 7:38:38 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 7:42:53 PM ::1 GET /
+ HTTP  4/26/2026 7:42:53 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 7:48:39 PM ::1 GET /
+ HTTP  4/26/2026 7:48:39 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 7:52:53 PM ::1 GET /
+ HTTP  4/26/2026 7:52:53 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 7:58:39 PM ::1 GET /
+ HTTP  4/26/2026 7:58:39 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 8:02:53 PM ::1 GET /
+ HTTP  4/26/2026 8:02:53 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 8:08:39 PM ::1 GET /
+ HTTP  4/26/2026 8:08:39 PM ::1 Returned 200 in 0 ms
+ HTTP  4/26/2026 8:12:53 PM ::1 GET /
+ HTTP  4/26/2026 8:12:53 PM ::1 Returned 200 in 0 ms
+ HTTP  4/26/2026 8:18:39 PM ::1 GET /
+ HTTP  4/26/2026 8:18:39 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 8:22:53 PM ::1 GET /
+ HTTP  4/26/2026 8:22:53 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 8:28:39 PM ::1 GET /
+ HTTP  4/26/2026 8:28:39 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 8:32:53 PM ::1 GET /
+ HTTP  4/26/2026 8:32:53 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 8:38:39 PM ::1 GET /
+ HTTP  4/26/2026 8:38:39 PM ::1 Returned 200 in 0 ms
+ HTTP  4/26/2026 8:42:53 PM ::1 GET /
+ HTTP  4/26/2026 8:42:53 PM ::1 Returned 200 in 0 ms
+ HTTP  4/26/2026 8:48:39 PM ::1 GET /
+ HTTP  4/26/2026 8:48:39 PM ::1 Returned 200 in 0 ms
+ HTTP  4/26/2026 8:52:53 PM ::1 GET /
+ HTTP  4/26/2026 8:52:53 PM ::1 Returned 200 in 0 ms
+ HTTP  4/26/2026 8:58:39 PM ::1 GET /
+ HTTP  4/26/2026 8:58:39 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 9:02:53 PM ::1 GET /
+ HTTP  4/26/2026 9:02:53 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 9:08:39 PM ::1 GET /
+ HTTP  4/26/2026 9:08:39 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 9:12:53 PM ::1 GET /
+ HTTP  4/26/2026 9:12:53 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 9:18:39 PM ::1 GET /
+ HTTP  4/26/2026 9:18:39 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 9:22:53 PM ::1 GET /
+ HTTP  4/26/2026 9:22:53 PM ::1 Returned 200 in 0 ms
+ HTTP  4/26/2026 9:28:39 PM ::1 GET /
+ HTTP  4/26/2026 9:28:39 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 9:32:53 PM ::1 GET /
+ HTTP  4/26/2026 9:32:53 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 9:38:39 PM ::1 GET /
+ HTTP  4/26/2026 9:38:39 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 9:42:53 PM ::1 GET /
+ HTTP  4/26/2026 9:42:53 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 9:48:39 PM ::1 GET /
+ HTTP  4/26/2026 9:48:39 PM ::1 Returned 200 in 0 ms
+ HTTP  4/26/2026 9:52:53 PM ::1 GET /
+ HTTP  4/26/2026 9:52:53 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 9:58:39 PM ::1 GET /
+ HTTP  4/26/2026 9:58:39 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 10:02:53 PM ::1 GET /
+ HTTP  4/26/2026 10:02:53 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 10:08:39 PM ::1 GET /
+ HTTP  4/26/2026 10:08:39 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 10:12:53 PM ::1 GET /
+ HTTP  4/26/2026 10:12:53 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 10:18:39 PM ::1 GET /
+ HTTP  4/26/2026 10:18:39 PM ::1 Returned 200 in 0 ms
+ HTTP  4/26/2026 10:22:53 PM ::1 GET /
+ HTTP  4/26/2026 10:22:53 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 10:28:39 PM ::1 GET /
+ HTTP  4/26/2026 10:28:39 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 10:32:53 PM ::1 GET /
+ HTTP  4/26/2026 10:32:53 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 10:38:39 PM ::1 GET /
+ HTTP  4/26/2026 10:38:39 PM ::1 Returned 200 in 0 ms
+ HTTP  4/26/2026 10:42:53 PM ::1 GET /
+ HTTP  4/26/2026 10:42:53 PM ::1 Returned 200 in 0 ms
+ HTTP  4/26/2026 10:48:39 PM ::1 GET /
+ HTTP  4/26/2026 10:48:39 PM ::1 Returned 200 in 0 ms
+ HTTP  4/26/2026 10:52:53 PM ::1 GET /
+ HTTP  4/26/2026 10:52:53 PM ::1 Returned 200 in 0 ms
+ HTTP  4/26/2026 10:58:39 PM ::1 GET /
+ HTTP  4/26/2026 10:58:39 PM ::1 Returned 200 in 0 ms
+ HTTP  4/26/2026 11:02:53 PM ::1 GET /
+ HTTP  4/26/2026 11:02:53 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 11:08:39 PM ::1 GET /
+ HTTP  4/26/2026 11:08:39 PM ::1 Returned 200 in 0 ms
+ HTTP  4/26/2026 11:12:53 PM ::1 GET /
+ HTTP  4/26/2026 11:12:53 PM ::1 Returned 200 in 0 ms
+ HTTP  4/26/2026 11:18:39 PM ::1 GET /
+ HTTP  4/26/2026 11:18:39 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 11:22:53 PM ::1 GET /
+ HTTP  4/26/2026 11:22:53 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 11:28:39 PM ::1 GET /
+ HTTP  4/26/2026 11:28:39 PM ::1 Returned 200 in 0 ms
+ HTTP  4/26/2026 11:32:53 PM ::1 GET /
+ HTTP  4/26/2026 11:32:53 PM ::1 Returned 200 in 0 ms
+ HTTP  4/26/2026 11:38:39 PM ::1 GET /
+ HTTP  4/26/2026 11:38:39 PM ::1 Returned 200 in 0 ms
+ HTTP  4/26/2026 11:42:53 PM ::1 GET /
+ HTTP  4/26/2026 11:42:53 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 11:48:39 PM ::1 GET /
+ HTTP  4/26/2026 11:48:39 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 11:52:53 PM ::1 GET /
+ HTTP  4/26/2026 11:52:53 PM ::1 Returned 200 in 1 ms
+ HTTP  4/26/2026 11:58:39 PM ::1 GET /
+ HTTP  4/26/2026 11:58:39 PM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 12:02:53 AM ::1 GET /
+ HTTP  4/27/2026 12:02:53 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 12:08:39 AM ::1 GET /
+ HTTP  4/27/2026 12:08:39 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 12:12:53 AM ::1 GET /
+ HTTP  4/27/2026 12:12:53 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 12:18:39 AM ::1 GET /
+ HTTP  4/27/2026 12:18:39 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 12:22:54 AM ::1 GET /
+ HTTP  4/27/2026 12:22:54 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 12:28:39 AM ::1 GET /
+ HTTP  4/27/2026 12:28:39 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 12:32:54 AM ::1 GET /
+ HTTP  4/27/2026 12:32:54 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 12:38:39 AM ::1 GET /
+ HTTP  4/27/2026 12:38:39 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 12:42:54 AM ::1 GET /
+ HTTP  4/27/2026 12:42:54 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 12:48:39 AM ::1 GET /
+ HTTP  4/27/2026 12:48:39 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 12:52:54 AM ::1 GET /
+ HTTP  4/27/2026 12:52:54 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 12:58:39 AM ::1 GET /
+ HTTP  4/27/2026 12:58:39 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 1:02:54 AM ::1 GET /
+ HTTP  4/27/2026 1:02:54 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 1:08:39 AM ::1 GET /
+ HTTP  4/27/2026 1:08:39 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 1:12:54 AM ::1 GET /
+ HTTP  4/27/2026 1:12:54 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 1:18:39 AM ::1 GET /
+ HTTP  4/27/2026 1:18:39 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 1:22:54 AM ::1 GET /
+ HTTP  4/27/2026 1:22:54 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 1:28:39 AM ::1 GET /
+ HTTP  4/27/2026 1:28:39 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 1:32:54 AM ::1 GET /
+ HTTP  4/27/2026 1:32:54 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 1:38:39 AM ::1 GET /
+ HTTP  4/27/2026 1:38:39 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 1:42:54 AM ::1 GET /
+ HTTP  4/27/2026 1:42:54 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 1:48:39 AM ::1 GET /
+ HTTP  4/27/2026 1:48:39 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 1:52:54 AM ::1 GET /
+ HTTP  4/27/2026 1:52:54 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 1:58:39 AM ::1 GET /
+ HTTP  4/27/2026 1:58:39 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 2:02:54 AM ::1 GET /
+ HTTP  4/27/2026 2:02:54 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 2:08:39 AM ::1 GET /
+ HTTP  4/27/2026 2:08:39 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 2:12:54 AM ::1 GET /
+ HTTP  4/27/2026 2:12:54 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 2:18:39 AM ::1 GET /
+ HTTP  4/27/2026 2:18:39 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 2:22:54 AM ::1 GET /
+ HTTP  4/27/2026 2:22:54 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 2:28:39 AM ::1 GET /
+ HTTP  4/27/2026 2:28:39 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 2:32:54 AM ::1 GET /
+ HTTP  4/27/2026 2:32:54 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 2:38:39 AM ::1 GET /
+ HTTP  4/27/2026 2:38:39 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 2:42:54 AM ::1 GET /
+ HTTP  4/27/2026 2:42:54 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 2:48:39 AM ::1 GET /
+ HTTP  4/27/2026 2:48:39 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 2:52:54 AM ::1 GET /
+ HTTP  4/27/2026 2:52:54 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 2:58:39 AM ::1 GET /
+ HTTP  4/27/2026 2:58:39 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 3:02:54 AM ::1 GET /
+ HTTP  4/27/2026 3:02:54 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 3:08:39 AM ::1 GET /
+ HTTP  4/27/2026 3:08:39 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 3:12:54 AM ::1 GET /
+ HTTP  4/27/2026 3:12:54 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 3:18:39 AM ::1 GET /
+ HTTP  4/27/2026 3:18:39 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 3:22:54 AM ::1 GET /
+ HTTP  4/27/2026 3:22:54 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 3:28:39 AM ::1 GET /
+ HTTP  4/27/2026 3:28:39 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 3:32:54 AM ::1 GET /
+ HTTP  4/27/2026 3:32:54 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 3:38:39 AM ::1 GET /
+ HTTP  4/27/2026 3:38:39 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 3:42:54 AM ::1 GET /
+ HTTP  4/27/2026 3:42:54 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 3:48:39 AM ::1 GET /
+ HTTP  4/27/2026 3:48:39 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 3:52:54 AM ::1 GET /
+ HTTP  4/27/2026 3:52:54 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 3:58:39 AM ::1 GET /
+ HTTP  4/27/2026 3:58:39 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 4:02:54 AM ::1 GET /
+ HTTP  4/27/2026 4:02:54 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 4:08:39 AM ::1 GET /
+ HTTP  4/27/2026 4:08:39 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 4:12:54 AM ::1 GET /
+ HTTP  4/27/2026 4:12:54 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 4:18:39 AM ::1 GET /
+ HTTP  4/27/2026 4:18:39 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 4:22:54 AM ::1 GET /
+ HTTP  4/27/2026 4:22:54 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 4:28:40 AM ::1 GET /
+ HTTP  4/27/2026 4:28:40 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 4:32:54 AM ::1 GET /
+ HTTP  4/27/2026 4:32:54 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 4:38:40 AM ::1 GET /
+ HTTP  4/27/2026 4:38:40 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 4:42:54 AM ::1 GET /
+ HTTP  4/27/2026 4:42:54 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 4:48:40 AM ::1 GET /
+ HTTP  4/27/2026 4:48:40 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 4:52:54 AM ::1 GET /
+ HTTP  4/27/2026 4:52:54 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 4:58:40 AM ::1 GET /
+ HTTP  4/27/2026 4:58:40 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 5:02:54 AM ::1 GET /
+ HTTP  4/27/2026 5:02:54 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 5:08:40 AM ::1 GET /
+ HTTP  4/27/2026 5:08:40 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 5:12:54 AM ::1 GET /
+ HTTP  4/27/2026 5:12:54 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 5:18:40 AM ::1 GET /
+ HTTP  4/27/2026 5:18:40 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 5:22:54 AM ::1 GET /
+ HTTP  4/27/2026 5:22:54 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 5:28:40 AM ::1 GET /
+ HTTP  4/27/2026 5:28:40 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 5:32:54 AM ::1 GET /
+ HTTP  4/27/2026 5:32:54 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 5:38:40 AM ::1 GET /
+ HTTP  4/27/2026 5:38:40 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 5:42:54 AM ::1 GET /
+ HTTP  4/27/2026 5:42:54 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 5:48:40 AM ::1 GET /
+ HTTP  4/27/2026 5:48:40 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 5:52:54 AM ::1 GET /
+ HTTP  4/27/2026 5:52:54 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 5:58:40 AM ::1 GET /
+ HTTP  4/27/2026 5:58:40 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 6:02:54 AM ::1 GET /
+ HTTP  4/27/2026 6:02:54 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 6:08:40 AM ::1 GET /
+ HTTP  4/27/2026 6:08:40 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 6:12:54 AM ::1 GET /
+ HTTP  4/27/2026 6:12:54 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 6:18:40 AM ::1 GET /
+ HTTP  4/27/2026 6:18:40 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 6:22:54 AM ::1 GET /
+ HTTP  4/27/2026 6:22:54 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 6:28:40 AM ::1 GET /
+ HTTP  4/27/2026 6:28:40 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 6:32:54 AM ::1 GET /
+ HTTP  4/27/2026 6:32:54 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 6:38:40 AM ::1 GET /
+ HTTP  4/27/2026 6:38:40 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 6:42:54 AM ::1 GET /
+ HTTP  4/27/2026 6:42:54 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 6:48:40 AM ::1 GET /
+ HTTP  4/27/2026 6:48:40 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 6:52:54 AM ::1 GET /
+ HTTP  4/27/2026 6:52:54 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 6:58:40 AM ::1 GET /
+ HTTP  4/27/2026 6:58:40 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 7:02:54 AM ::1 GET /
+ HTTP  4/27/2026 7:02:54 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 7:08:40 AM ::1 GET /
+ HTTP  4/27/2026 7:08:40 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 7:12:54 AM ::1 GET /
+ HTTP  4/27/2026 7:12:54 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 7:18:40 AM ::1 GET /
+ HTTP  4/27/2026 7:18:40 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 7:22:54 AM ::1 GET /
+ HTTP  4/27/2026 7:22:54 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 7:28:40 AM ::1 GET /
+ HTTP  4/27/2026 7:28:40 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 7:32:54 AM ::1 GET /
+ HTTP  4/27/2026 7:32:54 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 7:38:40 AM ::1 GET /
+ HTTP  4/27/2026 7:38:40 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 7:42:54 AM ::1 GET /
+ HTTP  4/27/2026 7:42:54 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 7:48:40 AM ::1 GET /
+ HTTP  4/27/2026 7:48:40 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 7:52:54 AM ::1 GET /
+ HTTP  4/27/2026 7:52:54 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 7:58:40 AM ::1 GET /
+ HTTP  4/27/2026 7:58:40 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 8:02:54 AM ::1 GET /
+ HTTP  4/27/2026 8:02:54 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 8:08:40 AM ::1 GET /
+ HTTP  4/27/2026 8:08:40 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 8:12:54 AM ::1 GET /
+ HTTP  4/27/2026 8:12:54 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 8:18:40 AM ::1 GET /
+ HTTP  4/27/2026 8:18:40 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 8:22:54 AM ::1 GET /
+ HTTP  4/27/2026 8:22:54 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 8:28:40 AM ::1 GET /
+ HTTP  4/27/2026 8:28:40 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 8:32:54 AM ::1 GET /
+ HTTP  4/27/2026 8:32:54 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 8:38:40 AM ::1 GET /
+ HTTP  4/27/2026 8:38:40 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 8:42:54 AM ::1 GET /
+ HTTP  4/27/2026 8:42:54 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 8:48:40 AM ::1 GET /
+ HTTP  4/27/2026 8:48:40 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 8:52:54 AM ::1 GET /
+ HTTP  4/27/2026 8:52:54 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 8:58:40 AM ::1 GET /
+ HTTP  4/27/2026 8:58:40 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 9:02:55 AM ::1 GET /
+ HTTP  4/27/2026 9:02:55 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 9:08:40 AM ::1 GET /
+ HTTP  4/27/2026 9:08:40 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 9:12:55 AM ::1 GET /
+ HTTP  4/27/2026 9:12:55 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 9:18:40 AM ::1 GET /
+ HTTP  4/27/2026 9:18:40 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 9:22:55 AM ::1 GET /
+ HTTP  4/27/2026 9:22:55 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 9:28:40 AM ::1 GET /
+ HTTP  4/27/2026 9:28:40 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 9:32:55 AM ::1 GET /
+ HTTP  4/27/2026 9:32:55 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 9:38:40 AM ::1 GET /
+ HTTP  4/27/2026 9:38:40 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 9:42:55 AM ::1 GET /
+ HTTP  4/27/2026 9:42:55 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 9:48:40 AM ::1 GET /
+ HTTP  4/27/2026 9:48:40 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 9:52:55 AM ::1 GET /
+ HTTP  4/27/2026 9:52:55 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 9:58:40 AM ::1 GET /
+ HTTP  4/27/2026 9:58:40 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 10:02:55 AM ::1 GET /
+ HTTP  4/27/2026 10:02:55 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 10:08:40 AM ::1 GET /
+ HTTP  4/27/2026 10:08:40 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 10:12:55 AM ::1 GET /
+ HTTP  4/27/2026 10:12:55 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 10:18:40 AM ::1 GET /
+ HTTP  4/27/2026 10:18:40 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 10:22:55 AM ::1 GET /
+ HTTP  4/27/2026 10:22:55 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 10:28:40 AM ::1 GET /
+ HTTP  4/27/2026 10:28:40 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 10:32:55 AM ::1 GET /
+ HTTP  4/27/2026 10:32:55 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 10:38:40 AM ::1 GET /
+ HTTP  4/27/2026 10:38:40 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 10:42:55 AM ::1 GET /
+ HTTP  4/27/2026 10:42:55 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 10:48:40 AM ::1 GET /
+ HTTP  4/27/2026 10:48:40 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 10:52:55 AM ::1 GET /
+ HTTP  4/27/2026 10:52:55 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 10:58:40 AM ::1 GET /
+ HTTP  4/27/2026 10:58:40 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 11:02:55 AM ::1 GET /
+ HTTP  4/27/2026 11:02:55 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 11:08:40 AM ::1 GET /
+ HTTP  4/27/2026 11:08:40 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 11:12:55 AM ::1 GET /
+ HTTP  4/27/2026 11:12:55 AM ::1 Returned 200 in 0 ms
+ HTTP  4/27/2026 11:18:41 AM ::1 GET /
+ HTTP  4/27/2026 11:18:41 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 11:22:10 AM ::1 GET /
+ HTTP  4/27/2026 11:22:10 AM ::1 Returned 200 in 1 ms
+
+ INFO  Gracefully shutting down. Please wait...
+ INFO  Accepting connections at http://localhost:3000
+ HTTP  4/27/2026 11:29:39 AM ::1 GET /
+ HTTP  4/27/2026 11:29:39 AM ::1 Returned 200 in 13 ms
+ HTTP  4/27/2026 11:30:28 AM 127.0.0.1 GET /
+ HTTP  4/27/2026 11:30:28 AM 127.0.0.1 Returned 200 in 1 ms
+ HTTP  4/27/2026 11:30:28 AM 127.0.0.1 GET /api/data-status
+ HTTP  4/27/2026 11:30:28 AM 127.0.0.1 Returned 200 in 1 ms
+ HTTP  4/27/2026 11:30:29 AM 127.0.0.1 GET /favicon.svg
+ HTTP  4/27/2026 11:30:29 AM 127.0.0.1 Returned 200 in 4 ms
+ HTTP  4/27/2026 11:30:32 AM 127.0.0.1 GET /api/data-status
+ HTTP  4/27/2026 11:30:32 AM 127.0.0.1 Returned 304 in 1 ms
+ HTTP  4/27/2026 11:30:33 AM 127.0.0.1 POST /api/recommend
+ HTTP  4/27/2026 11:30:33 AM 127.0.0.1 Returned 200 in 1 ms
+ HTTP  4/27/2026 11:30:35 AM 127.0.0.1 POST /api/recommend
+ HTTP  4/27/2026 11:30:35 AM 127.0.0.1 Returned 200 in 1 ms
+ HTTP  4/27/2026 11:30:37 AM 127.0.0.1 POST /api/recommend
+ HTTP  4/27/2026 11:30:37 AM 127.0.0.1 Returned 200 in 0 ms
+ HTTP  4/27/2026 11:30:40 AM 127.0.0.1 GET /api/data-status
+ HTTP  4/27/2026 11:30:40 AM 127.0.0.1 Returned 304 in 2 ms
+ HTTP  4/27/2026 11:30:41 AM 127.0.0.1 GET /api/data-status
+ HTTP  4/27/2026 11:30:41 AM 127.0.0.1 Returned 304 in 1 ms
+ HTTP  4/27/2026 11:30:41 AM 127.0.0.1 POST /api/recommend
+ HTTP  4/27/2026 11:30:41 AM 127.0.0.1 Returned 200 in 0 ms
+ HTTP  4/27/2026 11:30:44 AM 127.0.0.1 POST /api/recommend
+ HTTP  4/27/2026 11:30:44 AM 127.0.0.1 Returned 200 in 0 ms
+ HTTP  4/27/2026 11:30:47 AM 127.0.0.1 POST /api/recommend
+ HTTP  4/27/2026 11:30:47 AM 127.0.0.1 Returned 200 in 1 ms
+ HTTP  4/27/2026 11:30:53 AM 127.0.0.1 GET /
+ HTTP  4/27/2026 11:30:53 AM 127.0.0.1 Returned 304 in 1 ms
+ HTTP  4/27/2026 11:30:53 AM 127.0.0.1 GET /api/data-status
+ HTTP  4/27/2026 11:30:53 AM 127.0.0.1 Returned 304 in 1 ms
+ HTTP  4/27/2026 11:30:53 AM 127.0.0.1 GET /favicon.svg
+ HTTP  4/27/2026 11:30:53 AM 127.0.0.1 Returned 304 in 0 ms
+ HTTP  4/27/2026 11:30:55 AM 127.0.0.1 GET /api/data-status
+ HTTP  4/27/2026 11:30:55 AM 127.0.0.1 Returned 304 in 1 ms
+ HTTP  4/27/2026 11:30:55 AM 127.0.0.1 POST /api/recommend
+ HTTP  4/27/2026 11:30:55 AM 127.0.0.1 Returned 200 in 0 ms
+ HTTP  4/27/2026 11:30:58 AM 127.0.0.1 POST /api/recommend
+ HTTP  4/27/2026 11:30:58 AM 127.0.0.1 Returned 200 in 1 ms
+ HTTP  4/27/2026 11:31:01 AM 127.0.0.1 POST /api/recommend
+ HTTP  4/27/2026 11:31:01 AM 127.0.0.1 Returned 200 in 1 ms
+ HTTP  4/27/2026 11:31:43 AM 127.0.0.1 GET /
+ HTTP  4/27/2026 11:31:43 AM 127.0.0.1 Returned 304 in 1 ms
+ HTTP  4/27/2026 11:31:43 AM 127.0.0.1 GET /api/data-status
+ HTTP  4/27/2026 11:31:43 AM 127.0.0.1 Returned 304 in 0 ms
+ HTTP  4/27/2026 11:31:43 AM 127.0.0.1 GET /favicon.svg
+ HTTP  4/27/2026 11:31:43 AM 127.0.0.1 Returned 304 in 1 ms
+ HTTP  4/27/2026 11:31:45 AM 127.0.0.1 GET /api/data-status
+ HTTP  4/27/2026 11:31:45 AM 127.0.0.1 Returned 304 in 1 ms
+ HTTP  4/27/2026 11:31:45 AM 127.0.0.1 POST /api/recommend
+ HTTP  4/27/2026 11:31:45 AM 127.0.0.1 Returned 200 in 0 ms
+ HTTP  4/27/2026 11:31:48 AM 127.0.0.1 POST /api/recommend
+ HTTP  4/27/2026 11:31:48 AM 127.0.0.1 Returned 200 in 0 ms
+ HTTP  4/27/2026 11:31:51 AM 127.0.0.1 POST /api/recommend
+ HTTP  4/27/2026 11:31:51 AM 127.0.0.1 Returned 200 in 1 ms
+ HTTP  4/27/2026 11:33:45 AM 127.0.0.1 GET /
+ HTTP  4/27/2026 11:33:45 AM 127.0.0.1 Returned 304 in 0 ms
+ HTTP  4/27/2026 11:33:46 AM 127.0.0.1 GET /api/data-status
+ HTTP  4/27/2026 11:33:46 AM 127.0.0.1 Returned 304 in 1 ms
+ HTTP  4/27/2026 11:33:46 AM 127.0.0.1 GET /favicon.svg
+ HTTP  4/27/2026 11:33:46 AM 127.0.0.1 Returned 304 in 1 ms
+ HTTP  4/27/2026 11:33:48 AM 127.0.0.1 GET /api/data-status
+ HTTP  4/27/2026 11:33:48 AM 127.0.0.1 Returned 304 in 1 ms
+ HTTP  4/27/2026 11:33:48 AM 127.0.0.1 POST /api/recommend
+ HTTP  4/27/2026 11:33:48 AM 127.0.0.1 Returned 200 in 1 ms
+ HTTP  4/27/2026 11:33:51 AM 127.0.0.1 POST /api/recommend
+ HTTP  4/27/2026 11:33:51 AM 127.0.0.1 Returned 200 in 0 ms
+ HTTP  4/27/2026 11:33:54 AM 127.0.0.1 POST /api/recommend
+ HTTP  4/27/2026 11:33:54 AM 127.0.0.1 Returned 200 in 1 ms
+ HTTP  4/27/2026 11:34:15 AM 127.0.0.1 GET /
+ HTTP  4/27/2026 11:34:15 AM 127.0.0.1 Returned 304 in 1 ms
+ HTTP  4/27/2026 11:34:16 AM 127.0.0.1 GET /api/data-status
+ HTTP  4/27/2026 11:34:16 AM 127.0.0.1 Returned 304 in 1 ms
+ HTTP  4/27/2026 11:34:16 AM 127.0.0.1 GET /favicon.svg
+ HTTP  4/27/2026 11:34:16 AM 127.0.0.1 Returned 304 in 1 ms
+ HTTP  4/27/2026 11:34:17 AM 127.0.0.1 GET /api/data-status
+ HTTP  4/27/2026 11:34:17 AM 127.0.0.1 Returned 304 in 0 ms
+ HTTP  4/27/2026 11:34:17 AM 127.0.0.1 POST /api/recommend
+ HTTP  4/27/2026 11:34:17 AM 127.0.0.1 Returned 200 in 0 ms
+ HTTP  4/27/2026 11:34:20 AM 127.0.0.1 POST /api/recommend
+ HTTP  4/27/2026 11:34:20 AM 127.0.0.1 Returned 200 in 1 ms
+ HTTP  4/27/2026 11:34:23 AM 127.0.0.1 POST /api/recommend
+ HTTP  4/27/2026 11:34:23 AM 127.0.0.1 Returned 200 in 1 ms
+ HTTP  4/27/2026 11:38:52 AM ::1 GET /
+ HTTP  4/27/2026 11:38:52 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 11:48:52 AM ::1 GET /
+ HTTP  4/27/2026 11:48:52 AM ::1 Returned 200 in 1 ms
+ HTTP  4/27/2026 11:49:01 AM 127.0.0.1 GET /
+ HTTP  4/27/2026 11:49:01 AM 127.0.0.1 Returned 304 in 0 ms
+ HTTP  4/27/2026 11:49:02 AM 127.0.0.1 GET /api/data-status
+ HTTP  4/27/2026 11:49:02 AM 127.0.0.1 Returned 304 in 0 ms
+ HTTP  4/27/2026 11:49:02 AM 127.0.0.1 GET /favicon.svg
+ HTTP  4/27/2026 11:49:02 AM 127.0.0.1 Returned 304 in 1 ms
+ HTTP  4/27/2026 11:49:03 AM 127.0.0.1 GET /api/data-status
+ HTTP  4/27/2026 11:49:03 AM 127.0.0.1 Returned 304 in 1 ms
+ HTTP  4/27/2026 11:49:03 AM 127.0.0.1 POST /api/recommend
+ HTTP  4/27/2026 11:49:03 AM 127.0.0.1 Returned 200 in 0 ms
+ HTTP  4/27/2026 11:49:06 AM 127.0.0.1 POST /api/recommend
+ HTTP  4/27/2026 11:49:06 AM 127.0.0.1 Returned 200 in 1 ms
+ HTTP  4/27/2026 11:49:09 AM 127.0.0.1 POST /api/recommend
+ HTTP  4/27/2026 11:49:09 AM 127.0.0.1 Returned 200 in 0 ms
+ HTTP  4/27/2026 11:49:11 AM 127.0.0.1 GET /
+ HTTP  4/27/2026 11:49:11 AM 127.0.0.1 Returned 304 in 0 ms
+ HTTP  4/27/2026 11:49:11 AM 127.0.0.1 GET /favicon.svg
+ HTTP  4/27/2026 11:49:11 AM 127.0.0.1 Returned 304 in 1 ms
+ HTTP  4/27/2026 11:49:11 AM 127.0.0.1 GET /api/data-status
+ HTTP  4/27/2026 11:49:11 AM 127.0.0.1 Returned 304 in 1 ms
+ HTTP  4/27/2026 11:49:12 AM 127.0.0.1 GET /api/data-status
+ HTTP  4/27/2026 11:49:12 AM 127.0.0.1 Returned 304 in 1 ms
+ HTTP  4/27/2026 11:49:14 AM 127.0.0.1 GET /api/data-status
+ HTTP  4/27/2026 11:49:14 AM 127.0.0.1 Returned 304 in 0 ms
+ HTTP  4/27/2026 11:49:14 AM 127.0.0.1 POST /api/recommend
+ HTTP  4/27/2026 11:49:14 AM 127.0.0.1 Returned 200 in 0 ms
+ HTTP  4/27/2026 11:49:17 AM 127.0.0.1 POST /api/recommend
+ HTTP  4/27/2026 11:49:17 AM 127.0.0.1 Returned 200 in 0 ms
+ HTTP  4/27/2026 11:49:20 AM 127.0.0.1 POST /api/recommend
+ HTTP  4/27/2026 11:49:20 AM 127.0.0.1 Returned 200 in 0 ms
+ HTTP  4/27/2026 11:51:11 AM 127.0.0.1 GET /api/heroes
+ HTTP  4/27/2026 11:51:11 AM 127.0.0.1 Returned 200 in 0 ms
+
+ INFO  Gracefully shutting down. Please wait...

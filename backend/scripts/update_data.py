@@ -52,38 +52,18 @@ def atomic_write_json(filepath: Path, data: dict | list):
 
 # ── 英雄基础数据更新 ──
 async def update_heroes():
-    """从 OpenDota 同步英雄列表到数据库"""
+    """从 OpenDota 同步英雄列表到数据库，复用 database 模块的 schema 和写入逻辑"""
     log("📦 更新英雄基础数据...")
     async with httpx.AsyncClient(timeout=30) as client:
         resp = await client.get(f"{OPENDOTA_API}/heroes")
         resp.raise_for_status()
         heroes = resp.json()
 
-    conn = sqlite3.connect(str(DB_PATH))
-    c = conn.cursor()
-    c.execute("""
-        CREATE TABLE IF NOT EXISTS heroes (
-            id INTEGER PRIMARY KEY,
-            name TEXT, localized_name TEXT,
-            primary_attr TEXT, attack_type TEXT,
-            roles TEXT, img TEXT, legs INTEGER
-        )
-    """)
-
-    updated = 0
-    for h in heroes:
-        c.execute("""
-            INSERT OR REPLACE INTO heroes (id, name, localized_name, primary_attr, attack_type, roles, img, legs)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?)
-        """, (
-            h["id"], h["name"], h["localized_name"],
-            h["primary_attr"], h["attack_type"],
-            json.dumps(h.get("roles", [])), h.get("img", ""), h.get("legs", 0)
-        ))
-        updated += 1
-
-    conn.commit()
-    conn.close()
+    # 复用 database 模块：确保表结构最新 + 统一写入逻辑
+    sys.path.insert(0, str(BASE_DIR))
+    from services.database import init_db, upsert_heroes
+    init_db()  # 自动建表 + 迁移缺失列
+    updated = upsert_heroes(heroes)  # 统一写入（含 img 生成、cn_name 查找）
     log(f"  ✅ 已更新 {updated} 个英雄到数据库")
 
 

@@ -1,0 +1,412 @@
+nohup: failed to run command 'python': No such file or directory
+nohup: failed to run command 'python': No such file or directory
+INFO:     Started server process [2055588]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8082 (Press CTRL+C to quit)
+INFO:     127.0.0.1:39782 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34674 - "GET /docs HTTP/1.1" 200 OK
+更新失败: 英雄基础数据, stderr=Traceback (most recent call last):
+  File "/root/.openclaw/workspace/dota2-bp-advisor/backend/scripts/update_data.py", line 271, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.12/asyncio
+INFO:     127.0.0.1:59918 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53162 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37944 - "GET /heroes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37948 - "GET /hero-stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45096 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55316 - "GET /api/heroes HTTP/1.1" 200 OK
+INFO:     2409:8900:1ea6:2322:48f4:7ff:fead:c512:0 - "GET / HTTP/1.1" 200 OK
+INFO:     2409:8900:1ea6:2322:48f4:7ff:fead:c512:0 - "GET /assets/index-BuNCKqIm.css HTTP/1.1" 200 OK
+INFO:     2409:8900:1ea6:2322:48f4:7ff:fead:c512:0 - "GET /assets/index-CBNfS1O1.js HTTP/1.1" 200 OK
+INFO:     2409:8900:1ea6:2322:48f4:7ff:fead:c512:0 - "GET /api/data-status HTTP/1.1" 200 OK
+INFO:     2409:8900:1ea6:2322:48f4:7ff:fead:c512:0 - "GET /api/heroes/stats?rank=5 HTTP/1.1" 200 OK
+INFO:     2409:8900:1ea6:2322:48f4:7ff:fead:c512:0 - "GET /api/heroes HTTP/1.1" 200 OK
+INFO:     2409:8900:1ea6:2322:48f4:7ff:fead:c512:0 - "GET /favicon.svg HTTP/1.1" 200 OK
+INFO:     2409:8900:1ea6:2322:48f4:7ff:fead:c512:0 - "GET /api/data-status HTTP/1.1" 200 OK
+INFO:     2409:8900:1ea6:2322:48f4:7ff:fead:c512:0 - "GET /api/player/123769363/hero-pool HTTP/1.1" 200 OK
+INFO:     2409:8900:1ea6:2322:48f4:7ff:fead:c512:0 - "GET /api/heroes/aliases HTTP/1.1" 200 OK
+INFO:     2409:8900:1ea6:2322:48f4:7ff:fead:c512:0 - "GET /api/data-status HTTP/1.1" 200 OK
+INFO:     2409:8900:1ea6:2322:48f4:7ff:fead:c512:0 - "POST /api/recommend HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44652 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44356 - "GET /docs HTTP/1.1" 200 OK
+INFO:     2409:8900:1ea6:2322:48f4:7ff:fead:c512:0 - "POST /api/recommend HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55128 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33192 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39856 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58128 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50940 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38260 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52834 - "GET /docs HTTP/1.1" 200 OK
+更新失败: 英雄基础数据, stderr=Traceback (most recent call last):
+  File "/root/.openclaw/workspace/dota2-bp-advisor/backend/scripts/update_data.py", line 271, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.12/asyncio
+INFO:     127.0.0.1:47424 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41588 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39796 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50868 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36918 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50834 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53832 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46472 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33080 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51368 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47542 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /docs HTTP/1.1" 200 OK
+更新失败: 英雄基础数据, stderr=Traceback (most recent call last):
+  File "/root/.openclaw/workspace/dota2-bp-advisor/backend/scripts/update_data.py", line 271, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.12/asyncio
+INFO:     127.0.0.1:55058 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57796 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44642 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55772 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52370 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40542 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53262 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53934 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59734 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46750 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41056 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55908 - "GET /docs HTTP/1.1" 200 OK
+更新失败: 英雄基础数据, stderr=Traceback (most recent call last):
+  File "/root/.openclaw/workspace/dota2-bp-advisor/backend/scripts/update_data.py", line 271, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.12/asyncio
+INFO:     127.0.0.1:60470 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41642 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46734 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57344 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34506 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42846 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56796 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58312 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46640 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36018 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54394 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47060 - "GET /docs HTTP/1.1" 200 OK
+更新失败: 英雄基础数据, stderr=Traceback (most recent call last):
+  File "/root/.openclaw/workspace/dota2-bp-advisor/backend/scripts/update_data.py", line 271, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.12/asyncio
+INFO:     127.0.0.1:35856 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53016 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44956 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36292 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36752 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34800 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56686 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42814 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57776 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60620 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49748 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58662 - "GET /docs HTTP/1.1" 200 OK
+更新失败: 英雄基础数据, stderr=Traceback (most recent call last):
+  File "/root/.openclaw/workspace/dota2-bp-advisor/backend/scripts/update_data.py", line 271, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.12/asyncio
+INFO:     127.0.0.1:40254 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60230 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42708 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57272 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43616 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43752 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40854 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44862 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50862 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58380 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52434 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53828 - "GET /docs HTTP/1.1" 200 OK
+更新失败: 英雄基础数据, stderr=Traceback (most recent call last):
+  File "/root/.openclaw/workspace/dota2-bp-advisor/backend/scripts/update_data.py", line 271, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.12/asyncio
+INFO:     127.0.0.1:45902 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49350 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42208 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34720 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35524 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45812 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39346 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51504 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40406 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51350 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37910 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34608 - "GET /docs HTTP/1.1" 200 OK
+更新失败: 英雄基础数据, stderr=Traceback (most recent call last):
+  File "/root/.openclaw/workspace/dota2-bp-advisor/backend/scripts/update_data.py", line 271, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.12/asyncio
+INFO:     127.0.0.1:57196 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36352 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33842 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35308 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36664 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47250 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37164 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50624 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54650 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35808 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49946 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38068 - "GET /docs HTTP/1.1" 200 OK
+更新失败: 英雄基础数据, stderr=Traceback (most recent call last):
+  File "/root/.openclaw/workspace/dota2-bp-advisor/backend/scripts/update_data.py", line 271, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.12/asyncio
+INFO:     127.0.0.1:41108 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54008 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58594 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53568 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35604 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60806 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44832 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54292 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33764 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33828 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49440 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34566 - "GET /docs HTTP/1.1" 200 OK
+更新失败: 英雄基础数据, stderr=Traceback (most recent call last):
+  File "/root/.openclaw/workspace/dota2-bp-advisor/backend/scripts/update_data.py", line 271, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.12/asyncio
+INFO:     127.0.0.1:46740 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57000 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40988 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37382 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55712 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39564 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49554 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49910 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57470 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37482 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49784 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38788 - "GET /docs HTTP/1.1" 200 OK
+更新失败: 英雄基础数据, stderr=Traceback (most recent call last):
+  File "/root/.openclaw/workspace/dota2-bp-advisor/backend/scripts/update_data.py", line 271, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.12/asyncio
+INFO:     127.0.0.1:49782 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38732 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37618 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49694 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50498 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45760 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44256 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51162 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50946 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36710 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59122 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46870 - "GET /docs HTTP/1.1" 200 OK
+更新失败: 英雄基础数据, stderr=Traceback (most recent call last):
+  File "/root/.openclaw/workspace/dota2-bp-advisor/backend/scripts/update_data.py", line 271, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.12/asyncio
+INFO:     127.0.0.1:60790 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55696 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56882 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51376 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43134 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41602 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60880 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56510 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54026 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48812 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49008 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45558 - "GET /docs HTTP/1.1" 200 OK
+更新失败: 英雄基础数据, stderr=Traceback (most recent call last):
+  File "/root/.openclaw/workspace/dota2-bp-advisor/backend/scripts/update_data.py", line 271, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.12/asyncio
+INFO:     127.0.0.1:53280 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51438 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51584 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38634 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43156 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56906 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33818 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42310 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38752 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38654 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54280 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53784 - "GET /docs HTTP/1.1" 200 OK
+更新失败: 英雄基础数据, stderr=Traceback (most recent call last):
+  File "/root/.openclaw/workspace/dota2-bp-advisor/backend/scripts/update_data.py", line 271, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.12/asyncio
+INFO:     127.0.0.1:47714 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60496 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45654 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43034 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59844 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52792 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47552 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56336 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48134 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39640 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47050 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44640 - "GET /docs HTTP/1.1" 200 OK
+更新失败: 英雄基础数据, stderr=Traceback (most recent call last):
+  File "/root/.openclaw/workspace/dota2-bp-advisor/backend/scripts/update_data.py", line 271, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.12/asyncio
+INFO:     127.0.0.1:42060 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57814 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48010 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60298 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46596 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41880 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48112 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49956 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56180 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34048 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56886 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43024 - "GET /docs HTTP/1.1" 200 OK
+更新失败: 英雄基础数据, stderr=Traceback (most recent call last):
+  File "/root/.openclaw/workspace/dota2-bp-advisor/backend/scripts/update_data.py", line 271, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.12/asyncio
+INFO:     127.0.0.1:58654 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51530 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53282 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37480 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42138 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37328 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58650 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33692 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57432 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47362 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45666 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52066 - "GET /docs HTTP/1.1" 200 OK
+更新失败: 英雄基础数据, stderr=Traceback (most recent call last):
+  File "/root/.openclaw/workspace/dota2-bp-advisor/backend/scripts/update_data.py", line 271, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.12/asyncio
+INFO:     127.0.0.1:53340 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60156 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41536 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50606 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38292 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36560 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60078 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42798 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50594 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46716 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45856 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36866 - "GET /docs HTTP/1.1" 200 OK
+更新失败: 英雄基础数据, stderr=Traceback (most recent call last):
+  File "/root/.openclaw/workspace/dota2-bp-advisor/backend/scripts/update_data.py", line 271, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.12/asyncio
+INFO:     127.0.0.1:55970 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60030 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46976 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47226 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42008 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44020 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53664 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44086 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46022 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40652 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54854 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52506 - "GET /docs HTTP/1.1" 200 OK
+更新失败: 英雄基础数据, stderr=Traceback (most recent call last):
+  File "/root/.openclaw/workspace/dota2-bp-advisor/backend/scripts/update_data.py", line 271, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.12/asyncio
+INFO:     127.0.0.1:37414 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40722 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36652 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37094 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59766 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40554 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47918 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47502 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47498 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38642 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46018 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33038 - "GET /docs HTTP/1.1" 200 OK
+更新失败: 英雄基础数据, stderr=Traceback (most recent call last):
+  File "/root/.openclaw/workspace/dota2-bp-advisor/backend/scripts/update_data.py", line 271, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.12/asyncio
+INFO:     127.0.0.1:48172 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34648 - "GET /docs HTTP/1.1" 200 OK
+INFO:     103.101.221.73:0 - "GET / HTTP/1.1" 200 OK
+INFO:     103.101.221.73:0 - "GET /api/data-status HTTP/1.1" 200 OK
+INFO:     103.101.221.73:0 - "GET /api/heroes HTTP/1.1" 200 OK
+INFO:     103.101.221.73:0 - "GET /api/heroes/stats?rank=5 HTTP/1.1" 200 OK
+INFO:     103.101.221.73:0 - "GET /api/heroes/aliases HTTP/1.1" 200 OK
+INFO:     103.101.221.73:0 - "GET /api/data-status HTTP/1.1" 200 OK
+INFO:     103.101.221.73:0 - "POST /api/recommend HTTP/1.1" 200 OK
+INFO:     103.101.221.73:0 - "GET /api/data-status HTTP/1.1" 200 OK
+INFO:     103.101.221.73:0 - "GET /api/data-status HTTP/1.1" 200 OK
+INFO:     103.101.221.73:0 - "POST /api/recommend HTTP/1.1" 200 OK
+INFO:     103.101.221.73:0 - "GET /api/data-status HTTP/1.1" 200 OK
+INFO:     103.101.221.73:0 - "GET /api/data-status HTTP/1.1" 200 OK
+INFO:     103.101.221.73:0 - "POST /api/recommend HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49326 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34410 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38452 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41712 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37268 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58858 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53668 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36148 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35314 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49934 - "GET /docs HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [2055588]
+INFO:     Started server process [2360315]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8082 (Press CTRL+C to quit)
+INFO:     127.0.0.1:60214 - "GET /docs HTTP/1.1" 200 OK
+更新失败: 英雄基础数据, stderr=Traceback (most recent call last):
+  File "/root/.openclaw/workspace/dota2-bp-advisor/backend/scripts/update_data.py", line 271, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.12/asyncio
+INFO:     127.0.0.1:50306 - "POST /api/reload-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35454 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54146 - "POST /api/recommend HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39048 - "POST /api/reload-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44520 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58110 - "GET /api/data-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56708 - "POST /api/recommend HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49572 - "GET /api/heroes HTTP/1.1" 200 OK
+INFO:     111.229.209.242:0 - "GET /api/heroes HTTP/1.1" 200 OK
+INFO:     103.101.221.73:0 - "GET /api/data-status HTTP/1.1" 200 OK
+INFO:     103.101.221.73:0 - "GET /api/data-status HTTP/1.1" 200 OK
+INFO:     103.101.221.73:0 - "POST /api/recommend HTTP/1.1" 200 OK
+INFO:     103.101.221.73:0 - "POST /api/recommend HTTP/1.1" 200 OK
+INFO:     103.101.221.73:0 - "GET /api/data-status HTTP/1.1" 200 OK
+INFO:     103.101.221.73:0 - "GET /api/data-status HTTP/1.1" 200 OK
+INFO:     103.101.221.73:0 - "POST /api/recommend HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59708 - "GET /api/heroes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42186 - "POST /api/reload-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54372 - "GET /api/heroes HTTP/1.1" 200 OK
+INFO:     103.101.221.73:0 - "GET /api/data-status HTTP/1.1" 200 OK
+INFO:     103.101.221.73:0 - "GET /api/data-status HTTP/1.1" 200 OK
+INFO:     103.101.221.73:0 - "POST /api/recommend HTTP/1.1" 200 OK
+INFO:     103.101.221.73:0 - "POST /api/recommend HTTP/1.1" 200 OK
+INFO:     103.101.221.73:0 - "POST /api/recommend HTTP/1.1" 200 OK
+INFO:     103.101.221.73:0 - "GET /api/data-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43188 - "GET /docs HTTP/1.1" 200 OK
+INFO:     103.101.221.73:0 - "GET /api/data-status HTTP/1.1" 200 OK
+INFO:     103.101.221.73:0 - "GET /api/data-status HTTP/1.1" 200 OK
+INFO:     103.101.221.73:0 - "POST /api/recommend HTTP/1.1" 200 OK
+INFO:     103.101.221.73:0 - "GET /api/data-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43618 - "POST /api/reload-data HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [2360315]
+INFO:     Started server process [2369460]
+INFO:     Waiting for application startup.
+2026-04-27 12:04:53,616 services.database INFO 数据库初始化完成
+2026-04-27 12:04:53,616 main INFO 数据库初始化成功
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8082 (Press CTRL+C to quit)
+INFO:     127.0.0.1:46452 - "GET /api/heroes HTTP/1.1" 200 OK
