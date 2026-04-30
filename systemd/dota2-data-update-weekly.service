@@ -1,0 +1,10 @@
+[Unit]
+Description=Dota2 BP Advisor - Weekly Synergy Data Update
+
+[Service]
+Type=oneshot
+WorkingDirectory=/root/.openclaw/workspace/dota2-bp-advisor/backend
+ExecStart=/usr/bin/python3 scripts/update_data.py --synergy
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=dota2-data-update

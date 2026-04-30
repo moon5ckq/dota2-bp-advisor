@@ -1,0 +1,18 @@
+[Unit]
+Description=Dota2 BP Advisor - ngrok Tunnel
+After=network-online.target dota2-frontend.service
+Wants=network-online.target
+Requires=dota2-frontend.service
+
+[Service]
+Type=simple
+Environment=HOME=/root
+ExecStart=/usr/local/bin/ngrok http 3000
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=dota2-ngrok
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,17 @@
+[Unit]
+Description=Dota2 BP Advisor - Frontend (Node.js)
+After=network.target dota2-backend.service
+Requires=dota2-backend.service
+
+[Service]
+Type=simple
+WorkingDirectory=/root/.openclaw/workspace/dota2-bp-advisor/frontend
+ExecStart=/usr/bin/node server.cjs
+Restart=always
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=dota2-frontend
+
+[Install]
+WantedBy=multi-user.target

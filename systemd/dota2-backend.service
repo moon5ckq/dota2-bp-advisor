@@ -1,0 +1,16 @@
+[Unit]
+Description=Dota2 BP Advisor - Backend (FastAPI)
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/root/.openclaw/workspace/dota2-bp-advisor/backend
+ExecStart=/usr/bin/python3 -m uvicorn main:app --host 0.0.0.0 --port 8082
+Restart=always
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=dota2-backend
+
+[Install]
+WantedBy=multi-user.target
