@@ -94,7 +94,7 @@ export default function Home() {
         </div>
       ) : (
         // 英雄卡片网格（响应式列数）
-        <div className="mt-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3">
+        <div className="mt-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
           {filtered.map((h) => (
             <HeroCard key={h.id} hero={h} />
           ))}
