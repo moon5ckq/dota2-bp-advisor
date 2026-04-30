@@ -797,3 +797,5 @@ npm warn exec The following package was not found and will be installed: serve@1
  HTTP  4/27/2026 11:51:11 AM 127.0.0.1 Returned 200 in 0 ms
 
  INFO  Gracefully shutting down. Please wait...
+Frontend+proxy running on http://0.0.0.0:3000
+Frontend+proxy running on http://0.0.0.0:3000

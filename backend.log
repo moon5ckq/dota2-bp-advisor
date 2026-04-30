@@ -410,3 +410,346 @@ INFO:     Waiting for application startup.
 INFO:     Application startup complete.
 INFO:     Uvicorn running on http://0.0.0.0:8082 (Press CTRL+C to quit)
 INFO:     127.0.0.1:46452 - "GET /api/heroes HTTP/1.1" 200 OK
+INFO:     103.101.221.73:0 - "GET /api/data-status HTTP/1.1" 200 OK
+INFO:     103.101.221.73:0 - "GET /api/data-status HTTP/1.1" 200 OK
+2026-04-27 12:06:49,123 httpx INFO HTTP Request: GET https://api.opendota.com/api/heroStats "HTTP/1.1 200 OK"
+2026-04-27 12:06:50,721 httpx INFO HTTP Request: GET https://api.opendota.com/api/heroes/54/matchups "HTTP/1.1 200 OK"
+2026-04-27 12:06:50,736 httpx INFO HTTP Request: GET https://api.opendota.com/api/heroes/135/matchups "HTTP/1.1 200 OK"
+INFO:     103.101.221.73:0 - "POST /api/recommend HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [2369460]
+INFO:     Started server process [2370614]
+INFO:     Waiting for application startup.
+2026-04-27 12:09:01,834 services.database INFO 数据库初始化完成
+2026-04-27 12:09:01,834 main INFO 数据库初始化成功
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8082 (Press CTRL+C to quit)
+INFO:     127.0.0.1:48896 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33472 - "GET /api/heroes HTTP/1.1" 200 OK
+2026-04-27 12:09:56,252 httpx INFO HTTP Request: GET https://api.opendota.com/api/heroStats "HTTP/1.1 200 OK"
+2026-04-27 12:09:57,125 httpx INFO HTTP Request: GET https://api.opendota.com/api/heroes/2/matchups "HTTP/1.1 200 OK"
+2026-04-27 12:09:58,131 httpx INFO HTTP Request: GET https://api.opendota.com/api/heroes/1/matchups "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:33474 - "POST /api/recommend HTTP/1.1" 200 OK
+INFO:     111.229.209.242:0 - "GET /api/heroes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46294 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48694 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57984 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55042 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42056 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38556 - "GET /docs HTTP/1.1" 200 OK
+INFO:     103.101.221.73:0 - "GET /api/data-status HTTP/1.1" 200 OK
+INFO:     103.101.221.73:0 - "GET /api/data-status HTTP/1.1" 200 OK
+2026-04-27 13:17:12,373 httpx INFO HTTP Request: GET https://api.opendota.com/api/heroStats "HTTP/1.1 200 OK"
+2026-04-27 13:17:14,444 httpx INFO HTTP Request: GET https://api.opendota.com/api/heroes/135/matchups "HTTP/1.1 200 OK"
+2026-04-27 13:17:15,540 httpx INFO HTTP Request: GET https://api.opendota.com/api/heroes/54/matchups "HTTP/1.1 200 OK"
+INFO:     103.101.221.73:0 - "POST /api/recommend HTTP/1.1" 200 OK
+INFO:     103.101.221.73:0 - "GET /api/data-status HTTP/1.1" 200 OK
+INFO:     103.101.221.73:0 - "GET /api/heroes HTTP/1.1" 200 OK
+INFO:     103.101.221.73:0 - "GET /api/heroes/stats?rank=5 HTTP/1.1" 200 OK
+INFO:     103.101.221.73:0 - "GET /api/heroes/aliases HTTP/1.1" 200 OK
+INFO:     103.101.221.73:0 - "GET /api/data-status HTTP/1.1" 200 OK
+2026-04-27 13:17:43,410 httpx INFO HTTP Request: GET https://api.opendota.com/api/players/123769363/heroes "HTTP/1.1 200 OK"
+2026-04-27 13:17:43,591 httpx INFO HTTP Request: GET https://api.opendota.com/api/heroes/5/matchups "HTTP/1.1 200 OK"
+2026-04-27 13:17:44,656 httpx INFO HTTP Request: GET https://api.opendota.com/api/heroes/67/matchups "HTTP/1.1 200 OK"
+INFO:     103.101.221.73:0 - "POST /api/recommend HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42466 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58952 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54824 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33790 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48816 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38378 - "GET /docs HTTP/1.1" 200 OK
+INFO:     2409:8900:1e98:72e:a03c:4aff:fe58:c851:0 - "GET /api/data-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56224 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59174 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60204 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53222 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38196 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42122 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50058 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36228 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44916 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36222 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44720 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50196 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41524 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51894 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34906 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46616 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44694 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45914 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56012 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53194 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35802 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48934 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41388 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53954 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52506 - "GET /docs HTTP/1.1" 200 OK
+2026-04-27 18:10:01,839 data_updater INFO 开始更新: 英雄基础数据
+INFO:     127.0.0.1:53404 - "POST /api/reload-data HTTP/1.1" 200 OK
+2026-04-27 18:10:02,958 data_updater INFO 更新完成: 英雄基础数据
+INFO:     127.0.0.1:42394 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59956 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38998 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57438 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45524 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37170 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35864 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60374 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42252 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49002 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43464 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38784 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51202 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45876 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46060 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59890 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33554 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50326 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41840 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49996 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46716 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50086 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55232 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41202 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35016 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49580 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41490 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53702 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40212 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55338 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44718 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42922 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41180 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37898 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51272 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51552 - "GET /docs HTTP/1.1" 200 OK
+2026-04-28 00:10:02,980 data_updater INFO 开始更新: 英雄基础数据
+2026-04-28 00:10:33,732 data_updater ERROR 更新失败: 英雄基础数据, stderr=Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/dist-packages/httpx/_transports/default.py", line 72, in map_httpcore_exceptions
+    yield
+  File "/usr/local/lib/python3.12/dist-p
+INFO:     127.0.0.1:42040 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46924 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50904 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41860 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58736 - "GET /docs HTTP/1.1" 200 OK
+2026-04-28 01:10:33,734 data_updater INFO 开始更新: 英雄基础数据
+INFO:     127.0.0.1:58910 - "POST /api/reload-data HTTP/1.1" 200 OK
+2026-04-28 01:10:34,987 data_updater INFO 更新完成: 英雄基础数据
+INFO:     127.0.0.1:45060 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50666 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48804 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52350 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55372 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59162 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55296 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50072 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50322 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36350 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38466 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51656 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49166 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41704 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42678 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40968 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53048 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58410 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47912 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35356 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42868 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54490 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58754 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55190 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59816 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43232 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51854 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60674 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42414 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45612 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55658 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55296 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46488 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44452 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58682 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56056 - "GET /docs HTTP/1.1" 200 OK
+2026-04-28 07:10:35,013 data_updater INFO 开始更新: 英雄基础数据
+INFO:     127.0.0.1:36802 - "POST /api/reload-data HTTP/1.1" 200 OK
+2026-04-28 07:10:36,206 data_updater INFO 更新完成: 英雄基础数据
+INFO:     127.0.0.1:46496 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48170 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38530 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55540 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54348 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60246 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45648 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41914 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50612 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50450 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58178 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48878 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52874 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56560 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41148 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40822 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42594 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52958 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45420 - "GET /docs HTTP/1.1" 200 OK
+INFO:     103.101.221.73:0 - "GET /api/data-status HTTP/1.1" 200 OK
+INFO:     103.101.221.73:0 - "GET /api/heroes HTTP/1.1" 200 OK
+INFO:     103.101.221.73:0 - "GET /api/heroes/stats?rank=5 HTTP/1.1" 200 OK
+INFO:     103.101.221.73:0 - "GET /api/data-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59268 - "GET /docs HTTP/1.1" 200 OK
+2026-04-28 10:29:48,246 httpx INFO HTTP Request: GET https://api.opendota.com/api/players/123769363/matches?limit=200 "HTTP/1.1 200 OK"
+INFO:     103.101.221.73:0 - "GET /api/player/123769363/hero-pool HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44230 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46676 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55228 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39706 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51840 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43102 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36306 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49686 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60208 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34426 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45154 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59950 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37386 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42444 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40268 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51412 - "GET /docs HTTP/1.1" 200 OK
+2026-04-28 13:10:36,231 data_updater INFO 开始更新: 英雄基础数据
+INFO:     127.0.0.1:60476 - "POST /api/reload-data HTTP/1.1" 200 OK
+2026-04-28 13:10:38,536 data_updater INFO 更新完成: 英雄基础数据
+INFO:     127.0.0.1:57772 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38522 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36894 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52650 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46098 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46916 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45892 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43978 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35390 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53546 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53580 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45384 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39570 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36146 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54068 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36886 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47386 - "GET /docs HTTP/1.1" 200 OK
+INFO:     103.101.221.73:0 - "GET /api/data-status HTTP/1.1" 200 OK
+INFO:     103.101.221.73:0 - "GET /api/heroes/stats?rank=5 HTTP/1.1" 200 OK
+INFO:     103.101.221.73:0 - "GET /api/heroes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55010 - "GET /docs HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [2370614]
+INFO:     Started server process [3092480]
+INFO:     Waiting for application startup.
+2026-04-29 12:55:59,612 services.database INFO 数据库初始化完成
+2026-04-29 12:55:59,612 main INFO 数据库初始化成功
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8082 (Press CTRL+C to quit)
+INFO:     127.0.0.1:52524 - "GET /docs HTTP/1.1" 200 OK
+INFO:     2409:8931:cda:7623:f89b:25ff:fe08:875:0 - "GET /api/data-status HTTP/1.1" 200 OK
+INFO:     2409:8931:cda:7623:f89b:25ff:fe08:875:0 - "GET /api/heroes/stats?rank=5 HTTP/1.1" 200 OK
+INFO:     2409:8931:cda:7623:f89b:25ff:fe08:875:0 - "GET /api/heroes HTTP/1.1" 200 OK
+2026-04-29 12:56:59,613 data_updater INFO 开始更新: 英雄基础数据
+INFO:     127.0.0.1:46150 - "POST /api/reload-data HTTP/1.1" 200 OK
+2026-04-29 12:57:00,932 data_updater INFO 更新完成: 英雄基础数据
+INFO:     2409:8931:cda:7623:f89b:25ff:fe08:875:0 - "GET /api/data-status HTTP/1.1" 200 OK
+2026-04-29 12:57:13,242 httpx INFO HTTP Request: GET https://api.opendota.com/api/players/123769363/matches?limit=200 "HTTP/1.1 200 OK"
+INFO:     2409:8931:cda:7623:f89b:25ff:fe08:875:0 - "GET /api/player/123769363/hero-pool HTTP/1.1" 200 OK
+INFO:     2409:8931:cda:7623:f89b:25ff:fe08:875:0 - "GET /api/heroes/aliases HTTP/1.1" 200 OK
+INFO:     2409:8931:cda:7623:f89b:25ff:fe08:875:0 - "GET /api/data-status HTTP/1.1" 200 OK
+2026-04-29 12:57:17,716 httpx INFO HTTP Request: GET https://api.opendota.com/api/heroStats "HTTP/1.1 200 OK"
+2026-04-29 12:57:18,235 httpx INFO HTTP Request: GET https://api.opendota.com/api/heroes/5/matchups "HTTP/1.1 200 OK"
+2026-04-29 12:57:19,499 httpx INFO HTTP Request: GET https://api.opendota.com/api/players/123769363/heroes "HTTP/1.1 200 OK"
+2026-04-29 12:57:20,611 httpx INFO HTTP Request: GET https://api.opendota.com/api/heroes/67/matchups "HTTP/1.1 200 OK"
+INFO:     2409:8931:cda:7623:f89b:25ff:fe08:875:0 - "POST /api/recommend HTTP/1.1" 200 OK
+INFO:     2409:8931:cda:7623:f89b:25ff:fe08:875:0 - "POST /api/recommend HTTP/1.1" 200 OK
+INFO:     2409:8931:cda:7623:f89b:25ff:fe08:875:0 - "POST /api/recommend HTTP/1.1" 200 OK
+2026-04-29 12:58:44,118 httpx INFO HTTP Request: GET https://api.opendota.com/api/heroes/42/matchups "HTTP/1.1 200 OK"
+INFO:     2409:8931:cda:7623:f89b:25ff:fe08:875:0 - "POST /api/recommend HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53136 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47456 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50080 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56684 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53854 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57526 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56846 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55740 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40496 - "GET /docs HTTP/1.1" 200 OK
+INFO:     2409:8931:4e6:5cb0:88ee:6da9:dbdc:461:0 - "GET /api/data-status HTTP/1.1" 200 OK
+INFO:     2409:8931:4e6:5cb0:88ee:6da9:dbdc:461:0 - "GET /api/heroes HTTP/1.1" 200 OK
+INFO:     2409:8931:4e6:5cb0:88ee:6da9:dbdc:461:0 - "GET /api/heroes/stats?rank=5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58406 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34902 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55138 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59354 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49730 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42252 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44810 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47960 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33962 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:32996 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50134 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51350 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52878 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36840 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60270 - "GET /docs HTTP/1.1" 200 OK
+INFO:     2409:8931:cda:7623:f89b:25ff:fe08:875:0 - "GET /api/data-status HTTP/1.1" 200 OK
+INFO:     2409:8931:cda:7623:f89b:25ff:fe08:875:0 - "GET /api/data-status HTTP/1.1" 200 OK
+INFO:     2409:8931:cda:7623:f89b:25ff:fe08:875:0 - "GET /api/data-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35548 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34230 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50266 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43372 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47188 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50184 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59838 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33058 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60558 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46460 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40486 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41762 - "GET /docs HTTP/1.1" 200 OK
+2026-04-29 18:57:00,954 data_updater INFO 开始更新: 英雄基础数据
+INFO:     127.0.0.1:52994 - "POST /api/reload-data HTTP/1.1" 200 OK
+2026-04-29 18:57:01,955 data_updater INFO 更新完成: 英雄基础数据
+INFO:     127.0.0.1:58020 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33970 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34074 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42046 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38042 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38004 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57524 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34814 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46912 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36980 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47482 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54428 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34670 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45838 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36356 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35150 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43698 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43098 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39564 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45826 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60672 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53546 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35376 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33458 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35598 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52128 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46464 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46722 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36638 - "GET /docs HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [3092480]

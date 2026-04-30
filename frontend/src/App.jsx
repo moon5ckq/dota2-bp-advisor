@@ -7,7 +7,7 @@
  * 3. 设置全局背景色和文字颜色（暗色 Dota2 风格）
  */
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './index.css';
 import Navbar from './components/Navbar.jsx';
 import TabBar from './components/TabBar.jsx';
@@ -16,8 +16,15 @@ import BPAnalysis from './pages/BPAnalysis.jsx';
 import Profile from './pages/Profile.jsx';
 
 function App() {
-  // 当前激活的 Tab 页标识：'home' | 'bp' | 'me'
-  const [tab, setTab] = useState('home');
+  // 从 URL hash 恢复 tab 状态，刷新不丢失
+  const validTabs = ['home', 'bp', 'me'];
+  const hashTab = window.location.hash.replace('#', '');
+  const [tab, setTab] = useState(validTabs.includes(hashTab) ? hashTab : 'home');
+
+  // tab 变化时同步到 URL hash
+  useEffect(() => {
+    window.location.hash = tab;
+  }, [tab]);
 
   return (
     <div className="min-h-screen bg-[#0f1118] text-[#e8e6e3] flex justify-center">

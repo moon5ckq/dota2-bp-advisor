@@ -1,47 +1,164 @@
-t=2026-04-27T11:28:49+0800 lvl=info msg="no configuration paths supplied"
-t=2026-04-27T11:28:49+0800 lvl=info msg="using configuration at default config path" path=/root/.config/ngrok/ngrok.yml
-t=2026-04-27T11:28:49+0800 lvl=info msg="open config file" path=/root/.config/ngrok/ngrok.yml err=nil
-t=2026-04-27T11:28:50+0800 lvl=info msg="FIPS 140 mode" enabled=false
-t=2026-04-27T11:28:50+0800 lvl=info msg="starting web service" obj=web addr=127.0.0.1:4040 allow_hosts=[]
-t=2026-04-27T11:28:52+0800 lvl=info msg=start pg=/api/tunnels id=6074fcb098447a4b
-t=2026-04-27T11:28:52+0800 lvl=info msg=end pg=/api/tunnels id=6074fcb098447a4b status=200 dur=285.917µs
-t=2026-04-27T11:28:55+0800 lvl=info msg="client session established" obj=tunnels.session
-t=2026-04-27T11:28:55+0800 lvl=info msg="tunnel session started" obj=tunnels.session
-t=2026-04-27T11:28:56+0800 lvl=info msg="started tunnel" obj=tunnels name=command_line addr=http://localhost:3000 url=https://ranch-barricade-frugally.ngrok-free.dev
-t=2026-04-27T11:29:39+0800 lvl=info msg=start pg=/api/tunnels id=4b80116be23f4e33
-t=2026-04-27T11:29:39+0800 lvl=info msg=end pg=/api/tunnels id=4b80116be23f4e33 status=200 dur=160.952µs
-t=2026-04-27T11:29:58+0800 lvl=info msg=start pg=/api/tunnels id=a2a7c82ffc5e1a4a
-t=2026-04-27T11:29:58+0800 lvl=info msg=end pg=/api/tunnels id=a2a7c82ffc5e1a4a status=200 dur=191.079µs
-t=2026-04-27T11:30:28+0800 lvl=info msg="join connections" obj=join id=0c17c79f21a6 l=127.0.0.1:3000 r=103.101.221.73:5288
-t=2026-04-27T11:30:53+0800 lvl=info msg="join connections" obj=join id=10df8415ee0f l=127.0.0.1:3000 r=103.101.221.73:5288
-t=2026-04-27T11:31:43+0800 lvl=info msg="join connections" obj=join id=5bf21efc5b3d l=127.0.0.1:3000 r=103.101.221.73:5288
-t=2026-04-27T11:33:45+0800 lvl=info msg="join connections" obj=join id=d740c649caa0 l=127.0.0.1:3000 r=103.101.221.73:5288
-t=2026-04-27T11:34:15+0800 lvl=info msg="join connections" obj=join id=a5166b31005e l=127.0.0.1:3000 r=103.101.221.73:5288
-t=2026-04-27T11:34:16+0800 lvl=info msg="join connections" obj=join id=e82b235ac4d9 l=127.0.0.1:3000 r=103.101.221.73:5288
-t=2026-04-27T11:38:52+0800 lvl=info msg=start pg=/api/tunnels id=e56aeb0167b1f1b1
-t=2026-04-27T11:38:52+0800 lvl=info msg=end pg=/api/tunnels id=e56aeb0167b1f1b1 status=200 dur=170.551µs
-t=2026-04-27T11:48:52+0800 lvl=info msg=start pg=/api/tunnels id=d6234f2578f91a11
-t=2026-04-27T11:48:52+0800 lvl=info msg=end pg=/api/tunnels id=d6234f2578f91a11 status=200 dur=168.987µs
-t=2026-04-27T11:49:01+0800 lvl=info msg="join connections" obj=join id=61b9ab61daa0 l=127.0.0.1:3000 r=103.101.221.73:56515
-t=2026-04-27T11:49:11+0800 lvl=info msg="join connections" obj=join id=ad9a04d6e762 l=127.0.0.1:3000 r=103.101.221.73:56515
-t=2026-04-27T11:51:11+0800 lvl=info msg="join connections" obj=join id=0229dfe5b458 l=127.0.0.1:3000 r=49.235.137.194:55750
-t=2026-04-27T11:53:50+0800 lvl=info msg="join connections" obj=join id=5bc2971de235 l=127.0.0.1:3000 r=111.229.209.242:7249
-t=2026-04-27T11:54:42+0800 lvl=info msg="join connections" obj=join id=04b13030e865 l=127.0.0.1:3000 r=103.101.221.73:56515
-t=2026-04-27T11:54:43+0800 lvl=info msg="join connections" obj=join id=489eafef5582 l=127.0.0.1:3000 r=103.101.221.73:56515
-t=2026-04-27T11:54:44+0800 lvl=info msg="join connections" obj=join id=96f6b65192f8 l=127.0.0.1:3000 r=103.101.221.73:56515
-t=2026-04-27T11:54:54+0800 lvl=info msg="join connections" obj=join id=892676c55699 l=127.0.0.1:3000 r=103.101.221.73:56515
-t=2026-04-27T11:54:58+0800 lvl=info msg="join connections" obj=join id=1d07dd25095e l=127.0.0.1:3000 r=103.101.221.73:56515
-t=2026-04-27T11:55:00+0800 lvl=info msg="join connections" obj=join id=1f64bb245925 l=127.0.0.1:3000 r=103.101.221.73:56515
-t=2026-04-27T11:55:01+0800 lvl=info msg="join connections" obj=join id=15d1f4e07d69 l=127.0.0.1:3000 r=103.101.221.73:56515
-t=2026-04-27T11:57:34+0800 lvl=info msg="join connections" obj=join id=bbf6195bcd7e l=127.0.0.1:3000 r=103.101.221.73:56515
-t=2026-04-27T11:57:36+0800 lvl=info msg="join connections" obj=join id=89a47fc5e378 l=127.0.0.1:3000 r=103.101.221.73:56515
-t=2026-04-27T11:57:36+0800 lvl=info msg="join connections" obj=join id=be3aa112439a l=127.0.0.1:3000 r=103.101.221.73:56515
-t=2026-04-27T11:57:47+0800 lvl=info msg="join connections" obj=join id=69a9b8174622 l=127.0.0.1:3000 r=103.101.221.73:56515
-t=2026-04-27T11:57:51+0800 lvl=info msg="join connections" obj=join id=96da72579f98 l=127.0.0.1:3000 r=103.101.221.73:56515
-t=2026-04-27T11:57:53+0800 lvl=info msg="join connections" obj=join id=064d50a36148 l=127.0.0.1:3000 r=103.101.221.73:56515
-t=2026-04-27T11:58:52+0800 lvl=info msg=start pg=/api/tunnels id=c0adb5aff8a707e9
-t=2026-04-27T11:58:52+0800 lvl=info msg=end pg=/api/tunnels id=c0adb5aff8a707e9 status=200 dur=185.929µs
-t=2026-04-27T12:00:09+0800 lvl=info msg="join connections" obj=join id=120f1a199418 l=127.0.0.1:3000 r=103.101.221.73:56515
-t=2026-04-27T12:00:11+0800 lvl=info msg="join connections" obj=join id=0efd59409718 l=127.0.0.1:3000 r=103.101.221.73:56515
-t=2026-04-27T12:00:12+0800 lvl=info msg="join connections" obj=join id=38076c881efd l=127.0.0.1:3000 r=103.101.221.73:56515
-t=2026-04-27T12:00:13+0800 lvl=info msg="join connections" obj=join id=78f70b8f3307 l=127.0.0.1:3000 r=103.101.221.73:56515
+t=2026-04-29T12:56:01+0800 lvl=info msg="no configuration paths supplied"
+t=2026-04-29T12:56:01+0800 lvl=info msg="using configuration at default config path" path=/root/.config/ngrok/ngrok.yml
+t=2026-04-29T12:56:01+0800 lvl=info msg="open config file" path=/root/.config/ngrok/ngrok.yml err=nil
+t=2026-04-29T12:56:01+0800 lvl=info msg="FIPS 140 mode" enabled=false
+t=2026-04-29T12:56:01+0800 lvl=info msg="starting web service" obj=web addr=127.0.0.1:4040 allow_hosts=[]
+t=2026-04-29T12:56:01+0800 lvl=info msg="client session established" obj=tunnels.session
+t=2026-04-29T12:56:01+0800 lvl=info msg="tunnel session started" obj=tunnels.session
+t=2026-04-29T12:56:01+0800 lvl=info msg="update available" obj=updater
+t=2026-04-29T12:56:02+0800 lvl=info msg="started tunnel" obj=tunnels name=command_line addr=http://localhost:3000 url=https://ranch-barricade-frugally.ngrok-free.dev
+t=2026-04-29T12:56:02+0800 lvl=info msg=start pg=/api/tunnels id=0c220ba4344d5c11
+t=2026-04-29T12:56:02+0800 lvl=info msg=end pg=/api/tunnels id=0c220ba4344d5c11 status=200 dur=371.779µs
+t=2026-04-29T12:56:03+0800 lvl=info msg=start pg=/api/tunnels id=32ec30649a9eea74
+t=2026-04-29T12:56:03+0800 lvl=info msg=end pg=/api/tunnels id=32ec30649a9eea74 status=200 dur=183.465µs
+t=2026-04-29T12:56:58+0800 lvl=info msg="join connections" obj=join id=e955ecd1a4b5 l=127.0.0.1:3000 r=[2409:8931:cda:7623:f89b:25ff:fe08:875]:46932
+t=2026-04-29T12:56:58+0800 lvl=info msg="join connections" obj=join id=0f533c604ea2 l=127.0.0.1:3000 r=[2409:8931:cda:7623:f89b:25ff:fe08:875]:46932
+t=2026-04-29T12:56:58+0800 lvl=info msg="join connections" obj=join id=df4330dcf9ac l=127.0.0.1:3000 r=[2409:8931:cda:7623:f89b:25ff:fe08:875]:46932
+t=2026-04-29T12:56:58+0800 lvl=info msg="join connections" obj=join id=dffec352146d l=127.0.0.1:3000 r=[2409:8931:cda:7623:f89b:25ff:fe08:875]:46932
+t=2026-04-29T12:57:09+0800 lvl=info msg="join connections" obj=join id=b39cd204f5fd l=127.0.0.1:3000 r=[2409:8931:cda:7623:f89b:25ff:fe08:875]:46932
+t=2026-04-29T12:57:11+0800 lvl=info msg="join connections" obj=join id=4d3db4c55ff6 l=127.0.0.1:3000 r=[2409:8931:cda:7623:f89b:25ff:fe08:875]:46932
+t=2026-04-29T12:57:16+0800 lvl=info msg="join connections" obj=join id=2e2225584a03 l=127.0.0.1:3000 r=[2409:8931:cda:7623:f89b:25ff:fe08:875]:46932
+t=2026-04-29T12:57:16+0800 lvl=info msg="join connections" obj=join id=68ec83e99db7 l=127.0.0.1:3000 r=[2409:8931:cda:7623:f89b:25ff:fe08:875]:46932
+t=2026-04-29T12:57:17+0800 lvl=info msg="join connections" obj=join id=bd1a5f7f24f7 l=127.0.0.1:3000 r=[2409:8931:cda:7623:f89b:25ff:fe08:875]:46932
+t=2026-04-29T12:57:41+0800 lvl=info msg="join connections" obj=join id=b66e43300fbb l=127.0.0.1:3000 r=[2409:8931:cda:7623:f89b:25ff:fe08:875]:46932
+t=2026-04-29T12:57:55+0800 lvl=info msg="join connections" obj=join id=07242eab40aa l=127.0.0.1:3000 r=[2409:8931:cda:7623:f89b:25ff:fe08:875]:46932
+t=2026-04-29T12:58:42+0800 lvl=info msg="join connections" obj=join id=a5f384054b65 l=127.0.0.1:3000 r=[2409:8931:cda:7623:f89b:25ff:fe08:875]:46932
+t=2026-04-29T13:06:03+0800 lvl=info msg=start pg=/api/tunnels id=77e57d6fe782abfc
+t=2026-04-29T13:06:03+0800 lvl=info msg=end pg=/api/tunnels id=77e57d6fe782abfc status=200 dur=171.212µs
+t=2026-04-29T13:16:03+0800 lvl=info msg=start pg=/api/tunnels id=744ab05ff9aefa28
+t=2026-04-29T13:16:03+0800 lvl=info msg=end pg=/api/tunnels id=744ab05ff9aefa28 status=200 dur=227.327µs
+t=2026-04-29T13:26:04+0800 lvl=info msg=start pg=/api/tunnels id=77504a6a41472eab
+t=2026-04-29T13:26:04+0800 lvl=info msg=end pg=/api/tunnels id=77504a6a41472eab status=200 dur=157.737µs
+t=2026-04-29T13:36:04+0800 lvl=info msg=start pg=/api/tunnels id=3c3cc4d0cb9d9ee8
+t=2026-04-29T13:36:04+0800 lvl=info msg=end pg=/api/tunnels id=3c3cc4d0cb9d9ee8 status=200 dur=196.86µs
+t=2026-04-29T13:46:04+0800 lvl=info msg=start pg=/api/tunnels id=c40d0e8b3eeb6e2d
+t=2026-04-29T13:46:04+0800 lvl=info msg=end pg=/api/tunnels id=c40d0e8b3eeb6e2d status=200 dur=188.624µs
+t=2026-04-29T13:56:04+0800 lvl=info msg=start pg=/api/tunnels id=5839402ba8f7dc3c
+t=2026-04-29T13:56:04+0800 lvl=info msg=end pg=/api/tunnels id=5839402ba8f7dc3c status=200 dur=166.082µs
+t=2026-04-29T14:06:04+0800 lvl=info msg=start pg=/api/tunnels id=48bdbf57b84e6713
+t=2026-04-29T14:06:04+0800 lvl=info msg=end pg=/api/tunnels id=48bdbf57b84e6713 status=200 dur=162.896µs
+t=2026-04-29T14:16:04+0800 lvl=info msg=start pg=/api/tunnels id=b487e71024edc393
+t=2026-04-29T14:16:04+0800 lvl=info msg=end pg=/api/tunnels id=b487e71024edc393 status=200 dur=184.457µs
+t=2026-04-29T14:26:04+0800 lvl=info msg=start pg=/api/tunnels id=03f3c4926380fdbd
+t=2026-04-29T14:26:04+0800 lvl=info msg=end pg=/api/tunnels id=03f3c4926380fdbd status=200 dur=169.359µs
+t=2026-04-29T14:35:45+0800 lvl=info msg="join connections" obj=join id=2b90daf79459 l=127.0.0.1:3000 r=[2409:8931:4e6:5cb0:88ee:6da9:dbdc:461]:59253
+t=2026-04-29T14:35:45+0800 lvl=info msg="join connections" obj=join id=e31adfdd5638 l=127.0.0.1:3000 r=[2409:8931:4e6:5cb0:88ee:6da9:dbdc:461]:59253
+t=2026-04-29T14:35:47+0800 lvl=info msg="join connections" obj=join id=e090c6100d2d l=127.0.0.1:3000 r=[2409:8931:4e6:5cb0:88ee:6da9:dbdc:461]:59253
+t=2026-04-29T14:36:04+0800 lvl=info msg=start pg=/api/tunnels id=8f3dcb1aeb256ec4
+t=2026-04-29T14:36:04+0800 lvl=info msg=end pg=/api/tunnels id=8f3dcb1aeb256ec4 status=200 dur=168.607µs
+t=2026-04-29T14:46:04+0800 lvl=info msg=start pg=/api/tunnels id=cd454fb7da36241b
+t=2026-04-29T14:46:04+0800 lvl=info msg=end pg=/api/tunnels id=cd454fb7da36241b status=200 dur=167.976µs
+t=2026-04-29T14:56:04+0800 lvl=info msg=start pg=/api/tunnels id=bbde86c7f8639af8
+t=2026-04-29T14:56:04+0800 lvl=info msg=end pg=/api/tunnels id=bbde86c7f8639af8 status=200 dur=170.02µs
+t=2026-04-29T15:06:04+0800 lvl=info msg=start pg=/api/tunnels id=8f2b20c2b675f298
+t=2026-04-29T15:06:04+0800 lvl=info msg=end pg=/api/tunnels id=8f2b20c2b675f298 status=200 dur=168.016µs
+t=2026-04-29T15:16:04+0800 lvl=info msg=start pg=/api/tunnels id=4b218f09a781cae4
+t=2026-04-29T15:16:04+0800 lvl=info msg=end pg=/api/tunnels id=4b218f09a781cae4 status=200 dur=175.419µs
+t=2026-04-29T15:26:04+0800 lvl=info msg=start pg=/api/tunnels id=f67c9c7d35a1b6a2
+t=2026-04-29T15:26:04+0800 lvl=info msg=end pg=/api/tunnels id=f67c9c7d35a1b6a2 status=200 dur=172.554µs
+t=2026-04-29T15:36:04+0800 lvl=info msg=start pg=/api/tunnels id=0e76aaf5d60a3a56
+t=2026-04-29T15:36:04+0800 lvl=info msg=end pg=/api/tunnels id=0e76aaf5d60a3a56 status=200 dur=167.204µs
+t=2026-04-29T15:46:04+0800 lvl=info msg=start pg=/api/tunnels id=6bf66c3365c87cd7
+t=2026-04-29T15:46:04+0800 lvl=info msg=end pg=/api/tunnels id=6bf66c3365c87cd7 status=200 dur=162.786µs
+t=2026-04-29T15:56:04+0800 lvl=info msg=start pg=/api/tunnels id=d1cdabafd01ee890
+t=2026-04-29T15:56:04+0800 lvl=info msg=end pg=/api/tunnels id=d1cdabafd01ee890 status=200 dur=190.277µs
+t=2026-04-29T16:06:04+0800 lvl=info msg=start pg=/api/tunnels id=8a448198a122fcf3
+t=2026-04-29T16:06:04+0800 lvl=info msg=end pg=/api/tunnels id=8a448198a122fcf3 status=200 dur=195.858µs
+t=2026-04-29T16:16:04+0800 lvl=info msg=start pg=/api/tunnels id=2aca8a5a9ae95ef4
+t=2026-04-29T16:16:04+0800 lvl=info msg=end pg=/api/tunnels id=2aca8a5a9ae95ef4 status=200 dur=185.989µs
+t=2026-04-29T16:26:04+0800 lvl=info msg=start pg=/api/tunnels id=87345b88ebdc4e72
+t=2026-04-29T16:26:04+0800 lvl=info msg=end pg=/api/tunnels id=87345b88ebdc4e72 status=200 dur=173.065µs
+t=2026-04-29T16:36:04+0800 lvl=info msg=start pg=/api/tunnels id=53001460508dee9c
+t=2026-04-29T16:36:04+0800 lvl=info msg=end pg=/api/tunnels id=53001460508dee9c status=200 dur=165.461µs
+t=2026-04-29T16:46:04+0800 lvl=info msg=start pg=/api/tunnels id=d1aeb86911ffcdf7
+t=2026-04-29T16:46:04+0800 lvl=info msg=end pg=/api/tunnels id=d1aeb86911ffcdf7 status=200 dur=164.108µs
+t=2026-04-29T16:56:04+0800 lvl=info msg=start pg=/api/tunnels id=fe1ab2b2b2bb9b36
+t=2026-04-29T16:56:04+0800 lvl=info msg=end pg=/api/tunnels id=fe1ab2b2b2bb9b36 status=200 dur=179.107µs
+t=2026-04-29T17:03:00+0800 lvl=info msg="join connections" obj=join id=f062b66125d2 l=127.0.0.1:3000 r=[2409:8931:cda:7623:f89b:25ff:fe08:875]:45278
+t=2026-04-29T17:03:02+0800 lvl=info msg="join connections" obj=join id=dfee12e0a65f l=127.0.0.1:3000 r=[2409:8931:cda:7623:f89b:25ff:fe08:875]:45278
+t=2026-04-29T17:03:09+0800 lvl=info msg="join connections" obj=join id=14bee54bf336 l=127.0.0.1:3000 r=[2409:8931:cda:7623:f89b:25ff:fe08:875]:45278
+t=2026-04-29T17:06:04+0800 lvl=info msg=start pg=/api/tunnels id=e35782ce895cd9be
+t=2026-04-29T17:06:04+0800 lvl=info msg=end pg=/api/tunnels id=e35782ce895cd9be status=200 dur=168.817µs
+t=2026-04-29T17:16:04+0800 lvl=info msg=start pg=/api/tunnels id=47091a1fdf555ab4
+t=2026-04-29T17:16:04+0800 lvl=info msg=end pg=/api/tunnels id=47091a1fdf555ab4 status=200 dur=191.64µs
+t=2026-04-29T17:26:04+0800 lvl=info msg=start pg=/api/tunnels id=705119bbd86757c6
+t=2026-04-29T17:26:04+0800 lvl=info msg=end pg=/api/tunnels id=705119bbd86757c6 status=200 dur=168.337µs
+t=2026-04-29T17:36:04+0800 lvl=info msg=start pg=/api/tunnels id=b1bacddd626ad424
+t=2026-04-29T17:36:04+0800 lvl=info msg=end pg=/api/tunnels id=b1bacddd626ad424 status=200 dur=170.631µs
+t=2026-04-29T17:46:04+0800 lvl=info msg=start pg=/api/tunnels id=40e60b5b24501eda
+t=2026-04-29T17:46:04+0800 lvl=info msg=end pg=/api/tunnels id=40e60b5b24501eda status=200 dur=167.966µs
+t=2026-04-29T17:56:04+0800 lvl=info msg=start pg=/api/tunnels id=d5aafb46e1cb45cf
+t=2026-04-29T17:56:04+0800 lvl=info msg=end pg=/api/tunnels id=d5aafb46e1cb45cf status=200 dur=215.806µs
+t=2026-04-29T18:06:04+0800 lvl=info msg=start pg=/api/tunnels id=52f5297873f162a4
+t=2026-04-29T18:06:04+0800 lvl=info msg=end pg=/api/tunnels id=52f5297873f162a4 status=200 dur=188.525µs
+t=2026-04-29T18:16:04+0800 lvl=info msg=start pg=/api/tunnels id=f2291bc420b632da
+t=2026-04-29T18:16:04+0800 lvl=info msg=end pg=/api/tunnels id=f2291bc420b632da status=200 dur=171.202µs
+t=2026-04-29T18:26:04+0800 lvl=info msg=start pg=/api/tunnels id=f6aafe98e5f040e0
+t=2026-04-29T18:26:04+0800 lvl=info msg=end pg=/api/tunnels id=f6aafe98e5f040e0 status=200 dur=213.651µs
+t=2026-04-29T18:36:04+0800 lvl=info msg=start pg=/api/tunnels id=1ce4e5f3688166ce
+t=2026-04-29T18:36:04+0800 lvl=info msg=end pg=/api/tunnels id=1ce4e5f3688166ce status=200 dur=171.662µs
+t=2026-04-29T18:46:04+0800 lvl=info msg=start pg=/api/tunnels id=e025c0f687d49342
+t=2026-04-29T18:46:04+0800 lvl=info msg=end pg=/api/tunnels id=e025c0f687d49342 status=200 dur=168.406µs
+t=2026-04-29T18:56:02+0800 lvl=info msg="update available" obj=updater
+t=2026-04-29T18:56:04+0800 lvl=info msg=start pg=/api/tunnels id=6486c82813bc3f92
+t=2026-04-29T18:56:04+0800 lvl=info msg=end pg=/api/tunnels id=6486c82813bc3f92 status=200 dur=165.041µs
+t=2026-04-29T19:06:04+0800 lvl=info msg=start pg=/api/tunnels id=77ee2450d98f85f4
+t=2026-04-29T19:06:04+0800 lvl=info msg=end pg=/api/tunnels id=77ee2450d98f85f4 status=200 dur=178.425µs
+t=2026-04-29T19:16:04+0800 lvl=info msg=start pg=/api/tunnels id=63529cf02aab04db
+t=2026-04-29T19:16:04+0800 lvl=info msg=end pg=/api/tunnels id=63529cf02aab04db status=200 dur=173.466µs
+t=2026-04-29T19:26:04+0800 lvl=info msg=start pg=/api/tunnels id=b16b17e100fc35ae
+t=2026-04-29T19:26:04+0800 lvl=info msg=end pg=/api/tunnels id=b16b17e100fc35ae status=200 dur=176.021µs
+t=2026-04-29T19:36:05+0800 lvl=info msg=start pg=/api/tunnels id=b2f7e154fc6db117
+t=2026-04-29T19:36:05+0800 lvl=info msg=end pg=/api/tunnels id=b2f7e154fc6db117 status=200 dur=164.369µs
+t=2026-04-29T19:46:05+0800 lvl=info msg=start pg=/api/tunnels id=2747bdd4a401f562
+t=2026-04-29T19:46:05+0800 lvl=info msg=end pg=/api/tunnels id=2747bdd4a401f562 status=200 dur=166.082µs
+t=2026-04-29T19:56:05+0800 lvl=info msg=start pg=/api/tunnels id=2fbc5a7aa7c64664
+t=2026-04-29T19:56:05+0800 lvl=info msg=end pg=/api/tunnels id=2fbc5a7aa7c64664 status=200 dur=159.47µs
+t=2026-04-29T20:06:05+0800 lvl=info msg=start pg=/api/tunnels id=2fd5a6001e0ffc89
+t=2026-04-29T20:06:05+0800 lvl=info msg=end pg=/api/tunnels id=2fd5a6001e0ffc89 status=200 dur=167.685µs
+t=2026-04-29T20:16:05+0800 lvl=info msg=start pg=/api/tunnels id=efcbfe2419479582
+t=2026-04-29T20:16:05+0800 lvl=info msg=end pg=/api/tunnels id=efcbfe2419479582 status=200 dur=183.184µs
+t=2026-04-29T20:26:05+0800 lvl=info msg=start pg=/api/tunnels id=9a4fe0d20d5d027b
+t=2026-04-29T20:26:05+0800 lvl=info msg=end pg=/api/tunnels id=9a4fe0d20d5d027b status=200 dur=191.069µs
+t=2026-04-29T20:36:05+0800 lvl=info msg=start pg=/api/tunnels id=3af40d350fcee576
+t=2026-04-29T20:36:05+0800 lvl=info msg=end pg=/api/tunnels id=3af40d350fcee576 status=200 dur=165.271µs
+t=2026-04-29T20:46:05+0800 lvl=info msg=start pg=/api/tunnels id=8c6866c1ba488d3d
+t=2026-04-29T20:46:05+0800 lvl=info msg=end pg=/api/tunnels id=8c6866c1ba488d3d status=200 dur=184.096µs
+t=2026-04-29T20:56:05+0800 lvl=info msg=start pg=/api/tunnels id=5bba5ae22ac6edfb
+t=2026-04-29T20:56:05+0800 lvl=info msg=end pg=/api/tunnels id=5bba5ae22ac6edfb status=200 dur=174.859µs
+t=2026-04-29T21:06:05+0800 lvl=info msg=start pg=/api/tunnels id=aa40d6ecdfb4c739
+t=2026-04-29T21:06:05+0800 lvl=info msg=end pg=/api/tunnels id=aa40d6ecdfb4c739 status=200 dur=188.785µs
+t=2026-04-29T21:16:05+0800 lvl=info msg=start pg=/api/tunnels id=101180c6aa2d08dc
+t=2026-04-29T21:16:05+0800 lvl=info msg=end pg=/api/tunnels id=101180c6aa2d08dc status=200 dur=212.94µs
+t=2026-04-29T21:26:05+0800 lvl=info msg=start pg=/api/tunnels id=41945716fc9dbe50
+t=2026-04-29T21:26:05+0800 lvl=info msg=end pg=/api/tunnels id=41945716fc9dbe50 status=200 dur=199.145µs
+t=2026-04-29T21:36:05+0800 lvl=info msg=start pg=/api/tunnels id=4019aeb9b955423d
+t=2026-04-29T21:36:05+0800 lvl=info msg=end pg=/api/tunnels id=4019aeb9b955423d status=200 dur=170.851µs
+t=2026-04-29T21:46:05+0800 lvl=info msg=start pg=/api/tunnels id=200bdbaf34a7e8e3
+t=2026-04-29T21:46:05+0800 lvl=info msg=end pg=/api/tunnels id=200bdbaf34a7e8e3 status=200 dur=177.233µs
+t=2026-04-29T21:56:05+0800 lvl=info msg=start pg=/api/tunnels id=ca7bbcc4ad4e0044
+t=2026-04-29T21:56:05+0800 lvl=info msg=end pg=/api/tunnels id=ca7bbcc4ad4e0044 status=200 dur=168.928µs
+t=2026-04-29T22:06:05+0800 lvl=info msg=start pg=/api/tunnels id=16515c29d8e8007f
+t=2026-04-29T22:06:05+0800 lvl=info msg=end pg=/api/tunnels id=16515c29d8e8007f status=200 dur=171.603µs
+t=2026-04-29T22:16:05+0800 lvl=info msg=start pg=/api/tunnels id=cdc87ac7d52f4e5f
+t=2026-04-29T22:16:05+0800 lvl=info msg=end pg=/api/tunnels id=cdc87ac7d52f4e5f status=200 dur=189.045µs
+t=2026-04-29T22:26:05+0800 lvl=info msg=start pg=/api/tunnels id=2336b5037d64b058
+t=2026-04-29T22:26:05+0800 lvl=info msg=end pg=/api/tunnels id=2336b5037d64b058 status=200 dur=205.536µs
+t=2026-04-29T22:36:05+0800 lvl=info msg=start pg=/api/tunnels id=d359336a08f62f3d
+t=2026-04-29T22:36:05+0800 lvl=info msg=end pg=/api/tunnels id=d359336a08f62f3d status=200 dur=172.604µs
+t=2026-04-29T22:46:05+0800 lvl=info msg=start pg=/api/tunnels id=f280413bf0f27b1d
+t=2026-04-29T22:46:05+0800 lvl=info msg=end pg=/api/tunnels id=f280413bf0f27b1d status=200 dur=195.718µs
+t=2026-04-29T22:56:05+0800 lvl=info msg=start pg=/api/tunnels id=add9301cc78cd98e
+t=2026-04-29T22:56:05+0800 lvl=info msg=end pg=/api/tunnels id=add9301cc78cd98e status=200 dur=180.208µs
+t=2026-04-29T23:06:05+0800 lvl=info msg=start pg=/api/tunnels id=5dd2e1c324ccb06b
+t=2026-04-29T23:06:05+0800 lvl=info msg=end pg=/api/tunnels id=5dd2e1c324ccb06b status=200 dur=171.542µs
+t=2026-04-29T23:16:05+0800 lvl=info msg=start pg=/api/tunnels id=b36dafae2d223965
+t=2026-04-29T23:16:05+0800 lvl=info msg=end pg=/api/tunnels id=b36dafae2d223965 status=200 dur=188.474µs
+t=2026-04-29T23:26:05+0800 lvl=info msg=start pg=/api/tunnels id=429ac40946f34408
+t=2026-04-29T23:26:05+0800 lvl=info msg=end pg=/api/tunnels id=429ac40946f34408 status=200 dur=167.315µs
+t=2026-04-29T23:36:05+0800 lvl=info msg=start pg=/api/tunnels id=e5447e07fdb8acc7
+t=2026-04-29T23:36:05+0800 lvl=info msg=end pg=/api/tunnels id=e5447e07fdb8acc7 status=200 dur=172.754µs
+t=2026-04-29T23:46:05+0800 lvl=info msg=start pg=/api/tunnels id=07c9614f1452494f
+t=2026-04-29T23:46:05+0800 lvl=info msg=end pg=/api/tunnels id=07c9614f1452494f status=200 dur=171.612µs
+t=2026-04-29T23:56:03+0800 lvl=info msg="received stop request" obj=app stopReq="{err:<nil> restart:false}"
+t=2026-04-29T23:56:03+0800 lvl=info msg="session closing" obj=tunnels.session err=nil
