@@ -50,8 +50,12 @@ export default function HeroCard({ hero }) {
         <div className="font-semibold text-base truncate mb-0.5">{displayName}</div>
         <div className="text-xs text-[#8b8fa3] truncate mb-2">{hero.localized_name}</div>
         <div className="flex justify-between text-sm">
-          <span className={winColor}>胜率 {winRate}%</span>
-          <span className="text-[#8b8fa3]">{picks}场</span>
+          <span className="text-[#8b8fa3]">胜率</span>
+          <span className={winColor}>{winRate}%</span>
+        </div>
+        <div className="flex justify-between text-sm">
+          <span className="text-[#8b8fa3]">场次</span>
+          <span className="text-[#8b8fa3]">{picks}</span>
         </div>
       </div>
     </div>
